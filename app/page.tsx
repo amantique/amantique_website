@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Navbar_Responsive from "./components/Navbar_responsive";
 import DatePage from "./date/page";
@@ -13,11 +13,11 @@ import Footer from "./components/Footer";
 
 const HomePage: React.FC = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const [flies, setFlies] = useState([
-    { id: 1, position: { top: 100, left: 100 }, size: 50, speed: { x: 10, y: 10 } },
-    { id: 2, position: { top: 200, left: 300 }, size: 100, speed: { x: 15, y: 5 } },
-    { id: 3, position: { top: 400, left: 500 }, size: 75, speed: { x: 20, y: 20 } },
-  ]);
+  // const [flies, setFlies] = useState([
+  //   { id: 1, position: { top: 100, left: 100 }, size: 50, speed: { x: 10, y: 10 } },
+  //   { id: 2, position: { top: 200, left: 300 }, size: 100, speed: { x: 15, y: 5 } },
+  //   { id: 3, position: { top: 400, left: 500 }, size: 75, speed: { x: 20, y: 20 } },
+  // ]);
 
   const datePageRef = useRef<HTMLDivElement>(null);
   const musiquePageRef = useRef<HTMLDivElement>(null);
@@ -96,60 +96,60 @@ const HomePage: React.FC = () => {
     return () => window.removeEventListener("resize", checkWindowSize);
   }, []);
 
-  useEffect(() => {
-    const moveFlies = () => {
-      setFlies((prevFlies) => {
-        return prevFlies.map((fly) => {
-          let newTop = fly.position.top + fly.speed.y;
-          let newLeft = fly.position.left + fly.speed.x;
+  // useEffect(() => {
+    // const moveFlies = () => {
+    //   setFlies((prevFlies) => {
+    //     return prevFlies.map((fly) => {
+    //       let newTop = fly.position.top + fly.speed.y;
+    //       let newLeft = fly.position.left + fly.speed.x;
 
-          const imageWidth = fly.size;
-          const imageHeight = fly.size;
+    //       const imageWidth = fly.size;
+    //       const imageHeight = fly.size;
 
-          if (newTop < 0) {
-            newTop = 0;
-            fly.speed.y = Math.abs(Math.random() * 15);
-            fly.speed.x = Math.random() > 0.5 ? Math.random() * 30 : -Math.random() * 30;
-          }
-          if (newLeft < 0) {
-            newLeft = 0;
-            fly.speed.x = Math.abs(Math.random() * 30);
-            fly.speed.y = Math.random() > 0.5 ? Math.random() * 15 : -Math.random() * 15;
-          }
-          if (newTop + imageHeight > window.innerHeight) {
-            newTop = window.innerHeight - imageHeight;
-            fly.speed.y = -Math.abs(Math.random() * 15);
-            fly.speed.x = Math.random() > 0.5 ? Math.random() * 30 : -Math.random() * 30;
-          }
-          if (newLeft + imageWidth > window.innerWidth) {
-            newLeft = window.innerWidth - imageWidth;
-            fly.speed.x = -Math.abs(Math.random() * 30);
-            fly.speed.y = Math.random() > 0.5 ? Math.random() * 15 : -Math.random() * 15;
-          }
+    //       if (newTop < 0) {
+    //         newTop = 0;
+    //         fly.speed.y = Math.abs(Math.random() * 15);
+    //         fly.speed.x = Math.random() > 0.5 ? Math.random() * 30 : -Math.random() * 30;
+    //       }
+    //       if (newLeft < 0) {
+    //         newLeft = 0;
+    //         fly.speed.x = Math.abs(Math.random() * 30);
+    //         fly.speed.y = Math.random() > 0.5 ? Math.random() * 15 : -Math.random() * 15;
+    //       }
+    //       if (newTop + imageHeight > window.innerHeight) {
+    //         newTop = window.innerHeight - imageHeight;
+    //         fly.speed.y = -Math.abs(Math.random() * 15);
+    //         fly.speed.x = Math.random() > 0.5 ? Math.random() * 30 : -Math.random() * 30;
+    //       }
+    //       if (newLeft + imageWidth > window.innerWidth) {
+    //         newLeft = window.innerWidth - imageWidth;
+    //         fly.speed.x = -Math.abs(Math.random() * 30);
+    //         fly.speed.y = Math.random() > 0.5 ? Math.random() * 15 : -Math.random() * 15;
+    //       }
 
-          return { ...fly, position: { top: newTop, left: newLeft } };
-        });
-      });
-    };
+    //       return { ...fly, position: { top: newTop, left: newLeft } };
+    //     });
+    //   });
+    // };
 
-    const interval = setInterval(moveFlies, 30); 
+    // const interval = setInterval(moveFlies, 30); 
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  const handleFlyClick = (size: number) => {
-    const newFly = {
-      id: flies.length + 1,
-      position: {
-        top: Math.random() * (window.innerHeight - size),
-        left: Math.random() * (window.innerWidth - size),
-      },
-      size: size,
-      speed: { x: Math.random() * 15, y: Math.random() * 15 },
-    };
+  // const handleFlyClick = (size: number) => {
+  //   const newFly = {
+  //     id: flies.length + 1,
+  //     position: {
+  //       top: Math.random() * (window.innerHeight - size),
+  //       left: Math.random() * (window.innerWidth - size),
+  //     },
+  //     size: size,
+  //     speed: { x: Math.random() * 15, y: Math.random() * 15 },
+  //   };
 
-    setFlies((prevFlies) => [...prevFlies, newFly]);
-  };
+  //   setFlies((prevFlies) => [...prevFlies, newFly]);
+  // };
 
   return (
     <>
@@ -189,7 +189,7 @@ const HomePage: React.FC = () => {
         </div>
 
         {/* Mouches qui se déplacent sur toute la page */}
-        {flies.map((fly) => (
+        {/* {flies.map((fly) => (
           <div
             key={fly.id}
             style={{
@@ -211,11 +211,11 @@ const HomePage: React.FC = () => {
               className="object-contain"
             />
           </div>
-        ))}
-      </div>
+        ))}*/}
+      </div> 
 
       {/* Appel du composant DatePage */}
-      <div ref={datePageRef} style={{ width: "100%", paddingTop: "87vh", margin: 0 }}>
+      <div ref={datePageRef} style={{ width: "100%", paddingTop: "86vh", margin: 0 }}>
         <DatePage />
       </div>
 

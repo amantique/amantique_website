@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 import Image from 'next/image';
 
 interface NavbarProps {
@@ -80,7 +80,7 @@ const Navbar: React.FC<NavbarProps> = ({ className, onContactClick, onDateClick,
       </div>
 
       {/* Logo centré */}
-      <div className={`absolute left-1/2 transform -translate-x-1/2 top-0 ${scrolled ? 'mt-1' : 'mt-1'}`}>
+      {/* <div className={`absolute left-1/2 transform -translate-x-1/2 top-0 ${scrolled ? 'mt-1' : 'mt-1'}`}>
         <Link href="/" className="text-xl font-bold p-2" onClick={(e) => {
           e.preventDefault(); 
           window.scrollTo({ top: 0, behavior: 'smooth' }); 
@@ -93,10 +93,13 @@ const Navbar: React.FC<NavbarProps> = ({ className, onContactClick, onDateClick,
             className={`transition-all duration-300 ${scrolled ? 'w-[180px] h-[120px]' : 'w-[700px] h-[350px]'}`}
           />
         </Link>
+      </div> */}
+      <div>
+        <h1 className='text-6xl'>AMANTIQUE</h1>
       </div>
 
       {/* Liens de navigation */}
-      <div className="flex text-2xl justify-center space-x-3 mt-5">
+      <div className="text-2xl flex items-center justify-between space-x-3">
         <a
           href="#"
           onClick={(e) => {
