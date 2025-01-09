@@ -184,7 +184,7 @@ const HomePage: React.FC = () => {
               zIndex: -1,
             }}
           >
-            <source src="/video/01.mp4" type="video/mp4" />
+            <source src="/video/teaser_flute.mp4" type="video/mp4" />
           </video>
         </div>
 
