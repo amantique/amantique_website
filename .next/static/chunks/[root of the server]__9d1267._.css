@@ -533,6 +533,10 @@ img, video {
   height: 350px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-16 {
   width: 4rem;
 }

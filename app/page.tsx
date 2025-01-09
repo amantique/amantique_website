@@ -168,25 +168,24 @@ const HomePage: React.FC = () => {
       <div className="container w-full pt-20">
         {/* Section de la vidéo */}
         <div className="w-full">
-        <iframe
-          width="100%"    // Utilise 100% de la largeur disponible
-          height="100vh"  // Utilise 100% de la hauteur de la fenêtre
-          src="https://www.youtube.com/embed/nXbfBoSJI7o?autoplay=1&loop=1&mute=1"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-          style={{
-            position: "absolute",  // Positionné absolument pour occuper tout l'écran
-            top: 0,
-            left: 0,
-            width: "100%",   // Prend toute la largeur
-            height: "100vh", // Prend toute la hauteur de la fenêtre
-            objectFit: "cover",  // Couvre tout l'écran sans déformation
-            zIndex: -1,    // Si tu veux mettre la vidéo en arrière-plan
-          }}
-        ></iframe>
+          <video
+            className="w-full h-auto"
+            autoPlay
+            loop
+            muted
+            playsInline
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100vh",
+              objectFit: "cover",
+              zIndex: -1,
+            }}
+          >
+            <source src="/video/01.mp4" type="video/mp4" />
+          </video>
         </div>
 
         {/* Mouches qui se déplacent sur toute la page */}
