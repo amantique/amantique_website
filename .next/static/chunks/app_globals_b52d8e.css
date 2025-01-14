@@ -393,6 +393,11 @@ img, video {
   margin-right: auto;
 }
 
+.mx-3 {
+  margin-left: .75rem;
+  margin-right: .75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -423,6 +428,14 @@ img, video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: .5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -635,10 +648,6 @@ img, video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.object-contain {
-  object-fit: contain;
 }
 
 .object-cover {

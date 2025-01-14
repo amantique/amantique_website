@@ -13,11 +13,11 @@ const BioPage = () => {
           backgroundPosition: "center",
         }}        
       >
-        <h2 className="text-7xl font-extrabold sm:text-9xl mb-8 text-[#F20D01] drop-shadow-lg">
+        <h2 className="text-7xl font-extrabold sm:text-9xl text-[#F20D01] drop-shadow-lg">
           BIO
         </h2>
 
-        <div className="flex flex-col items-center justify-center gap-8 p-8 sm:px-16">
+        <div className="flex flex-col items-center justify-center p-8 sm:px-16">
           {/* Bloc de texte - Section principale */}
           <div className="bg-white bg-opacity-90 w-full max-w-7xl p-10 shadow-xl space-y-8">
             <p className="text-lg sm:text-xl font-medium leading-relaxed">
