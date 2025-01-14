@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-// import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Navbar_Responsive from "./components/Navbar_responsive";
 import DatePage from "./date/page";
@@ -13,73 +12,24 @@ import Footer from "./components/Footer";
 
 const HomePage: React.FC = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  // const [flies, setFlies] = useState([
-  //   { id: 1, position: { top: 100, left: 100 }, size: 50, speed: { x: 10, y: 10 } },
-  //   { id: 2, position: { top: 200, left: 300 }, size: 100, speed: { x: 15, y: 5 } },
-  //   { id: 3, position: { top: 400, left: 500 }, size: 75, speed: { x: 20, y: 20 } },
-  // ]);
+  const navbarRef = useRef<HTMLElement>(null);
 
+  // Références des sections
   const datePageRef = useRef<HTMLDivElement>(null);
   const musiquePageRef = useRef<HTMLDivElement>(null);
   const bioPageRef = useRef<HTMLDivElement>(null);
   const photoPageRef = useRef<HTMLDivElement>(null);
   const contactPageRef = useRef<HTMLDivElement>(null);
 
-  const scrollToDatePage = () => {
-    if (datePageRef.current) {
-      const elementPosition = datePageRef.current.getBoundingClientRect().top + window.scrollY;
-      const offset = 870;
-  
+  // Calculer la hauteur de la navbar
+  const getNavbarHeight = () => navbarRef.current ? navbarRef.current.offsetHeight : 0;
+
+  const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement | null>) => {
+    if (sectionRef.current) {
+      const elementPosition = sectionRef.current.getBoundingClientRect().top + window.scrollY;
+      const offset = getNavbarHeight(); // Hauteur de la navbar
       window.scrollTo({
-        top: elementPosition + offset,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollToMusiquePage = () => {
-    if (musiquePageRef.current) {
-      const elementPosition = musiquePageRef.current.getBoundingClientRect().top + window.scrollY;
-      const offset = 0;
-  
-      window.scrollTo({
-        top: elementPosition + offset,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollToBioPage = () => {
-    if (bioPageRef.current) {
-      const elementPosition = bioPageRef.current.getBoundingClientRect().top + window.scrollY;
-      const offset = window.innerHeight;
-
-      window.scrollTo({
-        top: elementPosition + offset,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollToPhotoPage = () => {
-    if (photoPageRef.current) {
-      const elementPosition = photoPageRef.current.getBoundingClientRect().top + window.scrollY;
-      const offset = window.innerHeight;
-
-      window.scrollTo({
-        top: elementPosition + offset,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollToContactPage = () => {
-    if (contactPageRef.current) {
-      const elementPosition = contactPageRef.current.getBoundingClientRect().top + window.scrollY;
-      const offset = window.innerHeight;
-
-      window.scrollTo({
-        top: elementPosition + offset,
+        top: elementPosition - offset, // Ajuste le défilement pour compenser la navbar
         behavior: "smooth",
       });
     }
@@ -96,73 +46,19 @@ const HomePage: React.FC = () => {
     return () => window.removeEventListener("resize", checkWindowSize);
   }, []);
 
-  // useEffect(() => {
-    // const moveFlies = () => {
-    //   setFlies((prevFlies) => {
-    //     return prevFlies.map((fly) => {
-    //       let newTop = fly.position.top + fly.speed.y;
-    //       let newLeft = fly.position.left + fly.speed.x;
-
-    //       const imageWidth = fly.size;
-    //       const imageHeight = fly.size;
-
-    //       if (newTop < 0) {
-    //         newTop = 0;
-    //         fly.speed.y = Math.abs(Math.random() * 15);
-    //         fly.speed.x = Math.random() > 0.5 ? Math.random() * 30 : -Math.random() * 30;
-    //       }
-    //       if (newLeft < 0) {
-    //         newLeft = 0;
-    //         fly.speed.x = Math.abs(Math.random() * 30);
-    //         fly.speed.y = Math.random() > 0.5 ? Math.random() * 15 : -Math.random() * 15;
-    //       }
-    //       if (newTop + imageHeight > window.innerHeight) {
-    //         newTop = window.innerHeight - imageHeight;
-    //         fly.speed.y = -Math.abs(Math.random() * 15);
-    //         fly.speed.x = Math.random() > 0.5 ? Math.random() * 30 : -Math.random() * 30;
-    //       }
-    //       if (newLeft + imageWidth > window.innerWidth) {
-    //         newLeft = window.innerWidth - imageWidth;
-    //         fly.speed.x = -Math.abs(Math.random() * 30);
-    //         fly.speed.y = Math.random() > 0.5 ? Math.random() * 15 : -Math.random() * 15;
-    //       }
-
-    //       return { ...fly, position: { top: newTop, left: newLeft } };
-    //     });
-    //   });
-    // };
-
-    // const interval = setInterval(moveFlies, 30); 
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  // const handleFlyClick = (size: number) => {
-  //   const newFly = {
-  //     id: flies.length + 1,
-  //     position: {
-  //       top: Math.random() * (window.innerHeight - size),
-  //       left: Math.random() * (window.innerWidth - size),
-  //     },
-  //     size: size,
-  //     speed: { x: Math.random() * 15, y: Math.random() * 15 },
-  //   };
-
-  //   setFlies((prevFlies) => [...prevFlies, newFly]);
-  // };
-
   return (
     <>
       {isSmallScreen ? (
         <Navbar_Responsive />
       ) : (
         <Navbar
+          ref={navbarRef} 
           className="sticky top-0 z-50"
-          onContactClick={scrollToContactPage} 
-          onDateClick={scrollToDatePage} 
-          onPhotoClick={scrollToPhotoPage}
-          onMusiqueClick={scrollToMusiquePage}
-          onBioClick={scrollToBioPage}
+          onContactClick={() => scrollToSection(contactPageRef)}
+          onDateClick={() => scrollToSection(datePageRef)}
+          onMusiqueClick={() => scrollToSection(musiquePageRef)}
+          onBioClick={() => scrollToSection(bioPageRef)}
+          onPhotoClick={() => scrollToSection(photoPageRef)}
         />
       )}
       <div className="container w-full pt-20">
@@ -187,56 +83,23 @@ const HomePage: React.FC = () => {
             <source src="/video/teaser_flute_reduce.mp4" type="video/mp4" />
           </video>
         </div>
-
-        {/* Mouches qui se déplacent sur toute la page */}
-        {/* {flies.map((fly) => (
-          <div
-            key={fly.id}
-            style={{
-              position: "absolute",
-              top: `${fly.position.top}px`,
-              left: `${fly.position.left}px`,
-              zIndex: 100,
-              cursor: "pointer",
-              width: `${fly.size}px`,
-              height: "auto",
-            }}
-          >
-            <Image
-              src="/img/fly/red_little_fly.png"
-              alt="Mouche"
-              onClick={() => handleFlyClick(fly.size)}
-              width={fly.size}
-              height={fly.size}
-              className="object-contain"
-            />
-          </div>
-        ))}*/}
-      </div> 
-
-      {/* Appel du composant DatePage */}
-      <div ref={datePageRef} style={{ width: "100%", paddingTop: "86vh", margin: 0 }}>
-        <DatePage />
       </div>
 
-      {/* Appel du composant MusiquePage */}
+      {/* Sections */}
+      <div ref={datePageRef} style={{ width: "100%", marginTop: "86vh" }}>
+        <DatePage />
+      </div>
       <div ref={musiquePageRef}>
         <MusiquePage />
       </div>
-      
-      {/* Appel du composant BioPage */}
       <div ref={bioPageRef}>
         <BioPage />
       </div>
-      
-      {/* Appel du composant PhotoPage */}
       <div ref={photoPageRef}>
         <PhotoPage />
       </div>
-
-      {/* Appel du composant ContactPage */}
       <div ref={contactPageRef}>
-          <ContactPage />
+        <ContactPage />
       </div>
 
       <Footer />

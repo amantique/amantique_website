@@ -5,19 +5,159 @@
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, k: __turbopack_refresh__, m: module, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
+// "use client";
+// import { useState, useEffect } from 'react';
+// // import Link from 'next/link';
+// import Image from 'next/image';
+// interface NavbarProps {
+//   className?: string;
+//   onContactClick?: () => void;
+//   onDateClick?: () => void;
+//   onPhotoClick?: () => void;
+//   onMusiqueClick?: () => void;
+//   onBioClick?: () => void;
+// }
+// const Navbar: React.FC<NavbarProps> = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqueClick, onBioClick }) => {
+//   const [scrolled, setScrolled] = useState(false);
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       if (window.scrollY > 50) { 
+//         setScrolled(true);
+//       } else {
+//         setScrolled(false);
+//       }
+//     };
+//     window.addEventListener('scroll', handleScroll);
+//     return () => {
+//       window.removeEventListener('scroll', handleScroll);
+//     };
+//   }, []);
+//   return (
+//     <nav
+//   className={`text-white flex items-center justify-between fixed top-0 px-5 z-50 
+//     ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-30 shadow-none'} 
+//     ${className}`}
+// >
+//       {/* Conteneur pour les icônes sociaux */}
+//       <div className="flex items-center justify-between space-x-3">
+//         {/* Spotify */}
+//         <a href="https://open.spotify.com/intl-fr/artist/1gUDo746RvvVVY3lbL2r7N?si=9xiGodwdSca93pMnkZ37-w" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+//           <Image src="/img/icon/spotify.png" alt="Spotify Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+//           <Image src="/img/icon/spotify_red.png" alt="Spotify Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+//         </a>
+//         {/* Apple Music */}
+//         <a href="https://music.apple.com/fr/artist/amantique/1771329106" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+//           <Image src="/img/icon/apple.png" alt="Apple Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+//           <Image src="/img/icon/apple_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+//         </a>
+//         {/* Instagram */}
+//         <a href="https://www.instagram.com/amantique._/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+//           <Image src="/img/icon/instagram.png" alt="Instagram Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+//           <Image src="/img/icon/instagram_red.png" alt="Instagram Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+//         </a>
+//         {/* Facebook */}
+//         <a href="https://www.facebook.com/profile.php?id=100091951621434" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+//           <Image src="/img/icon/facebook.png" alt="Facebook Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+//           <Image src="/img/icon/facebook_red.png" alt="Facebook Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+//         </a>
+//         {/* TikTok */}
+//         <a href="https://www.tiktok.com/@amantique_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+//           <Image src="/img/icon/tiktok.png" alt="TikTok Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+//           <Image src="/img/icon/tiktok_red.png" alt="TikTok Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+//         </a>
+//         {/* YouTube */}
+//         <a href="https://www.youtube.com/@Amantique" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+//           <Image src="/img/icon/youtube.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+//           <Image src="/img/icon/youtube_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+//         </a>
+//       </div>
+//       {/* Logo centré */}
+//       {/* <div className={`absolute left-1/2 transform -translate-x-1/2 top-0 ${scrolled ? 'mt-1' : 'mt-1'}`}>
+//         <Link href="/" className="text-xl font-bold p-2" onClick={(e) => {
+//           e.preventDefault(); 
+//           window.scrollTo({ top: 0, behavior: 'smooth' }); 
+//         }}>
+//           <Image
+//             src="/img/logo/logo.png"
+//             alt="Logo"
+//             width={500}
+//             height={473}
+//             className={`transition-all duration-300 ${scrolled ? 'w-[180px] h-[120px]' : 'w-[700px] h-[350px]'}`}
+//           />
+//         </Link>
+//       </div> */}
+//       <div>
+//         <h1 className='text-6xl'>AMANTIQUE</h1>
+//       </div>
+//       {/* Liens de navigation */}
+//       <div className="text-2xl flex items-center justify-between space-x-3">
+//         <a
+//           href="#"
+//           onClick={(e) => {
+//             e.preventDefault(); 
+//             onDateClick?.(); 
+//           }}
+//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
+//         >
+//           DATE
+//         </a>
+//         <a
+//           href="#"
+//           onClick={(e) => {
+//             e.preventDefault();
+//             onMusiqueClick?.();
+//           }}
+//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
+//         >
+//           MUSIQUE
+//         </a>
+//         <a
+//           href="#"
+//           onClick={(e) => {
+//             e.preventDefault(); 
+//             onBioClick?.(); 
+//           }}
+//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
+//         >
+//           BIO
+//         </a>
+//         <a
+//           href="#"
+//           onClick={(e) => {
+//             e.preventDefault();
+//             onPhotoClick?.(); 
+//           }}
+//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
+//         >
+//           PHOTO
+//         </a>
+//         <a
+//           href="#"
+//           onClick={(e) => {
+//             e.preventDefault();
+//             onContactClick?.();
+//           }}
+//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
+//         >
+//           CONTACT
+//         </a>
+//       </div>
+//     </nav>
+//   );
+// };
+// export default Navbar;
 __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-// import Link from 'next/link';
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
 ;
 ;
-const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqueClick, onBioClick })=>{
+const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["forwardRef"])(_c = _s(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick }, ref)=>{
     _s();
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -40,9 +180,10 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
         }
     }["Navbar.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+        ref: ref,
         className: `text-white flex items-center justify-between fixed top-0 px-5 z-50 
-    ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-30 shadow-none'} 
-    ${className}`,
+        ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-30 shadow-none'} 
+        ${className}`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-between space-x-3",
@@ -61,7 +202,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 47,
+                                lineNumber: 204,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -72,13 +213,13 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 48,
+                                lineNumber: 205,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 46,
+                        lineNumber: 203,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -95,7 +236,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 53,
+                                lineNumber: 210,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -106,13 +247,13 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 54,
+                                lineNumber: 211,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 52,
+                        lineNumber: 209,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -129,7 +270,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 59,
+                                lineNumber: 216,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -140,13 +281,13 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 60,
+                                lineNumber: 217,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 58,
+                        lineNumber: 215,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -163,7 +304,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 65,
+                                lineNumber: 222,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -174,13 +315,13 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 66,
+                                lineNumber: 223,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 64,
+                        lineNumber: 221,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -197,7 +338,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 71,
+                                lineNumber: 228,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -208,13 +349,13 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 72,
+                                lineNumber: 229,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 70,
+                        lineNumber: 227,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -231,7 +372,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 77,
+                                lineNumber: 234,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -242,33 +383,39 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 78,
+                                lineNumber: 235,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 76,
+                        lineNumber: 233,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Navbar.tsx",
-                lineNumber: 44,
+                lineNumber: 201,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: "text-6xl",
+                    className: "text-6xl cursor-pointer",
+                    onClick: ()=>{
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                    },
                     children: "AMANTIQUE"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Navbar.tsx",
-                    lineNumber: 98,
+                    lineNumber: 241,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/Navbar.tsx",
-                lineNumber: 97,
+                lineNumber: 240,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -284,7 +431,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                         children: "DATE"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 103,
+                        lineNumber: 253,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -297,7 +444,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                         children: "MUSIQUE"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 113,
+                        lineNumber: 263,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -310,7 +457,7 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                         children: "BIO"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 123,
+                        lineNumber: 273,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -320,10 +467,10 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                             onPhotoClick?.();
                         },
                         className: "px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150",
-                        children: "PHOTO"
+                        children: "PHOTOS"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 133,
+                        lineNumber: 283,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -336,27 +483,28 @@ const Navbar = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqu
                         children: "CONTACT"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 143,
+                        lineNumber: 293,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Navbar.tsx",
-                lineNumber: 102,
+                lineNumber: 252,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Navbar.tsx",
-        lineNumber: 37,
+        lineNumber: 194,
         columnNumber: 5
     }, this);
-};
-_s(Navbar, "tQtW9FyKD+Ut/6k+f0BCbABprL4=");
-_c = Navbar;
+}, "tQtW9FyKD+Ut/6k+f0BCbABprL4=")), "tQtW9FyKD+Ut/6k+f0BCbABprL4=");
+_c1 = Navbar;
+Navbar.displayName = 'Navbar';
 const __TURBOPACK__default__export__ = Navbar;
-var _c;
-__turbopack_refresh__.register(_c, "Navbar");
+var _c, _c1;
+__turbopack_refresh__.register(_c, "Navbar$forwardRef");
+__turbopack_refresh__.register(_c1, "Navbar");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -1660,7 +1808,6 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-// import Image from "next/image";
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/app/components/Navbar.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar_responsive$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/app/components/Navbar_responsive.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$date$2f$page$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/app/date/page.tsx [app-client] (ecmascript)");
@@ -1684,62 +1831,21 @@ var _s = __turbopack_refresh__.signature();
 const HomePage = ()=>{
     _s();
     const [isSmallScreen, setIsSmallScreen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    // const [flies, setFlies] = useState([
-    //   { id: 1, position: { top: 100, left: 100 }, size: 50, speed: { x: 10, y: 10 } },
-    //   { id: 2, position: { top: 200, left: 300 }, size: 100, speed: { x: 15, y: 5 } },
-    //   { id: 3, position: { top: 400, left: 500 }, size: 75, speed: { x: 20, y: 20 } },
-    // ]);
+    const navbarRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    // Références des sections
     const datePageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const musiquePageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const bioPageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const photoPageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const contactPageRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const scrollToDatePage = ()=>{
-        if (datePageRef.current) {
-            const elementPosition = datePageRef.current.getBoundingClientRect().top + window.scrollY;
-            const offset = 870;
+    // Calculer la hauteur de la navbar
+    const getNavbarHeight = ()=>navbarRef.current ? navbarRef.current.offsetHeight : 0;
+    const scrollToSection = (sectionRef)=>{
+        if (sectionRef.current) {
+            const elementPosition = sectionRef.current.getBoundingClientRect().top + window.scrollY;
+            const offset = getNavbarHeight(); // Hauteur de la navbar
             window.scrollTo({
-                top: elementPosition + offset,
-                behavior: "smooth"
-            });
-        }
-    };
-    const scrollToMusiquePage = ()=>{
-        if (musiquePageRef.current) {
-            const elementPosition = musiquePageRef.current.getBoundingClientRect().top + window.scrollY;
-            const offset = 0;
-            window.scrollTo({
-                top: elementPosition + offset,
-                behavior: "smooth"
-            });
-        }
-    };
-    const scrollToBioPage = ()=>{
-        if (bioPageRef.current) {
-            const elementPosition = bioPageRef.current.getBoundingClientRect().top + window.scrollY;
-            const offset = window.innerHeight;
-            window.scrollTo({
-                top: elementPosition + offset,
-                behavior: "smooth"
-            });
-        }
-    };
-    const scrollToPhotoPage = ()=>{
-        if (photoPageRef.current) {
-            const elementPosition = photoPageRef.current.getBoundingClientRect().top + window.scrollY;
-            const offset = window.innerHeight;
-            window.scrollTo({
-                top: elementPosition + offset,
-                behavior: "smooth"
-            });
-        }
-    };
-    const scrollToContactPage = ()=>{
-        if (contactPageRef.current) {
-            const elementPosition = contactPageRef.current.getBoundingClientRect().top + window.scrollY;
-            const offset = window.innerHeight;
-            window.scrollTo({
-                top: elementPosition + offset,
+                top: elementPosition - offset,
                 behavior: "smooth"
             });
         }
@@ -1758,69 +1864,23 @@ const HomePage = ()=>{
             })["HomePage.useEffect"];
         }
     }["HomePage.useEffect"], []);
-    // useEffect(() => {
-    // const moveFlies = () => {
-    //   setFlies((prevFlies) => {
-    //     return prevFlies.map((fly) => {
-    //       let newTop = fly.position.top + fly.speed.y;
-    //       let newLeft = fly.position.left + fly.speed.x;
-    //       const imageWidth = fly.size;
-    //       const imageHeight = fly.size;
-    //       if (newTop < 0) {
-    //         newTop = 0;
-    //         fly.speed.y = Math.abs(Math.random() * 15);
-    //         fly.speed.x = Math.random() > 0.5 ? Math.random() * 30 : -Math.random() * 30;
-    //       }
-    //       if (newLeft < 0) {
-    //         newLeft = 0;
-    //         fly.speed.x = Math.abs(Math.random() * 30);
-    //         fly.speed.y = Math.random() > 0.5 ? Math.random() * 15 : -Math.random() * 15;
-    //       }
-    //       if (newTop + imageHeight > window.innerHeight) {
-    //         newTop = window.innerHeight - imageHeight;
-    //         fly.speed.y = -Math.abs(Math.random() * 15);
-    //         fly.speed.x = Math.random() > 0.5 ? Math.random() * 30 : -Math.random() * 30;
-    //       }
-    //       if (newLeft + imageWidth > window.innerWidth) {
-    //         newLeft = window.innerWidth - imageWidth;
-    //         fly.speed.x = -Math.abs(Math.random() * 30);
-    //         fly.speed.y = Math.random() > 0.5 ? Math.random() * 15 : -Math.random() * 15;
-    //       }
-    //       return { ...fly, position: { top: newTop, left: newLeft } };
-    //     });
-    //   });
-    // };
-    // const interval = setInterval(moveFlies, 30); 
-    //   return () => clearInterval(interval);
-    // }, []);
-    // const handleFlyClick = (size: number) => {
-    //   const newFly = {
-    //     id: flies.length + 1,
-    //     position: {
-    //       top: Math.random() * (window.innerHeight - size),
-    //       left: Math.random() * (window.innerWidth - size),
-    //     },
-    //     size: size,
-    //     speed: { x: Math.random() * 15, y: Math.random() * 15 },
-    //   };
-    //   setFlies((prevFlies) => [...prevFlies, newFly]);
-    // };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             isSmallScreen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar_responsive$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 157,
+                lineNumber: 52,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                ref: navbarRef,
                 className: "sticky top-0 z-50",
-                onContactClick: scrollToContactPage,
-                onDateClick: scrollToDatePage,
-                onPhotoClick: scrollToPhotoPage,
-                onMusiqueClick: scrollToMusiquePage,
-                onBioClick: scrollToBioPage
+                onContactClick: ()=>scrollToSection(contactPageRef),
+                onDateClick: ()=>scrollToSection(datePageRef),
+                onMusiqueClick: ()=>scrollToSection(musiquePageRef),
+                onBioClick: ()=>scrollToSection(bioPageRef),
+                onPhotoClick: ()=>scrollToSection(photoPageRef)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 159,
+                lineNumber: 54,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1847,98 +1907,97 @@ const HomePage = ()=>{
                             type: "video/mp4"
                         }, void 0, false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 187,
+                            lineNumber: 83,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 171,
+                        lineNumber: 67,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 170,
+                    lineNumber: 66,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 168,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: datePageRef,
                 style: {
                     width: "100%",
-                    paddingTop: "86vh",
-                    margin: 0
+                    marginTop: "86vh"
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$date$2f$page$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 219,
+                    lineNumber: 90,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 218,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: musiquePageRef,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$musique$2f$page$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 224,
+                    lineNumber: 93,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 223,
+                lineNumber: 92,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: bioPageRef,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$bio$2f$page$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 229,
+                    lineNumber: 96,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 228,
+                lineNumber: 95,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: photoPageRef,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$photo$2f$page$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 234,
+                    lineNumber: 99,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 233,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: contactPageRef,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$contact$2f$page$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 239,
-                    columnNumber: 11
+                    lineNumber: 102,
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 238,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 242,
+                lineNumber: 105,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 };
-_s(HomePage, "rMvBjJa4K2+4Pi6nwR8VqSCuawk=");
+_s(HomePage, "8lKMQ85Mt3Z+nIBV4E15zW2Zwxo=");
 _c = HomePage;
 const __TURBOPACK__default__export__ = HomePage;
 var _c;

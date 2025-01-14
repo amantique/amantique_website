@@ -5,6 +5,15 @@ import React from 'react'
 const BioPage = () => {
   return (
     <>      
+    <div className="w-full text-center bg-cover bg-center bg-no-repeat text-[#0A0A0A]" 
+        style={{
+          backgroundImage: "url('/img/bg/bg_bio_responsive.jpg')",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}        
+      >
+      </div>
       <div className="w-full text-center bg-[#F20D01] text-[#0A0A0A]">
         <h2 className="text-7xl font-extrabold sm:text-9xl mb-8">
           BIO
