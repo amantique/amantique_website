@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         plakette: ['PlaketteSerialBold', 'sans-serif'], // Définissez la nouvelle police
+        robotomono: ['RobotoMono', 'monospace'],
       },
     },
   },

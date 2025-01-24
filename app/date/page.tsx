@@ -16,7 +16,7 @@ const ContactPage = () => {
         }}
       >
         {/* Titre principal */}
-        <h2 className="text-7xl text-white font-extrabold sm:text-9xl mb-8 drop-shadow-lg">DATE</h2>
+        <h2 className="text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg">DATE</h2>
 
         {/* Section À VENIR */}
         <div className="flex items-center text-left text-5xl pl-4 sm:pl-8 md:pl-16 mb-4">
@@ -42,7 +42,7 @@ const ContactPage = () => {
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
                 <h3 className="text-2xl font-semibold">31 • 01 - Paris (95)</h3>
-                <p className="text-1xl">GILBERT DISC</p>
+                <p className="text-sm font-black font-robotomono">GILBERT DISC</p>
               </div>
             </div>
           </a>
@@ -72,7 +72,7 @@ const ContactPage = () => {
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
                 <h3 className="text-2xl font-semibold">15 • 01 - Paris (95)</h3>
-                <p className="text-1xl">CIRQUE ÉLECTRIQUE</p>
+                <p className="text-sm font-black font-robotomono">CIRQUE ÉLECTRIQUE</p>
               </div>
             </div>
           </a>
@@ -93,7 +93,7 @@ const ContactPage = () => {
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
                 <h3 className="text-2xl font-semibold">5 • 12 - Paris (95)</h3>
-                <p className="text-1xl">TRUSKEL</p>
+                <p className="text-sm font-black font-robotomono">TRUSKEL</p>
               </div>
               <div className="text-[#F20D01] absolute top-[-10px] left-0 w-full text-center text-5xl font-bold animate-bounce">
                 RELEASE
@@ -117,7 +117,7 @@ const ContactPage = () => {
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
                 <h3 className="text-2xl font-semibold">15 • 11 - Paris (95)</h3>
-                <p className="text-1xl">LA MÉCANIQUE ONDULATOIRE</p>
+                <p className="text-sm font-black font-robotomono">LA MÉCANIQUE ONDULATOIRE</p>
               </div>
             </div>
           </a>
@@ -138,7 +138,7 @@ const ContactPage = () => {
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
                 <h3 className="text-2xl font-semibold">11 • 10 - Paris (95)</h3>
-                <p className="text-1xl">POP UP DU LABEL</p>
+                <p className="text-sm font-black font-robotomono">POP UP DU LABEL</p>
               </div>
               <div className="text-[#F20D01] absolute top-[-10px] left-0 w-full text-center text-5xl font-bold animate-bounce">
                 RELEASE
