@@ -5,7 +5,7 @@ import React from 'react';
 const BentoPage = () => {
   return (
     <>
-      <div className="w-full max-w-7xl mx-auto text-center text-black mb-4">
+      <div className="w-full max-w-7xl mx-auto text-center text-black mb-4 bg-white">
         <h2 className="text-7xl text-black font-extrabold pt-4 sm:text-9xl drop-shadow-lg">MUSIQUE</h2>
 
         {/* Liste de la playlist */}
