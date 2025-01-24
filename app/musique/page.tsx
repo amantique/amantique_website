@@ -5,8 +5,8 @@ import React from 'react';
 const BentoPage = () => {
   return (
     <>
-      <div className="w-full mx-auto text-center text-black mb-4 bg-white">
-        <h2 className="text-7xl text-black font-extrabold pt-4 sm:text-9xl drop-shadow-lg">MUSIQUE</h2>
+      <div className="w-full mx-auto text-center text-black pb-4 bg-white">
+        <h2 className="text-7xl text-black font-extrabold pt-4 sm:text-9xl drop-shadow-lg">MUSIQUES</h2>
 
         {/* Liste de la playlist */}
         <div className="space-y-8">

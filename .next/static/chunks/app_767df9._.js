@@ -42,7 +42,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         ref: ref,
         className: `text-white flex items-center justify-between fixed top-0 px-5 z-50 
-        ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-30 shadow-none'} 
+        ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-75 shadow-none'} 
         ${className} h-[50px]`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -286,23 +286,23 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         href: "#",
                         onClick: (e)=>{
                             e.preventDefault();
-                            onDateClick?.();
+                            onMusiqueClick?.();
                         },
                         className: "px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150",
-                        children: "DATE"
+                        children: "MUSIQUES"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
                         lineNumber: 95,
-                        columnNumber: 9
+                        columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "#",
                         onClick: (e)=>{
                             e.preventDefault();
-                            onMusiqueClick?.();
+                            onDateClick?.();
                         },
                         className: "px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150",
-                        children: "MUSIQUE"
+                        children: "DATES"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
                         lineNumber: 105,
@@ -341,7 +341,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                             onContactClick?.();
                         },
                         className: "px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150",
-                        children: "CONTACT"
+                        children: "CONTACTS"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
                         lineNumber: 135,
@@ -722,7 +722,7 @@ const ContactPage = ()=>{
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: "text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg",
-                    children: "DATE"
+                    children: "DATES"
                 }, void 0, false, {
                     fileName: "[project]/app/date/page.tsx",
                     lineNumber: 19,
@@ -1090,11 +1090,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const BentoPage = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full mx-auto text-center text-black mb-4 bg-white",
+            className: "w-full mx-auto text-center text-black pb-4 bg-white",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: "text-7xl text-black font-extrabold pt-4 sm:text-9xl drop-shadow-lg",
-                    children: "MUSIQUE"
+                    children: "MUSIQUES"
                 }, void 0, false, {
                     fileName: "[project]/app/musique/page.tsx",
                     lineNumber: 9,
@@ -1587,11 +1587,14 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)"); // Importer Link pour la navigation
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
 ;
 ;
+;
+// Exemple d'images pour tes albums
 const directories = {
     "15_10_meca": [
         "/img/live/15_10_meca/PB150056-Edit.jpg",
@@ -1604,194 +1607,242 @@ const directories = {
 };
 const PhotoPage = ()=>{
     _s();
-    const [selectedAlbum, setSelectedAlbum] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [images, setImages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
-    const handleCardClick = async (album)=>{
-        setSelectedAlbum(album);
-        const fetchedImages = await fetchImagesFromDirectory(album);
-        setImages(fetchedImages);
+    // Mélange les images de manière aléatoire
+    const shuffleImages = (imagesArray)=>{
+        const shuffled = [
+            ...imagesArray
+        ];
+        for(let i = shuffled.length - 1; i > 0; i--){
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [
+                shuffled[j],
+                shuffled[i]
+            ]; // Échange les éléments
+        }
+        return shuffled;
     };
-    const fetchImagesFromDirectory = async (album)=>{
-        return directories[album] || [];
-    };
+    // Récupérer toutes les images et les mélanger
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PhotoPage.useEffect": ()=>{
+            const allImages = [
+                ...directories["15_10_meca"],
+                ...directories["11_10_popup"]
+            ];
+            setImages(shuffleImages(allImages));
+        }
+    }["PhotoPage.useEffect"], []);
+    // Logique pour changer de slide automatiquement toutes les 0,5 secondes
+    const [currentSlide, setCurrentSlide] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PhotoPage.useEffect": ()=>{
+            const interval = setInterval({
+                "PhotoPage.useEffect.interval": ()=>{
+                    setCurrentSlide({
+                        "PhotoPage.useEffect.interval": (prevSlide)=>(prevSlide + 1) % images.length
+                    }["PhotoPage.useEffect.interval"]); // Passe à la suivante
+                }
+            }["PhotoPage.useEffect.interval"], 1500); // Défile toutes les 1 seconde
+            return ({
+                "PhotoPage.useEffect": ()=>clearInterval(interval)
+            })["PhotoPage.useEffect"]; // Nettoie l'intervalle quand le composant se démonte
+        }
+    }["PhotoPage.useEffect"], [
+        images.length
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "w-full text-center text-white",
+        className: "pb-4 relative w-full text-center text-white bg-gray-950",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: "text-7xl font-extrabold sm:text-9xl mb-8",
-                children: "PHOTO"
+                className: "text-7xl font-extrabold sm:text-9xl py-4",
+                children: "PHOTOS"
             }, void 0, false, {
                 fileName: "[project]/app/photo/page.tsx",
-                lineNumber: 112,
+                lineNumber: 55,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 pb-10",
+                id: "indicators-carousel",
+                className: "relative w-full",
+                "data-carousel": "static",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative w-full max-w-xs h-80 mx-auto group overflow-hidden cursor-pointer",
-                        onClick: ()=>handleCardClick("15_10_meca"),
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                src: "/img/live/15_10_meca/PB150056-Edit.jpg",
-                                alt: "Album 15 • 10 La MÉCANIQUE",
-                                width: 500,
-                                height: 500,
-                                style: {
-                                    objectFit: 'cover'
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/app/photo/page.tsx",
-                                lineNumber: 120,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute bottom-0 w-full text-white bg-[#F20D01] bg-opacity-90 py-4 px-6 group-hover:bg-white group-hover:bg-opacity-70 group-hover:text-[#F20D01] group-hover:tracking-wider transition-all duration-500 ease-in-out",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-semibold",
-                                        children: "15 • 10 - Paris (95)"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/photo/page.tsx",
-                                        lineNumber: 128,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-1xl",
-                                        children: "La MÉCANIQUE"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/photo/page.tsx",
-                                        lineNumber: 129,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/photo/page.tsx",
-                                lineNumber: 127,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/photo/page.tsx",
-                        lineNumber: 116,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative w-full max-w-xs h-80 mx-auto group overflow-hidden cursor-pointer",
-                        onClick: ()=>handleCardClick("11_10_popup"),
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                src: "/img/live/11_10_popup/PA110010-Enhanced-NR.jpg",
-                                alt: "Album 11 • 10 POPUP",
-                                width: 500,
-                                height: 500,
-                                style: {
-                                    objectFit: 'cover'
-                                }
-                            }, void 0, false, {
-                                fileName: "[project]/app/photo/page.tsx",
-                                lineNumber: 137,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute bottom-0 w-full text-white bg-[#F20D01] bg-opacity-90 py-4 px-6 group-hover:bg-white group-hover:bg-opacity-70 group-hover:text-[#F20D01] group-hover:tracking-wider transition-all duration-500 ease-in-out",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-2xl font-semibold",
-                                        children: "11 • 10 - Paris (95)"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/photo/page.tsx",
-                                        lineNumber: 145,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-1xl",
-                                        children: "POPUP"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/photo/page.tsx",
-                                        lineNumber: 146,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/photo/page.tsx",
-                                lineNumber: 144,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/photo/page.tsx",
-                        lineNumber: 133,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/photo/page.tsx",
-                lineNumber: 115,
-                columnNumber: 7
-            }, this),
-            selectedAlbum && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-8 p-10",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-4xl font-bold mb-4",
-                        children: [
-                            "Album: ",
-                            selectedAlbum
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/photo/page.tsx",
-                        lineNumber: 154,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4",
+                        className: "relative w-full h-[70vh] overflow-hidden rounded-lg",
                         children: images.map((image, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative w-full h-48 overflow-hidden rounded-lg",
+                                className: `absolute w-full h-full transition-all duration-700 ease-in-out transform ${index === currentSlide ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"}`,
+                                "data-carousel-item": true,
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: image,
                                     alt: `Image ${index + 1}`,
-                                    width: 500,
-                                    height: 500,
-                                    className: "object-cover rounded-lg"
+                                    fill: true,
+                                    style: {
+                                        objectFit: "contain"
+                                    },
+                                    className: "rounded-lg"
                                 }, void 0, false, {
                                     fileName: "[project]/app/photo/page.tsx",
-                                    lineNumber: 158,
-                                    columnNumber: 17
+                                    lineNumber: 71,
+                                    columnNumber: 15
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/app/photo/page.tsx",
-                                lineNumber: 157,
-                                columnNumber: 15
+                                lineNumber: 62,
+                                columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/photo/page.tsx",
-                        lineNumber: 155,
-                        columnNumber: 11
+                        lineNumber: 60,
+                        columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setSelectedAlbum(null),
-                        className: "mt-4 px-6 py-2 bg-red-600 text-white font-bold rounded",
-                        children: "Fermer"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2",
+                        children: images.map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
+                                className: `w-3 h-3 rounded-full ${currentSlide === index ? "bg-white" : "bg-gray-500"}`,
+                                "aria-label": `Slide ${index + 1}`,
+                                onClick: ()=>setCurrentSlide(index)
+                            }, index, false, {
+                                fileName: "[project]/app/photo/page.tsx",
+                                lineNumber: 85,
+                                columnNumber: 13
+                            }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/photo/page.tsx",
-                        lineNumber: 168,
-                        columnNumber: 11
+                        lineNumber: 83,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        className: "absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none",
+                        onClick: ()=>setCurrentSlide((currentSlide - 1 + images.length) % images.length),
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    className: "w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180",
+                                    "aria-hidden": "true",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    fill: "none",
+                                    viewBox: "0 0 6 10",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        stroke: "currentColor",
+                                        strokeLinecap: "round",
+                                        strokeLinejoin: "round",
+                                        strokeWidth: "2",
+                                        d: "M5 1 1 5l4 4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/photo/page.tsx",
+                                        lineNumber: 109,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/photo/page.tsx",
+                                    lineNumber: 102,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "sr-only",
+                                    children: "Previous"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/photo/page.tsx",
+                                    lineNumber: 117,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/photo/page.tsx",
+                            lineNumber: 101,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/photo/page.tsx",
+                        lineNumber: 96,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        className: "absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none",
+                        onClick: ()=>setCurrentSlide((currentSlide + 1) % images.length),
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    className: "w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180",
+                                    "aria-hidden": "true",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    fill: "none",
+                                    viewBox: "0 0 6 10",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        stroke: "currentColor",
+                                        strokeLinecap: "round",
+                                        strokeLinejoin: "round",
+                                        strokeWidth: "2",
+                                        d: "m1 9 4-4-4-4"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/photo/page.tsx",
+                                        lineNumber: 134,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/photo/page.tsx",
+                                    lineNumber: 127,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "sr-only",
+                                    children: "Next"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/photo/page.tsx",
+                                    lineNumber: 142,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/photo/page.tsx",
+                            lineNumber: 126,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/photo/page.tsx",
+                        lineNumber: 121,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/photo/page.tsx",
-                lineNumber: 153,
-                columnNumber: 9
+                lineNumber: 58,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-4",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: "/all-photos",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: "px-6 py-3 text-lg font-bold text-gray-950 bg-white rounded-lg hover:bg-[#F20D01] transition duration-300",
+                        children: "Voir toutes les photos"
+                    }, void 0, false, {
+                        fileName: "[project]/app/photo/page.tsx",
+                        lineNumber: 150,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/app/photo/page.tsx",
+                    lineNumber: 149,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/photo/page.tsx",
+                lineNumber: 148,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/photo/page.tsx",
-        lineNumber: 111,
+        lineNumber: 54,
         columnNumber: 5
     }, this);
 };
-_s(PhotoPage, "QMoFmeSRzHR9iYcBHP0ZRd3lfME=");
+_s(PhotoPage, "CIAYAS20h8uReHMcKgWfiLVvEIY=");
 _c = PhotoPage;
 const __TURBOPACK__default__export__ = PhotoPage;
 var _c;
@@ -1825,7 +1876,7 @@ const ContactPage = ()=>{
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-4 text-7xl font-extrabold sm:text-9xl",
-                                children: "CONTACT"
+                                children: "CONTACTS"
                             }, void 0, false, {
                                 fileName: "[project]/app/contact/page.tsx",
                                 lineNumber: 16,

@@ -13,7 +13,7 @@ const ContactPage = () => {
 
           {/* Première colonne*/}
           <div className="flex-1">
-          <h2 className="mt-4 text-7xl font-extrabold sm:text-9xl">CONTACT</h2>
+          <h2 className="mt-4 text-7xl font-extrabold sm:text-9xl">CONTACTS</h2>
             <div className="pl-4">
               <p className="text-base text-white font-robotomono">Besoin d&apos;infos, envie de programmer un concert ou une question qui trotte dans ta tête ? N’hésite pas à nous contacter par ici.</p>
             </div>            

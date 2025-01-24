@@ -1,178 +1,157 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link"; // Importer Link pour la navigation
 
-type Directories = {
-  "15_10_meca": string[];
-  "11_10_popup": string[];
-};
-
-const directories: Directories = {
+// Exemple d'images pour tes albums
+const directories = {
   "15_10_meca": [
     "/img/live/15_10_meca/PB150056-Edit.jpg",
     "/img/live/15_10_meca/PB150061-Edit.jpg",
-    // "/img/live/15_10_meca/PB150063-Edit.jpg",
-    // "/img/live/15_10_meca/PB150083-Edit.jpg",
-    // "/img/live/15_10_meca/PB150091-Edit.jpg",
-    // "/img/live/15_10_meca/PB150114-Edit.jpg",
-    // "/img/live/15_10_meca/PB150116-Edit.jpg",
-    // "/img/live/15_10_meca/PB150121-Edit.jpg",
-    // "/img/live/15_10_meca/PB150128-Edit.jpg",
-    // "/img/live/15_10_meca/PB150138-Edit.jpg",
-    // "/img/live/15_10_meca/PB150139-Edit.jpg",
-    // "/img/live/15_10_meca/PB150144-Edit.jpg",
-    // "/img/live/15_10_meca/PB150150-Edit.jpg",
-    // "/img/live/15_10_meca/PB150163-Edit.jpg",
-    // "/img/live/15_10_meca/PB150166-Edit.jpg",
-    // "/img/live/15_10_meca/PB150191-Edit.jpg",
-    // "/img/live/15_10_meca/PB150201-Edit.jpg",
-    // "/img/live/15_10_meca/PB150222-Edit.jpg",
-    // "/img/live/15_10_meca/PB150228-Edit.jpg",
-    // "/img/live/15_10_meca/PB150238-Edit.jpg",
-    // "/img/live/15_10_meca/PB150245-Edit.jpg",
-    // "/img/live/15_10_meca/PB150254-Edit.jpg",
-    // "/img/live/15_10_meca/PB150257-Edit.jpg",
-    // "/img/live/15_10_meca/PB150260-Edit.jpg",
-    // "/img/live/15_10_meca/PB150264-Edit.jpg",
-    // "/img/live/15_10_meca/PB150265-Edit.jpg",
-    // "/img/live/15_10_meca/PB150268-Edit.jpg",
-    // "/img/live/15_10_meca/PB150269-Edit.jpg",
-    // "/img/live/15_10_meca/PB150275-Edit.jpg",
-    // "/img/live/15_10_meca/PB150279.jpg",
-    // "/img/live/15_10_meca/PB150282.jpg",    
   ],
   "11_10_popup": [
     "/img/live/11_10_popup/PA110006-Enhanced-NR.jpg",
     "/img/live/11_10_popup/PA110010-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110011-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110012-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110014-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110017-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110041-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110043-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110046-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110051-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110052-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110059-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110063-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110065-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110067-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110069-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110074-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110075-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110078-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110081-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110084-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110087-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110212-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110239-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110266-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110272-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110285-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110289-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110295-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110297-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110300-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110304-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110306-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110334-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110339-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110343-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110351-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110354-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110362-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110364-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110372-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110374-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110382-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110387-Enhanced-NR.jpg",
-    // "/img/live/11_10_popup/PA110395-Enhanced-NR.jpg",
   ],
 };
 
 const PhotoPage: React.FC = () => {
-  const [selectedAlbum, setSelectedAlbum] = useState<keyof Directories | null>(
-    null
-  );
   const [images, setImages] = useState<string[]>([]);
 
-  const handleCardClick = async (album: keyof Directories) => {
-    setSelectedAlbum(album);
-    const fetchedImages = await fetchImagesFromDirectory(album);
-    setImages(fetchedImages);
+  // Mélange les images de manière aléatoire
+  const shuffleImages = (imagesArray: string[]): string[] => {
+    const shuffled = [...imagesArray];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Échange les éléments
+    }
+    return shuffled;
   };
 
-  const fetchImagesFromDirectory = async (album: keyof Directories): Promise<string[]> => {
-    return directories[album] || [];
-  };
+  // Récupérer toutes les images et les mélanger
+  useEffect(() => {
+    const allImages = [
+      ...directories["15_10_meca"],
+      ...directories["11_10_popup"],
+    ];
+
+    setImages(shuffleImages(allImages));
+  }, []);
+
+  // Logique pour changer de slide automatiquement toutes les 0,5 secondes
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length); // Passe à la suivante
+    }, 1500); // Défile toutes les 1 seconde
+
+    return () => clearInterval(interval); // Nettoie l'intervalle quand le composant se démonte
+  }, [images.length]);
 
   return (
-    <div className="w-full text-center text-white">
-      <h2 className="text-7xl font-extrabold sm:text-9xl mb-8">PHOTO</h2>
+    <div className="pb-4 relative w-full text-center text-white bg-gray-950">
+      <h2 className="text-7xl font-extrabold sm:text-9xl py-4">PHOTOS</h2>
 
-      {/* Cartes des albums */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 pb-10">
-        <div
-          className="relative w-full max-w-xs h-80 mx-auto group overflow-hidden cursor-pointer"
-          onClick={() => handleCardClick("15_10_meca")}
-        >
-          <Image
-            src="/img/live/15_10_meca/PB150056-Edit.jpg"
-            alt="Album 15 • 10 La MÉCANIQUE"
-            width={500}
-            height={500}
-            style={{ objectFit: 'cover' }}
-          />
-          <div className="absolute bottom-0 w-full text-white bg-[#F20D01] bg-opacity-90 py-4 px-6 group-hover:bg-white group-hover:bg-opacity-70 group-hover:text-[#F20D01] group-hover:tracking-wider transition-all duration-500 ease-in-out">
-            <h3 className="text-2xl font-semibold">15 • 10 - Paris (95)</h3>
-            <p className="text-1xl">La MÉCANIQUE</p>
-          </div>
+      {/* Carrousel */}
+      <div id="indicators-carousel" className="relative w-full" data-carousel="static">
+        {/* Carousel wrapper */}
+        <div className="relative w-full h-[70vh] overflow-hidden rounded-lg">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`absolute w-full h-full transition-all duration-700 ease-in-out transform ${
+                index === currentSlide
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-full"
+              }`}
+              data-carousel-item
+            >
+              <Image
+                src={image}
+                alt={`Image ${index + 1}`}
+                fill
+                style={{ objectFit: "contain" }}
+                className="rounded-lg"
+              />
+            </div>
+          ))}
         </div>
 
-        <div
-          className="relative w-full max-w-xs h-80 mx-auto group overflow-hidden cursor-pointer"
-          onClick={() => handleCardClick("11_10_popup")}
-        >
-          <Image
-            src="/img/live/11_10_popup/PA110010-Enhanced-NR.jpg"
-            alt="Album 11 • 10 POPUP"
-            width={500}
-            height={500}
-            style={{ objectFit: 'cover' }}
-          />
-          <div className="absolute bottom-0 w-full text-white bg-[#F20D01] bg-opacity-90 py-4 px-6 group-hover:bg-white group-hover:bg-opacity-70 group-hover:text-[#F20D01] group-hover:tracking-wider transition-all duration-500 ease-in-out">
-            <h3 className="text-2xl font-semibold">11 • 10 - Paris (95)</h3>
-            <p className="text-1xl">POPUP</p>
-          </div>
+        {/* Slider indicators */}
+        <div className="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              type="button"
+              className={`w-3 h-3 rounded-full ${currentSlide === index ? "bg-white" : "bg-gray-500"}`}
+              aria-label={`Slide ${index + 1}`}
+              onClick={() => setCurrentSlide(index)} // Permet de naviguer à un slide spécifique
+            ></button>
+          ))}
         </div>
+
+        {/* Slider controls */}
+        <button
+          type="button"
+          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          onClick={() => setCurrentSlide((currentSlide - 1 + images.length) % images.length)} // Naviguer vers le slide précédent
+        >
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg
+              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span className="sr-only">Previous</span>
+          </span>
+        </button>
+
+        <button
+          type="button"
+          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          onClick={() => setCurrentSlide((currentSlide + 1) % images.length)} // Naviguer vers le slide suivant
+        >
+          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg
+              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span className="sr-only">Next</span>
+          </span>
+        </button>
       </div>
 
-      {/* Section pour afficher les images de l'album sélectionné */}
-      {selectedAlbum && (
-        <div className="mt-8 p-10">
-          <h3 className="text-4xl font-bold mb-4">Album: {selectedAlbum}</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {images.map((image, index) => (
-              <div key={index} className="relative w-full h-48 overflow-hidden rounded-lg">
-                <Image
-                  src={image}
-                  alt={`Image ${index + 1}`}
-                  width={500}
-                  height={500}
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            ))}
-          </div>
-          <button
-            onClick={() => setSelectedAlbum(null)}
-            className="mt-4 px-6 py-2 bg-red-600 text-white font-bold rounded"
-          >
-            Fermer
+      {/* Button to view all photos */}
+      <div className="mt-4">
+        <Link href="/all-photos">
+          <button className="px-6 py-3 text-lg font-bold text-gray-950 bg-white rounded-lg hover:bg-[#F20D01] transition duration-300">
+            Voir toutes les photos
           </button>
-        </div>
-      )}
+        </Link>
+      </div>
     </div>
   );
 };

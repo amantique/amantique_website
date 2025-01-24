@@ -36,7 +36,7 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
     <nav
       ref={ref} // Référence pour le composant
       className={`text-white flex items-center justify-between fixed top-0 px-5 z-50 
-        ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-30 shadow-none'} 
+        ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-75 shadow-none'} 
         ${className} h-[50px]`}  // Hauteur et marge en bas
     >
       {/* Conteneur pour les icônes sociaux */}
@@ -92,6 +92,16 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
 
       {/* Liens de navigation */}
       <div className="text-2xl flex items-center justify-between space-x-3">
+      <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            onMusiqueClick?.();
+          }}
+          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
+        >
+          MUSIQUES
+        </a>
         <a
           href="#"
           onClick={(e) => {
@@ -100,17 +110,7 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
           }}
           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
         >
-          DATE
-        </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            onMusiqueClick?.();
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          MUSIQUE
+          DATES
         </a>
         <a
           href="#"
@@ -140,7 +140,7 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
           }}
           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
         >
-          CONTACT
+          CONTACTS
         </a>
       </div>
     </nav>
