@@ -69,7 +69,7 @@ const HomePage: React.FC = () => {
           onPhotoClick={() => scrollToSection(photoPageRef)}
         />
       )}
-      <div className="container w-full pt-20">
+      <div className="w-full pt-20">
         {/* Section de la vidéo */}
         <div className="w-full">
           <video
@@ -106,7 +106,7 @@ const HomePage: React.FC = () => {
       <div ref={photoPageRef}>
         <PhotoPage />
       </div>
-      <div ref={contactPageRef}>
+      <div ref={contactPageRef} className="w-full">
         <ContactPage />
       </div>
 
