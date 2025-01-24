@@ -5,57 +5,41 @@ import React from 'react';
 const BentoPage = () => {
   return (
     <>
-      <div className="w-full max-w-7xl mx-auto text-center text-black mb-12">
-        <h2 className="text-7xl font-extrabold sm:text-9xl text-gradient bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-black">
-          MUSIQUE
-        </h2>
+      <div className="w-full max-w-7xl mx-auto text-center text-black mb-4">
+        <h2 className="text-7xl text-black font-extrabold pt-4 sm:text-9xl drop-shadow-lg">MUSIQUE</h2>
 
-        <div className="mt-16 grid gap-8 sm:mt-16 lg:grid-cols-3 lg:grid-rows-3">
-        <div className="relative lg:row-span-2 flex items-center justify-center h-full group">
-  <div className="absolute inset-px bg-gradient-to-r from-[#F20D01] to-black rounded-lg shadow-lg group-hover:bg-[#F20D01] group-hover:to-[#F20D01] transition-colors duration-1000"></div>
-  <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
-    <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-125 transition duration-500 ease-in-out">
-      Ange & Mouche
-    </p>
-  </div>
-</div>
-
-
-          <div className="relative max-lg:row-start-1 flex items-center justify-center h-full group">
-            <div className="absolute inset-px bg-black rounded-lg shadow-lg"></div>
-            <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
-              <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out">
-                EAU SALEE
+        {/* Liste de la playlist */}
+        <div className="space-y-8">
+          {/* Premier morceau */}
+          <div className="flex flex-col items-center justify-center space-y-4"> {/* Ajout de space-y pour espacer les titres */}
+            <a
+              href="https://youtu.be/JYfQXyXPdhs?si=XYOu95WlmPqcEu9X"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-block"
+            >
+              <p className="text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]">
+                Eau Salée
               </p>
-            </div>
+            </a>
+            <a
+              href="https://youtu.be/nXbfBoSJI7o?si=La8zugaD8prDyGBY"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-block"
+            >
+              <p className="text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]">
+                Ange & Mouche
+              </p>
+            </a>
           </div>
 
-          <div className="relative max-lg:row-start-3 lg:col-start-1 lg:row-start-3 lg:col-span-3 flex items-center justify-center h-full group">
-            <div className="absolute inset-px bg-gradient-to-r from-[#F20D01] to-black rounded-lg shadow-lg"></div>
-            <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
-              <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out">
-                ???
-              </p>
-            </div>
+          <div className="relative flex flex-col items-center justify-center">
+            <p className="text-3xl font-semibold text-gray-400">
+              Et beaucoup d&apos;autres à venir...
+            </p>
           </div>
 
-          <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 flex items-center justify-center h-full group">
-            <div className="absolute inset-px bg-black rounded-lg shadow-lg"></div>
-            <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
-              <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out">
-                ???
-              </p>
-            </div>
-          </div>
-
-          <div className="relative lg:row-span-2 flex items-center justify-center h-full group">
-            <div className="absolute inset-px bg-gradient-to-r from-black via-black to-[#F20D01] rounded-lg shadow-lg"></div>
-            <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
-              <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out">
-                ???
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </>
