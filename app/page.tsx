@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
 
   useEffect(() => {
     const checkWindowSize = () => {
-      setIsSmallScreen(window.innerWidth < 750);
+      setIsSmallScreen(window.innerWidth < 830);
     };
 
     window.addEventListener("resize", checkWindowSize);
@@ -49,7 +49,15 @@ const HomePage: React.FC = () => {
   return (
     <>
       {isSmallScreen ? (
-        <Navbar_Responsive />
+        <Navbar_Responsive 
+        ref={navbarRef} 
+          className="sticky top-0 z-50"
+          onContactClick={() => scrollToSection(contactPageRef)}
+          onDateClick={() => scrollToSection(datePageRef)}
+          onMusiqueClick={() => scrollToSection(musiquePageRef)}
+          onBioClick={() => scrollToSection(bioPageRef)}
+          onPhotoClick={() => scrollToSection(photoPageRef)}
+        />
       ) : (
         <Navbar
           ref={navbarRef} 
@@ -86,11 +94,11 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Sections */}
-      <div ref={datePageRef} style={{ width: "100%", marginTop: "86vh" }}>
-        <DatePage />
-      </div>
-      <div ref={musiquePageRef}>
+      <div ref={musiquePageRef} style={{ width: "100%", marginTop: "86vh" }}>
         <MusiquePage />
+      </div>
+      <div ref={datePageRef}>
+        <DatePage />
       </div>
       <div ref={bioPageRef}>
         <BioPage />

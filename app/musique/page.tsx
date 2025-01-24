@@ -1,42 +1,65 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
 
-const MusiquePage = () => {
+const BentoPage = () => {
   return (
-    <>      
-      <div className="w-full text-center text-white">
-        <h2 className="text-7xl font-extrabold sm:text-9xl mb-8">
+    <>
+      <div className="w-full max-w-7xl mx-auto text-center text-black mb-12">
+        <h2 className="text-7xl font-extrabold sm:text-9xl text-gradient bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-black">
           MUSIQUE
         </h2>
 
-        <div className="w-full pb-1 text-center flex justify-center items-center">
-          {/* Carte 1 */}
-          <div className="flex items-center text-center text-5xl pl-4 sm:pl-8 md:pl-16 mb-4">
-            <h3 className="text-left text-4xl mb-4">
-              ANGES & MOUCHES
-            </h3>
-            <Link href="https://youtu.be/nXbfBoSJI7o?si=efTJasuoPwWTFJFE" className="text-2xl px-5 text-[#F20D01] hover:tracking-wider transition-colors-transform rounded-md transition-all duration-500 ease-in-out transform hover:scale-110 transform-origin-center">
-              Écouter
-            </Link>
-          </div>
-        </div>
+        <div className="mt-16 grid gap-8 sm:mt-16 lg:grid-cols-3 lg:grid-rows-3">
+        <div className="relative lg:row-span-2 flex items-center justify-center h-full group">
+  <div className="absolute inset-px bg-gradient-to-r from-[#F20D01] to-black rounded-lg shadow-lg group-hover:bg-[#F20D01] group-hover:to-[#F20D01] transition-colors duration-1000"></div>
+  <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
+    <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-125 transition duration-500 ease-in-out">
+      Ange & Mouche
+    </p>
+  </div>
+</div>
 
-        <div className="w-full pb-1 text-center flex justify-center items-center">
-          {/* Carte 2 */}
-          <div className="flex items-center text-center text-5xl pl-4 sm:pl-8 md:pl-16 mb-4">
-            <h3 className="text-left text-4xl mb-4">
-              EAU SALÉ
-            </h3>
-            <Link href="https://youtu.be/JYfQXyXPdhs?si=P2oFYlEERXWBk4fu" className="text-2xl px-5 text-[#F20D01] hover:tracking-wider transition-colors-transform rounded-md transition-all duration-500 ease-in-out transform hover:scale-110 transform-origin-center">
-              Écouter
-            </Link>
+
+          <div className="relative max-lg:row-start-1 flex items-center justify-center h-full group">
+            <div className="absolute inset-px bg-black rounded-lg shadow-lg"></div>
+            <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
+              <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out">
+                EAU SALEE
+              </p>
+            </div>
+          </div>
+
+          <div className="relative max-lg:row-start-3 lg:col-start-1 lg:row-start-3 lg:col-span-3 flex items-center justify-center h-full group">
+            <div className="absolute inset-px bg-gradient-to-r from-[#F20D01] to-black rounded-lg shadow-lg"></div>
+            <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
+              <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out">
+                ???
+              </p>
+            </div>
+          </div>
+
+          <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 flex items-center justify-center h-full group">
+            <div className="absolute inset-px bg-black rounded-lg shadow-lg"></div>
+            <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
+              <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out">
+                ???
+              </p>
+            </div>
+          </div>
+
+          <div className="relative lg:row-span-2 flex items-center justify-center h-full group">
+            <div className="absolute inset-px bg-gradient-to-r from-black via-black to-[#F20D01] rounded-lg shadow-lg"></div>
+            <div className="relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out">
+              <p className="text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out">
+                ???
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default MusiquePage;
+export default BentoPage;

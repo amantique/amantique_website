@@ -13,147 +13,6 @@ module.exports = mod;
 
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
-// "use client";
-// import { useState, useEffect } from 'react';
-// // import Link from 'next/link';
-// import Image from 'next/image';
-// interface NavbarProps {
-//   className?: string;
-//   onContactClick?: () => void;
-//   onDateClick?: () => void;
-//   onPhotoClick?: () => void;
-//   onMusiqueClick?: () => void;
-//   onBioClick?: () => void;
-// }
-// const Navbar: React.FC<NavbarProps> = ({ className, onContactClick, onDateClick, onPhotoClick, onMusiqueClick, onBioClick }) => {
-//   const [scrolled, setScrolled] = useState(false);
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (window.scrollY > 50) { 
-//         setScrolled(true);
-//       } else {
-//         setScrolled(false);
-//       }
-//     };
-//     window.addEventListener('scroll', handleScroll);
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
-//   return (
-//     <nav
-//   className={`text-white flex items-center justify-between fixed top-0 px-5 z-50 
-//     ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-30 shadow-none'} 
-//     ${className}`}
-// >
-//       {/* Conteneur pour les icônes sociaux */}
-//       <div className="flex items-center justify-between space-x-3">
-//         {/* Spotify */}
-//         <a href="https://open.spotify.com/intl-fr/artist/1gUDo746RvvVVY3lbL2r7N?si=9xiGodwdSca93pMnkZ37-w" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-//           <Image src="/img/icon/spotify.png" alt="Spotify Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-//           <Image src="/img/icon/spotify_red.png" alt="Spotify Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-//         </a>
-//         {/* Apple Music */}
-//         <a href="https://music.apple.com/fr/artist/amantique/1771329106" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-//           <Image src="/img/icon/apple.png" alt="Apple Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-//           <Image src="/img/icon/apple_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-//         </a>
-//         {/* Instagram */}
-//         <a href="https://www.instagram.com/amantique._/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-//           <Image src="/img/icon/instagram.png" alt="Instagram Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-//           <Image src="/img/icon/instagram_red.png" alt="Instagram Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-//         </a>
-//         {/* Facebook */}
-//         <a href="https://www.facebook.com/profile.php?id=100091951621434" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-//           <Image src="/img/icon/facebook.png" alt="Facebook Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-//           <Image src="/img/icon/facebook_red.png" alt="Facebook Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-//         </a>
-//         {/* TikTok */}
-//         <a href="https://www.tiktok.com/@amantique_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-//           <Image src="/img/icon/tiktok.png" alt="TikTok Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-//           <Image src="/img/icon/tiktok_red.png" alt="TikTok Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-//         </a>
-//         {/* YouTube */}
-//         <a href="https://www.youtube.com/@Amantique" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-//           <Image src="/img/icon/youtube.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-//           <Image src="/img/icon/youtube_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-//         </a>
-//       </div>
-//       {/* Logo centré */}
-//       {/* <div className={`absolute left-1/2 transform -translate-x-1/2 top-0 ${scrolled ? 'mt-1' : 'mt-1'}`}>
-//         <Link href="/" className="text-xl font-bold p-2" onClick={(e) => {
-//           e.preventDefault(); 
-//           window.scrollTo({ top: 0, behavior: 'smooth' }); 
-//         }}>
-//           <Image
-//             src="/img/logo/logo.png"
-//             alt="Logo"
-//             width={500}
-//             height={473}
-//             className={`transition-all duration-300 ${scrolled ? 'w-[180px] h-[120px]' : 'w-[700px] h-[350px]'}`}
-//           />
-//         </Link>
-//       </div> */}
-//       <div>
-//         <h1 className='text-6xl'>AMANTIQUE</h1>
-//       </div>
-//       {/* Liens de navigation */}
-//       <div className="text-2xl flex items-center justify-between space-x-3">
-//         <a
-//           href="#"
-//           onClick={(e) => {
-//             e.preventDefault(); 
-//             onDateClick?.(); 
-//           }}
-//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-//         >
-//           DATE
-//         </a>
-//         <a
-//           href="#"
-//           onClick={(e) => {
-//             e.preventDefault();
-//             onMusiqueClick?.();
-//           }}
-//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-//         >
-//           MUSIQUE
-//         </a>
-//         <a
-//           href="#"
-//           onClick={(e) => {
-//             e.preventDefault(); 
-//             onBioClick?.(); 
-//           }}
-//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-//         >
-//           BIO
-//         </a>
-//         <a
-//           href="#"
-//           onClick={(e) => {
-//             e.preventDefault();
-//             onPhotoClick?.(); 
-//           }}
-//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-//         >
-//           PHOTO
-//         </a>
-//         <a
-//           href="#"
-//           onClick={(e) => {
-//             e.preventDefault();
-//             onContactClick?.();
-//           }}
-//           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-//         >
-//           CONTACT
-//         </a>
-//       </div>
-//     </nav>
-//   );
-// };
-// export default Navbar;
 __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
@@ -164,6 +23,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 ;
 ;
+// Définition du composant Navbar avec forwardRef
 const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick }, ref)=>{
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
@@ -183,7 +43,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
         ref: ref,
         className: `text-white flex items-center justify-between fixed top-0 px-5 z-50 
         ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-30 shadow-none'} 
-        ${className}`,
+        ${className} h-[50px]`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-between space-x-3",
@@ -202,7 +62,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 204,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -213,13 +73,13 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 205,
+                                lineNumber: 47,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 203,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -236,7 +96,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 210,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -247,13 +107,13 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 211,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 209,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -270,7 +130,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 216,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -281,13 +141,13 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 217,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 215,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -304,7 +164,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 222,
+                                lineNumber: 64,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -315,13 +175,13 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 223,
+                                lineNumber: 65,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 221,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -338,7 +198,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 228,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -349,13 +209,13 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 229,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 227,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -372,7 +232,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 234,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -383,22 +243,23 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 235,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 233,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Navbar.tsx",
-                lineNumber: 201,
+                lineNumber: 43,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute left-1/2 transform -translate-x-1/2",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     className: "text-6xl cursor-pointer",
                     onClick: ()=>{
@@ -410,12 +271,12 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                     children: "AMANTIQUE"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Navbar.tsx",
-                    lineNumber: 241,
+                    lineNumber: 83,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/Navbar.tsx",
-                lineNumber: 240,
+                lineNumber: 82,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -431,7 +292,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                         children: "DATE"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 253,
+                        lineNumber: 95,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -444,7 +305,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                         children: "MUSIQUE"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 263,
+                        lineNumber: 105,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -457,7 +318,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                         children: "BIO"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 273,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -470,7 +331,7 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                         children: "PHOTOS"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 283,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -483,22 +344,23 @@ const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f
                         children: "CONTACT"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 293,
+                        lineNumber: 135,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Navbar.tsx",
-                lineNumber: 252,
+                lineNumber: 94,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Navbar.tsx",
-        lineNumber: 194,
+        lineNumber: 36,
         columnNumber: 5
     }, this);
 });
+// Définir le displayName pour faciliter le débogage
 Navbar.displayName = 'Navbar';
 const __TURBOPACK__default__export__ = Navbar;
 }}),
@@ -512,122 +374,304 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
-;
-const Navbar = ()=>{
-    const [isHovered, setIsHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const scale = Math.max(1 - scrollY / 1000, 0.5);
+// Définition du composant Navbar avec forwardRef
+const Navbar = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["forwardRef"])(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick }, ref)=>{
+    const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [menuOpen, setMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false); // Gestion de l'état du menu mobile
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const handleScroll = ()=>{
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return ()=>{
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    // Fonction pour fermer le menu
+    const closeMenu = ()=>{
+        setMenuOpen(false);
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-        className: "text-white p-4 relative flex items-center justify-between flex-wrap",
+        ref: ref,
+        className: `text-white flex items-center justify-between fixed top-0 px-4 py-2 z-50
+        ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-30 shadow-none'}
+        ${className} w-full`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-5 absolute left-1/2 transform -translate-x-1/2",
-                style: {
-                    marginTop: '70px'
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                    href: "/",
-                    className: "text-xl font-bold p-2",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: "/img/logo/logo.png",
-                        alt: "Logo",
-                        width: 211,
-                        height: 200,
-                        className: "transition-all duration-300",
-                        style: {
-                            transform: `scale(${scale}) translateY(${scrollY * 0.1}px)`
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/Navbar_responsive.tsx",
-                        lineNumber: 16,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/app/components/Navbar_responsive.tsx",
-                    lineNumber: 15,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/app/components/Navbar_responsive.tsx",
-                lineNumber: 14,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex space-x-4",
+                className: "flex justify-between items-center w-full",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "px-4 hover:bg-gray-700 transition-colors duration-300 rounded-md",
-                        onMouseEnter: ()=>setIsHovered(true),
-                        onMouseLeave: ()=>setIsHovered(false),
-                        children: "Menu"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute left-1/2 transform -translate-x-1/2",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-3xl cursor-pointer",
+                            onClick: ()=>{
+                                window.scrollTo({
+                                    top: 0,
+                                    behavior: 'smooth'
+                                });
+                            },
+                            children: "AMANTIQUE"
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 52,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar_responsive.tsx",
-                        lineNumber: 30,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
-                    isHovered && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute right-0 top-full mt-2 bg-gray-800 rounded-md shadow-lg",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/",
-                                className: "block px-4 py-2 hover:bg-gray-700 transition-colors duration-300",
-                                children: "Dates"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/Navbar_responsive.tsx",
-                                lineNumber: 41,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/",
-                                className: "block px-4 py-2 hover:bg-gray-700 transition-colors duration-300",
-                                children: "Musique"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/Navbar_responsive.tsx",
-                                lineNumber: 44,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/",
-                                className: "block px-4 py-2 hover:bg-gray-700 transition-colors duration-300",
-                                children: "Vidéo"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/Navbar_responsive.tsx",
-                                lineNumber: 47,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/",
-                                className: "block px-4 py-2 hover:bg-gray-700 transition-colors duration-300",
-                                children: "Contact"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/Navbar_responsive.tsx",
-                                lineNumber: 50,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "block lg:hidden",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>setMenuOpen(!menuOpen),
+                            className: "text-white text-3xl",
+                            children: [
+                                menuOpen ? '×' : '☰',
+                                " "
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 64,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/app/components/Navbar_responsive.tsx",
-                        lineNumber: 40,
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/components/Navbar_responsive.tsx",
+                lineNumber: 49,
+                columnNumber: 7
+            }, this),
+            menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "lg:hidden absolute top-[60px] left-0 w-full bg-black bg-opacity-70 text-white p-4 flex flex-col space-y-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "#",
+                        onClick: (e)=>{
+                            e.preventDefault();
+                            onDateClick?.();
+                            closeMenu(); // Ferme le menu après le clic
+                        },
+                        className: "hover:text-[#F20D01] transition-colors duration-300",
+                        children: "DATE"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 73,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "#",
+                        onClick: (e)=>{
+                            e.preventDefault();
+                            onMusiqueClick?.();
+                            closeMenu(); // Ferme le menu après le clic
+                        },
+                        className: "hover:text-[#F20D01] transition-colors duration-300",
+                        children: "MUSIQUE"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 84,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "#",
+                        onClick: (e)=>{
+                            e.preventDefault();
+                            onBioClick?.();
+                            closeMenu(); // Ferme le menu après le clic
+                        },
+                        className: "hover:text-[#F20D01] transition-colors duration-300",
+                        children: "BIO"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 95,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "#",
+                        onClick: (e)=>{
+                            e.preventDefault();
+                            onPhotoClick?.();
+                            closeMenu(); // Ferme le menu après le clic
+                        },
+                        className: "hover:text-[#F20D01] transition-colors duration-300",
+                        children: "PHOTOS"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 106,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "#",
+                        onClick: (e)=>{
+                            e.preventDefault();
+                            onContactClick?.();
+                            closeMenu(); // Ferme le menu après le clic
+                        },
+                        className: "hover:text-[#F20D01] transition-colors duration-300",
+                        children: "CONTACT"
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 117,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Navbar_responsive.tsx",
-                lineNumber: 29,
+                lineNumber: 72,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "hidden lg:flex space-x-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://open.spotify.com",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/img/icon/spotify.png",
+                            alt: "Spotify Icon",
+                            width: 20,
+                            height: 20
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 134,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 133,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://music.apple.com",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/img/icon/apple.png",
+                            alt: "Apple Music Icon",
+                            width: 20,
+                            height: 20
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 137,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 136,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://www.instagram.com",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/img/icon/instagram.png",
+                            alt: "Instagram Icon",
+                            width: 20,
+                            height: 20
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 140,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 139,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://www.facebook.com",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/img/icon/facebook.png",
+                            alt: "Facebook Icon",
+                            width: 20,
+                            height: 20
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 143,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 142,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://www.tiktok.com",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/img/icon/tiktok.png",
+                            alt: "TikTok Icon",
+                            width: 20,
+                            height: 20
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 146,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 145,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://www.youtube.com",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/img/icon/youtube.png",
+                            alt: "YouTube Icon",
+                            width: 20,
+                            height: 20
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 149,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 148,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/components/Navbar_responsive.tsx",
+                lineNumber: 132,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/Navbar_responsive.tsx",
-        lineNumber: 12,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
-};
+});
+// Définir le displayName pour faciliter le débogage
+Navbar.displayName = 'Navbar';
 const __TURBOPACK__default__export__ = Navbar;
 }}),
 "[project]/app/date/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
@@ -646,49 +690,55 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 const ContactPage = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full text-center bg-white text-[#0A0A0A]",
+            className: "w-full text-center bg-cover bg-center bg-no-repeat text-[#0A0A0A]",
+            style: {
+                backgroundImage: "url('/img/bg/bg_bio.jpg')",
+                backgroundAttachment: "fixed",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+            },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-7xl font-extrabold sm:text-9xl mb-8",
+                    className: "text-7xl text-white font-extrabold sm:text-9xl mb-8 drop-shadow-lg",
                     children: "DATE"
                 }, void 0, false, {
                     fileName: "[project]/app/date/page.tsx",
-                    lineNumber: 10,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center text-left text-5xl pl-4 sm:pl-8 md:pl-16 mb-4",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-left text-5xl mb-4 hover:tracking-wider hover:opacity-90 transition-all duration-500 ease-in-out transform hover:scale-110 transform-origin-center",
+                        className: "text-left text-white text-5xl mb-4 hover:tracking-wider hover:opacity-90 transition-all duration-500 ease-in-out transform hover:scale-110 transform-origin-center",
                         children: "À VENIR"
                     }, void 0, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 24,
-                        columnNumber: 13
+                        lineNumber: 23,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/date/page.tsx",
-                    lineNumber: 15,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 pb-10 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 justify-center items-center",
+                    className: "grid grid-cols-1 pb-10 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 justify-center items-center",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                        href: "https://www.instagram.com/p/DEiFBTuIL3B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+                        href: "https://www.instagram.com/p/DE72DoCoOOZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
                         target: "_blank",
                         rel: "noopener noreferrer",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "relative w-full max-w-xs h-80 mx-auto group",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/img/poster/15_01_25.jpg",
+                                    src: "/img/poster/31_01_25.jpg",
                                     alt: "Image de la carte",
                                     width: 320,
                                     height: 320,
                                     className: "object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 33,
+                                    lineNumber: 36,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -696,60 +746,114 @@ const ContactPage = ()=>{
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                             className: "text-2xl font-semibold",
-                                            children: "15 • 01  -  Paris (95)"
+                                            children: "31 • 01 - Paris (95)"
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 41,
+                                            lineNumber: 44,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-1xl",
-                                            children: "CIRQUE ÉLECTRIQUE"
+                                            children: "GILBERT DISC"
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 42,
+                                            lineNumber: 45,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 40,
+                                    lineNumber: 43,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 32,
+                            lineNumber: 35,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 31,
+                        lineNumber: 30,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/date/page.tsx",
-                    lineNumber: 29,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center text-left text-5xl pl-4 sm:pl-8 md:pl-16 mb-4",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "text-left text-5xl mb-4 hover:tracking-wider hover:opacity-90 transition-all duration-500 ease-in-out transform hover:scale-110 transform-origin-center",
+                        className: "text-left text-white text-5xl mb-4 hover:tracking-wider hover:opacity-90 transition-all duration-500 ease-in-out transform hover:scale-110 transform-origin-center",
                         children: "TROP TARD..."
                     }, void 0, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 58,
-                        columnNumber: 13
+                        lineNumber: 53,
+                        columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/date/page.tsx",
-                    lineNumber: 49,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 pb-10 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 justify-center items-center",
+                    className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-10 gap-8 px-4 justify-center items-center",
                     children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "https://www.instagram.com/p/DEiFBTuIL3B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "relative w-full max-w-xs h-80 mx-auto group",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/img/poster/15_01_25.jpg",
+                                        alt: "Image de la carte",
+                                        width: 320,
+                                        height: 320,
+                                        className: "object-cover"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/date/page.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "text-2xl font-semibold",
+                                                children: "15 • 01 - Paris (95)"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/date/page.tsx",
+                                                lineNumber: 74,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-1xl",
+                                                children: "CIRQUE ÉLECTRIQUE"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/date/page.tsx",
+                                                lineNumber: 75,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/date/page.tsx",
+                                        lineNumber: 73,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/date/page.tsx",
+                                lineNumber: 65,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/app/date/page.tsx",
+                            lineNumber: 60,
+                            columnNumber: 11
+                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: "https://www.instagram.com/p/DC91WpsI5GU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
                             target: "_blank",
@@ -765,7 +869,7 @@ const ContactPage = ()=>{
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/app/date/page.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -773,10 +877,10 @@ const ContactPage = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "text-2xl font-semibold",
-                                                children: "5 • 12  -  Paris (95)"
+                                                children: "5 • 12 - Paris (95)"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/date/page.tsx",
-                                                lineNumber: 75,
+                                                lineNumber: 95,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -784,13 +888,13 @@ const ContactPage = ()=>{
                                                 children: "TRUSKEL"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/date/page.tsx",
-                                                lineNumber: 76,
+                                                lineNumber: 96,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/date/page.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 94,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -798,18 +902,18 @@ const ContactPage = ()=>{
                                         children: "RELEASE"
                                     }, void 0, false, {
                                         fileName: "[project]/app/date/page.tsx",
-                                        lineNumber: 78,
+                                        lineNumber: 98,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/date/page.tsx",
-                                lineNumber: 66,
+                                lineNumber: 86,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 65,
+                            lineNumber: 81,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -827,7 +931,7 @@ const ContactPage = ()=>{
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/app/date/page.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 111,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -835,10 +939,10 @@ const ContactPage = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "text-2xl font-semibold",
-                                                children: "15 • 11  -  PARIS (95)"
+                                                children: "15 • 11 - Paris (95)"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/date/page.tsx",
-                                                lineNumber: 95,
+                                                lineNumber: 119,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -846,24 +950,24 @@ const ContactPage = ()=>{
                                                 children: "LA MÉCANIQUE ONDULATOIRE"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/date/page.tsx",
-                                                lineNumber: 96,
+                                                lineNumber: 120,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/date/page.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 118,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/date/page.tsx",
-                                lineNumber: 86,
+                                lineNumber: 110,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 85,
+                            lineNumber: 105,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -881,7 +985,7 @@ const ContactPage = ()=>{
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/app/date/page.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 132,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -889,24 +993,24 @@ const ContactPage = ()=>{
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "text-2xl font-semibold",
-                                                children: "11 • 10  -  Paris (95)"
+                                                children: "11 • 10 - Paris (95)"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/date/page.tsx",
-                                                lineNumber: 112,
-                                                columnNumber: 19
+                                                lineNumber: 140,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-1xl",
                                                 children: "POP UP DU LABEL"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/date/page.tsx",
-                                                lineNumber: 113,
-                                                columnNumber: 19
+                                                lineNumber: 141,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/date/page.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 139,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -914,24 +1018,24 @@ const ContactPage = ()=>{
                                         children: "RELEASE"
                                     }, void 0, false, {
                                         fileName: "[project]/app/date/page.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 143,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/date/page.tsx",
-                                lineNumber: 103,
+                                lineNumber: 131,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 102,
+                            lineNumber: 126,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/date/page.tsx",
-                    lineNumber: 63,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this)
             ]
@@ -953,98 +1057,194 @@ __turbopack_esm__({
     "default": (()=>__TURBOPACK__default__export__)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
 "use client";
 ;
-;
-const MusiquePage = ()=>{
+const BentoPage = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full text-center text-white",
+            className: "w-full max-w-7xl mx-auto text-center text-black mb-12",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-7xl font-extrabold sm:text-9xl mb-8",
+                    className: "text-7xl font-extrabold sm:text-9xl text-gradient bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-black",
                     children: "MUSIQUE"
                 }, void 0, false, {
                     fileName: "[project]/app/musique/page.tsx",
-                    lineNumber: 10,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full pb-1 text-center flex justify-center items-center",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center text-center text-5xl pl-4 sm:pl-8 md:pl-16 mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-left text-4xl mb-4",
-                                children: "ANGES & MOUCHES"
-                            }, void 0, false, {
-                                fileName: "[project]/app/musique/page.tsx",
-                                lineNumber: 17,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "https://youtu.be/nXbfBoSJI7o?si=efTJasuoPwWTFJFE",
-                                className: "text-2xl px-5 text-[#F20D01] hover:tracking-wider transition-colors-transform rounded-md transition-all duration-500 ease-in-out transform hover:scale-110 transform-origin-center",
-                                children: "Écouter"
-                            }, void 0, false, {
-                                fileName: "[project]/app/musique/page.tsx",
-                                lineNumber: 20,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/musique/page.tsx",
-                        lineNumber: 16,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
+                    className: "mt-16 grid gap-8 sm:mt-16 lg:grid-cols-3 lg:grid-rows-3",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative lg:row-span-2 flex items-center justify-center h-full group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-px bg-gradient-to-r from-[#F20D01] to-black rounded-lg shadow-lg group-hover:bg-[#F20D01] group-hover:to-[#F20D01] transition-colors duration-1000"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 15,
+                                    columnNumber: 3
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-125 transition duration-500 ease-in-out",
+                                        children: "Ange & Mouche"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/musique/page.tsx",
+                                        lineNumber: 17,
+                                        columnNumber: 5
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 16,
+                                    columnNumber: 3
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/musique/page.tsx",
+                            lineNumber: 14,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative max-lg:row-start-1 flex items-center justify-center h-full group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-px bg-black rounded-lg shadow-lg"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 25,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out",
+                                        children: "EAU SALEE"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/musique/page.tsx",
+                                        lineNumber: 27,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 26,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/musique/page.tsx",
+                            lineNumber: 24,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative max-lg:row-start-3 lg:col-start-1 lg:row-start-3 lg:col-span-3 flex items-center justify-center h-full group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-px bg-gradient-to-r from-[#F20D01] to-black rounded-lg shadow-lg"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out",
+                                        children: "???"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/musique/page.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 35,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/musique/page.tsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 flex items-center justify-center h-full group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-px bg-black rounded-lg shadow-lg"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 43,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out",
+                                        children: "???"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/musique/page.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/musique/page.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative lg:row-span-2 flex items-center justify-center h-full group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-px bg-gradient-to-r from-black via-black to-[#F20D01] rounded-lg shadow-lg"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 52,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative flex h-full flex-col overflow-hidden items-center justify-center p-6 group-hover:bg-opacity-90 transition duration-300 ease-in-out",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-4xl sm:text-5xl font-semibold tracking-tight text-white text-center transform group-hover:scale-105 transition duration-300 ease-in-out",
+                                        children: "???"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/musique/page.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/app/musique/page.tsx",
+                                    lineNumber: 53,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/musique/page.tsx",
+                            lineNumber: 51,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/app/musique/page.tsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full pb-1 text-center flex justify-center items-center",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex items-center text-center text-5xl pl-4 sm:pl-8 md:pl-16 mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "text-left text-4xl mb-4",
-                                children: "EAU SALÉ"
-                            }, void 0, false, {
-                                fileName: "[project]/app/musique/page.tsx",
-                                lineNumber: 29,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: "https://youtu.be/JYfQXyXPdhs?si=P2oFYlEERXWBk4fu",
-                                className: "text-2xl px-5 text-[#F20D01] hover:tracking-wider transition-colors-transform rounded-md transition-all duration-500 ease-in-out transform hover:scale-110 transform-origin-center",
-                                children: "Écouter"
-                            }, void 0, false, {
-                                fileName: "[project]/app/musique/page.tsx",
-                                lineNumber: 32,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/musique/page.tsx",
-                        lineNumber: 28,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/app/musique/page.tsx",
-                    lineNumber: 26,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/musique/page.tsx",
-            lineNumber: 9,
+            lineNumber: 8,
             columnNumber: 7
         }, this)
     }, void 0, false);
 };
-const __TURBOPACK__default__export__ = MusiquePage;
+const __TURBOPACK__default__export__ = BentoPage;
 }}),
 "[project]/app/bio/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -1060,310 +1260,358 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const BioPage = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full text-center bg-cover bg-center bg-no-repeat text-[#0A0A0A]",
-            style: {
-                backgroundImage: "url('/img/bg/bg_bio.jpg')",
-                backgroundAttachment: "fixed",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-            },
+            className: "relative w-full flex",
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-7xl font-extrabold sm:text-9xl text-[#F20D01] drop-shadow-lg",
-                    children: "BIO"
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex-shrink-0 w-1/2 h-screen relative",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                        className: "w-full h-full object-cover",
+                        autoPlay: true,
+                        loop: true,
+                        muted: true,
+                        playsInline: true,
+                        style: {
+                            position: "absolute",
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            zIndex: -1
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                                src: "/video/eau_salee.mp4",
+                                type: "video/mp4"
+                            }, void 0, false, {
+                                fileName: "[project]/app/bio/page.tsx",
+                                lineNumber: 27,
+                                columnNumber: 13
+                            }, this),
+                            "Votre navigateur ne supporte pas la balise vidéo."
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/bio/page.tsx",
+                        lineNumber: 11,
+                        columnNumber: 11
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/bio/page.tsx",
-                    lineNumber: 16,
+                    lineNumber: 10,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col items-center justify-center p-8 sm:px-16",
+                    className: "flex-1 bg-white p-8 sm:px-16",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "bg-white bg-opacity-90 w-full max-w-7xl p-10 shadow-xl space-y-8",
+                        className: "text-center text-[#0A0A0A]",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-lg sm:text-xl font-medium leading-relaxed",
-                                children: [
-                                    "Fondé en ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "2023"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 24,
-                                        columnNumber: 25
-                                    }, this),
-                                    ", venant de ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Nantes"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 24,
-                                        columnNumber: 90
-                                    }, this),
-                                    " et ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Paris"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 24,
-                                        columnNumber: 149
-                                    }, this),
-                                    ", Amantique est un groupe de ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "rock alternatif/psyché"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 25,
-                                        columnNumber: 42
-                                    }, this),
-                                    " avec du ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "chant en français"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 25,
-                                        columnNumber: 123
-                                    }, this),
-                                    ". C’est une musique géignarde, qui se traduit par d’intenses gémissements de 4 à 6 minutes, le tout rendu possible par une communication affectueuse entre les membres du groupe, tous allant de 19 à 23 ans."
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-7xl font-extrabold sm:text-9xl text-[#F20D01] drop-shadow-lg",
+                                children: "BIO"
+                            }, void 0, false, {
                                 fileName: "[project]/app/bio/page.tsx",
-                                lineNumber: 23,
+                                lineNumber: 35,
                                 columnNumber: 13
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-lg sm:text-xl font-medium leading-relaxed",
-                                children: [
-                                    "La musique d’Amantique est influencée par des groupes tels que les ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Red Hot Chili Peppers"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 30,
-                                        columnNumber: 82
-                                    }, this),
-                                    ", ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Feu! Chatterton"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 30,
-                                        columnNumber: 154
-                                    }, this),
-                                    ", ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Viagra Boys"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 31,
-                                        columnNumber: 17
-                                    }, this),
-                                    " ou encore ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Pogo Car Crash Control"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 31,
-                                        columnNumber: 88
-                                    }, this),
-                                    ". Le batteur explose, les lignes de basses ont chacune un Haut Potentiel Émotionnel (HPE), le guitariste s’appelle Samuel et le chanteur, Louis, a une puissante moustache."
-                                ]
-                            }, void 0, true, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col items-center justify-center",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-white bg-opacity-90 w-full max-w-7xl p-10 shadow-xl space-y-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-lg sm:text-xl font-medium leading-relaxed",
+                                            children: [
+                                                "Fondé en ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "2023"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 43,
+                                                    columnNumber: 29
+                                                }, this),
+                                                ", venant de ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Nantes"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 43,
+                                                    columnNumber: 94
+                                                }, this),
+                                                " et ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Paris"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 43,
+                                                    columnNumber: 153
+                                                }, this),
+                                                ", Amantique est un groupe de ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "rock alternatif/psyché"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 44,
+                                                    columnNumber: 46
+                                                }, this),
+                                                " avec du ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "chant en français"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 44,
+                                                    columnNumber: 127
+                                                }, this),
+                                                ". C’est une musique géignarde, qui se traduit par d’intenses gémissements de 4 à 6 minutes, le tout rendu possible par une communication affectueuse entre les membres du groupe, tous allant de 19 à 23 ans."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/bio/page.tsx",
+                                            lineNumber: 42,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-lg sm:text-xl font-medium leading-relaxed",
+                                            children: [
+                                                "La musique d’Amantique est influencée par des groupes tels que les ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Red Hot Chili Peppers"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 49,
+                                                    columnNumber: 86
+                                                }, this),
+                                                ", ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Feu! Chatterton"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 49,
+                                                    columnNumber: 158
+                                                }, this),
+                                                ", ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Viagra Boys"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 50,
+                                                    columnNumber: 21
+                                                }, this),
+                                                " ou encore ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Pogo Car Crash Control"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 50,
+                                                    columnNumber: 92
+                                                }, this),
+                                                ". Le batteur explose, les lignes de basses ont chacune un Haut Potentiel Émotionnel (HPE), le guitariste s’appelle Samuel et le chanteur, Louis, a une puissante moustache."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/bio/page.tsx",
+                                            lineNumber: 48,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-lg sm:text-xl font-medium leading-relaxed",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Amantique"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 54,
+                                                    columnNumber: 19
+                                                }, this),
+                                                " souhaite à travers sa musique en live offrir une ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "possibilité de se réunir"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 54,
+                                                    columnNumber: 127
+                                                }, this),
+                                                ", de s’extraire un temps de nos existences individuelles: ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "créer du mouvement"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 55,
+                                                    columnNumber: 75
+                                                }, this),
+                                                "."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/bio/page.tsx",
+                                            lineNumber: 53,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-lg sm:text-xl font-medium leading-relaxed",
+                                            children: [
+                                                "Été 2024, ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Amantique"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 58,
+                                                    columnNumber: 29
+                                                }, this),
+                                                " a enregistré son premier ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "EP. “Laurent”"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 58,
+                                                    columnNumber: 113
+                                                }, this),
+                                                " au Studio Arpège à Nantes, le tout mixé par l’anglais ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Alistair Groves"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 59,
+                                                    columnNumber: 70
+                                                }, this),
+                                                " au ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Motor Museum Studio"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 59,
+                                                    columnNumber: 138
+                                                }, this),
+                                                " à ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Liverpool (Oasis, Arctic Monkeys, Bring Me The Horizon…)"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 59,
+                                                    columnNumber: 209
+                                                }, this),
+                                                " et masterisé par ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Grant Berry à Manchester (While She Sleeps, Busted…)"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 60,
+                                                    columnNumber: 33
+                                                }, this),
+                                                "."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/bio/page.tsx",
+                                            lineNumber: 57,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-lg sm:text-xl font-medium leading-relaxed",
+                                            children: [
+                                                "Après une ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "vingtaine de concerts à Paris et en région parisienne"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 63,
+                                                    columnNumber: 29
+                                                }, this),
+                                                ", incluant des salles emblématiques tels que le ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "Pop Up, le Supersonic ou encore l’International"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 64,
+                                                    columnNumber: 26
+                                                }, this),
+                                                ", Amantique a sorti son ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "premier single “Eau Salée”"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 64,
+                                                    columnNumber: 146
+                                                }, this),
+                                                " le ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "11 octobre dernier"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 65,
+                                                    columnNumber: 41
+                                                }, this),
+                                                ", suivi d’un second nommé ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "“Anges & Mouches”"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 65,
+                                                    columnNumber: 134
+                                                }, this),
+                                                ", souhaitant défendre un ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "premier projet musical rempli d’émotions"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 66,
+                                                    columnNumber: 42
+                                                }, this),
+                                                ", en disant déjà beaucoup sur ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-3xl text-[#F20D01]",
+                                                    children: "eux et leur musique"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 66,
+                                                    columnNumber: 161
+                                                }, this),
+                                                "."
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/bio/page.tsx",
+                                            lineNumber: 62,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/bio/page.tsx",
+                                    lineNumber: 41,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
                                 fileName: "[project]/app/bio/page.tsx",
-                                lineNumber: 29,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-lg sm:text-xl font-medium leading-relaxed",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Amantique"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 35,
-                                        columnNumber: 15
-                                    }, this),
-                                    " souhaite à travers sa musique en live offrir une ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "possibilité de se réunir"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 35,
-                                        columnNumber: 123
-                                    }, this),
-                                    ", de s’extraire un temps de nos existences individuelles: ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "créer du mouvement"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 36,
-                                        columnNumber: 71
-                                    }, this),
-                                    "."
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/bio/page.tsx",
-                                lineNumber: 34,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-lg sm:text-xl font-medium leading-relaxed",
-                                children: [
-                                    "Été 2024, ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Amantique"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 39,
-                                        columnNumber: 25
-                                    }, this),
-                                    " a enregistré son premier ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "EP. “Laurent”"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 39,
-                                        columnNumber: 109
-                                    }, this),
-                                    " au Studio Arpège à Nantes, le tout mixé par l’anglais ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Alistair Groves"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 40,
-                                        columnNumber: 66
-                                    }, this),
-                                    " au ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Motor Museum Studio"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 40,
-                                        columnNumber: 134
-                                    }, this),
-                                    " à ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Liverpool (Oasis, Arctic Monkeys, Bring Me The Horizon…)"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 40,
-                                        columnNumber: 205
-                                    }, this),
-                                    " et masterisé par ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Grant Berry à Manchester (While She Sleeps, Busted…)"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 41,
-                                        columnNumber: 29
-                                    }, this),
-                                    "."
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/bio/page.tsx",
-                                lineNumber: 38,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-lg sm:text-xl font-medium leading-relaxed",
-                                children: [
-                                    "Après une ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "vingtaine de concerts à Paris et en région parisienne"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 44,
-                                        columnNumber: 25
-                                    }, this),
-                                    ", incluant des salles emblématiques tels que le ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "Pop Up, le Supersonic ou encore l’International"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 45,
-                                        columnNumber: 22
-                                    }, this),
-                                    ", Amantique a sorti son ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "premier single “Eau Salée”"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 45,
-                                        columnNumber: 142
-                                    }, this),
-                                    " le ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "11 octobre dernier"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 46,
-                                        columnNumber: 37
-                                    }, this),
-                                    ", suivi d’un second nommé ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "“Anges & Mouches”"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 46,
-                                        columnNumber: 130
-                                    }, this),
-                                    ", souhaitant défendre un ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "premier projet musical rempli d’émotions"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 47,
-                                        columnNumber: 38
-                                    }, this),
-                                    ", en disant déjà beaucoup sur ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-3xl text-[#F20D01]",
-                                        children: "eux et leur musique"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 47,
-                                        columnNumber: 157
-                                    }, this),
-                                    "."
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/bio/page.tsx",
-                                lineNumber: 43,
+                                lineNumber: 39,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/bio/page.tsx",
-                        lineNumber: 22,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/bio/page.tsx",
-                    lineNumber: 20,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this)
             ]
@@ -1653,7 +1901,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-        className: "text-white py-4",
+        className: "text-white py-4 bg-gray-950",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto text-center",
             children: [
@@ -1819,7 +2067,7 @@ const HomePage = ()=>{
     };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const checkWindowSize = ()=>{
-            setIsSmallScreen(window.innerWidth < 750);
+            setIsSmallScreen(window.innerWidth < 830);
         };
         window.addEventListener("resize", checkWindowSize);
         checkWindowSize();
@@ -1827,7 +2075,15 @@ const HomePage = ()=>{
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            isSmallScreen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar_responsive$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            isSmallScreen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar_responsive$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                ref: navbarRef,
+                className: "sticky top-0 z-50",
+                onContactClick: ()=>scrollToSection(contactPageRef),
+                onDateClick: ()=>scrollToSection(datePageRef),
+                onMusiqueClick: ()=>scrollToSection(musiquePageRef),
+                onBioClick: ()=>scrollToSection(bioPageRef),
+                onPhotoClick: ()=>scrollToSection(photoPageRef)
+            }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 52,
                 columnNumber: 9
@@ -1841,7 +2097,7 @@ const HomePage = ()=>{
                 onPhotoClick: ()=>scrollToSection(photoPageRef)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 54,
+                lineNumber: 62,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1868,91 +2124,91 @@ const HomePage = ()=>{
                             type: "video/mp4"
                         }, void 0, false, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 83,
+                            lineNumber: 91,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/page.tsx",
-                        lineNumber: 67,
+                        lineNumber: 75,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 66,
+                    lineNumber: 74,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 64,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                ref: datePageRef,
-                style: {
-                    width: "100%",
-                    marginTop: "86vh"
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$date$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/app/page.tsx",
-                    lineNumber: 90,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/app/page.tsx",
-                lineNumber: 89,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: musiquePageRef,
+                style: {
+                    width: "100%",
+                    marginTop: "86vh"
+                },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$musique$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 93,
+                    lineNumber: 98,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 92,
+                lineNumber: 97,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                ref: datePageRef,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$date$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/app/page.tsx",
+                    lineNumber: 101,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 100,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: bioPageRef,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$bio$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 96,
+                    lineNumber: 104,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 95,
+                lineNumber: 103,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: photoPageRef,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$photo$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 99,
+                    lineNumber: 107,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 98,
+                lineNumber: 106,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: contactPageRef,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$contact$2f$page$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 102,
+                    lineNumber: 110,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 101,
+                lineNumber: 109,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 105,
+                lineNumber: 113,
                 columnNumber: 7
             }, this)
         ]
