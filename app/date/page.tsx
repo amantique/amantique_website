@@ -9,7 +9,7 @@ const ContactPage = () => {
       <div
         className="w-full text-center bg-cover bg-center bg-no-repeat text-[#0A0A0A]"
         style={{
-          backgroundImage: "url('/img/bg/bg_bio.jpg')",
+          backgroundImage: "url('/img/bg/bg_bio.jpg')", // Image de fond par défaut
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
           backgroundPosition: "center",

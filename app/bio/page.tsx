@@ -31,8 +31,8 @@ const BioPage = () => {
           </div>
 
           {/* Contenu texte à droite */}
-          <div className="relative z-10 w-full lg:w-1/2 p-4 sm:px-8 flex flex-col items-center justify-center bg-white bg-opacity-75">
-            <div className="text-center text-[#0A0A0A]">
+          <div className="relative z-10 w-full lg:w-1/2 p-4 sm:px-8 flex flex-col items-center justify-center bg-black bg-opacity-50">
+            <div className="text-center text-white">
               <h2 className="text-7xl text-[#F20D01] font-extrabold sm:text-9xl drop-shadow-lg">BIO</h2>
 
               <div className="sm:text-base flex flex-col items-center justify-center text-justify font-robotomono max-w-7xl">
