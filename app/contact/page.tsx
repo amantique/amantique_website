@@ -22,7 +22,7 @@ const ContactPage = () => {
           {/* Deuxième colonne*/}
           <div className="flex-1 space-y-4 mt-4">
           <div className="bg-white p-4 rounded-lg shadow-md mt-7">
-              <p className="text-xl text-gray-600">
+              <p className="text-3xl text-gray-600">
                 <a href="mailto:amantic.sm@gmail.com" className="text-[#F20D01] hover:underline">
                   amantic.sm@gmail.com
                 </a>

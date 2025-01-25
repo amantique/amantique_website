@@ -14,7 +14,7 @@ const DatePageResponsive = () => {
   return (
     <>
       <div
-        className="w-full text-center bg-cover bg-center bg-no-repeat text-[#0A0A0A]"
+        className="w-full text-center bg-cover bg-center bg-no-repeat text-[#0A0A0A] pb-4"
         style={{
           backgroundImage: "url('/img/bg/bg_bio_responsive.jpg')", // Image de fond par défaut
           backgroundAttachment: "fixed",
@@ -39,7 +39,7 @@ const DatePageResponsive = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="relative w-full max-w-xs h-80 mx-auto group">
+            <div className="relative w-full max-w-xs mx-auto group">
               <Image
                 src="/img/poster/31_01_25.jpg"
                 alt="Image de la carte"
@@ -69,7 +69,7 @@ const DatePageResponsive = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="relative w-full max-w-xs h-80 mx-auto group">
+            <div className="relative w-full max-w-xs mx-auto group">
               <Image
                 src="/img/poster/15_01_25.jpg"
                 alt="Image de la carte"
@@ -90,7 +90,7 @@ const DatePageResponsive = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="relative w-full max-w-xs h-80 mx-auto group">
+            <div className="relative w-full max-w-xs mx-auto group">
               <Image
                 src="/img/poster/05_12_24.jpg"
                 alt="Image de la carte"
@@ -116,7 +116,7 @@ const DatePageResponsive = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="relative w-full max-w-xs h-80 mx-auto group">
+                <div className="relative w-full max-w-xs mx-auto group">
                   <Image
                     src="/img/poster/15_11_24.jpg"
                     alt="Image de la carte"
@@ -137,7 +137,7 @@ const DatePageResponsive = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="relative w-full max-w-xs h-80 mx-auto group">
+                <div className="relative w-full max-w-xs mx-auto group">
                   <Image
                     src="/img/poster/11_10_24.jpg"
                     alt="Image de la carte"

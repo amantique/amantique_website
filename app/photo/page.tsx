@@ -146,11 +146,11 @@ const PhotoPage: React.FC = () => {
 
       {/* Button to view all photos */}
       <div className="mt-4">
-        <Link href="/all-photos">
-          <button className="px-6 py-3 text-lg font-bold text-gray-950 bg-white rounded-lg hover:bg-[#F20D01] transition duration-300">
-            Voir toutes les photos
-          </button>
-        </Link>
+      <Link href="./photo/galerie_page">
+        <button className="px-6 py-3 text-lg font-bold text-gray-950 bg-white rounded-lg hover:bg-[#F20D01] transition duration-300">
+          Voir toutes les photos
+        </button>
+      </Link>
       </div>
     </div>
   );

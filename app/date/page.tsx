@@ -32,7 +32,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="relative w-full max-w-xs h-80 mx-auto group">
+            <div className="relative w-full max-w-xs mx-auto group">
               <Image
                 src="/img/poster/31_01_25.jpg"
                 alt="Image de la carte"
@@ -62,7 +62,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="relative w-full max-w-xs h-80 mx-auto group">
+            <div className="relative w-full max-w-xs mx-auto group">
               <Image
                 src="/img/poster/15_01_25.jpg"
                 alt="Image de la carte"
@@ -83,7 +83,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="relative w-full max-w-xs h-80 mx-auto group">
+            <div className="relative w-full max-w-xs mx-auto group">
               <Image
                 src="/img/poster/05_12_24.jpg"
                 alt="Image de la carte"
@@ -107,7 +107,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="relative w-full max-w-xs h-80 mx-auto group">
+            <div className="relative w-full max-w-xs mx-auto group">
               <Image
                 src="/img/poster/15_11_24.jpg"
                 alt="Image de la carte"
@@ -128,7 +128,7 @@ const ContactPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="relative w-full max-w-xs h-80 mx-auto group">
+            <div className="relative w-full max-w-xs mx-auto group">
               <Image
                 src="/img/poster/11_10_24.jpg"
                 alt="Image de la carte"
