@@ -23,7 +23,7 @@ const DatePageResponsive = () => {
         }}
       >
         {/* Titre principal */}
-        <h2 className="text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg">DATES resp</h2>
+        <h2 className="text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg">DATES</h2>
 
         {/* Section À VENIR */}
         <div className="flex items-center text-left text-5xl pl-4 sm:pl-8 md:pl-16 mb-4">
