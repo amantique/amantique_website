@@ -74,23 +74,23 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
             href="#"
             onClick={(e) => {
               e.preventDefault();
-              onDateClick?.();
-              closeMenu(); // Ferme le menu après le clic
-            }}
-            className="hover:text-[#F20D01] transition-colors duration-300"
-          >
-            DATE
-          </a>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
               onMusiqueClick?.();
               closeMenu(); // Ferme le menu après le clic
             }}
             className="hover:text-[#F20D01] transition-colors duration-300"
           >
-            MUSIQUE
+            MUSIQUES
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              onDateClick?.();
+              closeMenu(); // Ferme le menu après le clic
+            }}
+            className="hover:text-[#F20D01] transition-colors duration-300"
+          >
+            DATES
           </a>
           <a
             href="#"
@@ -123,7 +123,7 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
             }}
             className="hover:text-[#F20D01] transition-colors duration-300"
           >
-            CONTACT
+            CONTACTS
           </a>
         </div>
       )}
