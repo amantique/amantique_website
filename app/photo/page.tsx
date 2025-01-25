@@ -7,12 +7,12 @@ import Link from "next/link"; // Importer Link pour la navigation
 // Exemple d'images pour tes albums
 const directories = {
   "15_10_meca": [
-    "/img/live/15_10_meca/PB150056-Edit.jpg",
-    "/img/live/15_10_meca/PB150061-Edit.jpg",
+    "/img/live/PB150056-Edit.jpg",
+    "/img/live/PB150061-Edit.jpg",
   ],
   "11_10_popup": [
-    "/img/live/11_10_popup/PA110006-Enhanced-NR.jpg",
-    "/img/live/11_10_popup/PA110010-Enhanced-NR.jpg",
+    "/img/live/PA110006-Enhanced-NR.jpg",
+    "/img/live/PA110010-Enhanced-NR.jpg",
   ],
 };
 
