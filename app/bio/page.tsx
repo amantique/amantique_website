@@ -5,6 +5,7 @@ import React from 'react';
 const BioPage = () => {
   return (
     <>
+      <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
       <div className="relative w-full flex flex-col">
         {/* Conteneur principal : La hauteur est définie par le texte */}
         <div className="relative w-full">
@@ -21,8 +22,8 @@ const BioPage = () => {
                 top: 0,
                 left: 0,
                 width: "100%",
-                height: "100%", // La hauteur s'ajustera à la hauteur du parent
-                objectFit: "cover", // La vidéo couvre toute la zone sans déformation
+                height: "100%", 
+                objectFit: "cover",
               }}
             >
               <source src="/video/eau_salee.mp4" type="video/mp4" />

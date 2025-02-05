@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Navbar_Responsive from "./components/Navbar_responsive";
 import DatePage from "./date/page";
-import DatePageResponsive from "./date/page_responsive"; // Importer le composant responsive
+import DatePageResponsive from "./date/page_responsive";
 import MusiquePage from "./musique/page";
 import BioPage from "./bio/page";
 import PhotoPage from "./photo/page";
@@ -28,9 +28,9 @@ const HomePage: React.FC = () => {
   const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement | null>) => {
     if (sectionRef.current) {
       const elementPosition = sectionRef.current.getBoundingClientRect().top + window.scrollY;
-      const offset = getNavbarHeight(); // Hauteur de la navbar
+      const offset = getNavbarHeight();
       window.scrollTo({
-        top: elementPosition - offset, // Ajuste le défilement pour compenser la navbar
+        top: elementPosition - offset,
         behavior: "smooth",
       });
     }
@@ -49,6 +49,7 @@ const HomePage: React.FC = () => {
 
   return (
     <>
+      <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
       {isSmallScreen ? (
         <Navbar_Responsive 
           ref={navbarRef} 
@@ -99,7 +100,6 @@ const HomePage: React.FC = () => {
         <MusiquePage />
       </div>
       <div ref={datePageRef}>
-        {/* Affichage conditionnel de DatePage selon la taille de l'écran */}
         {isSmallScreen ? (<DatePageResponsive />) : (<DatePage />)}
       </div>
       <div ref={bioPageRef}>

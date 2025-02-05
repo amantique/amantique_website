@@ -6,6 +6,7 @@ import Image from "next/image";
 const ContactPage = () => {
   return (
     <>
+      <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
       <div
         className="w-full text-center bg-cover bg-center bg-no-repeat text-[#0A0A0A]"
         style={{

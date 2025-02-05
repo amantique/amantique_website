@@ -6,6 +6,7 @@ import Image from 'next/image'; // si tu utilises Next.js
 const ContactPage = () => {
   return (
     <>
+      <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
       <div className="w-full mx-auto text-black bg-[#F20D01] px-20 pb-4">
 
         {/* Div avec deux colonnes */}
