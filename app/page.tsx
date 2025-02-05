@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Navbar_Responsive from "./components/Navbar_responsive";
@@ -49,6 +50,15 @@ const HomePage: React.FC = () => {
 
   return (
     <>
+      <Head>
+        <title>Amantique</title>
+        <meta name="description" content="amantique" />
+        <meta property="og:title" content="amantique" />
+        <meta property="og:description" content="amantique" />
+        <meta property="og:image" content="/images/logo.png" />
+        <meta property="og:url" content="https://www.amantique.fr" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
       {isSmallScreen ? (
         <Navbar_Responsive 

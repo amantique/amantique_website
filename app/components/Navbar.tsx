@@ -33,12 +33,14 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
   }, []);
 
   return (
+    
     <nav
       ref={ref} // Référence pour le composant
       className={`text-white flex items-center justify-between fixed top-0 px-5 z-50 
         ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-75 shadow-none'} 
         ${className} h-[50px]`}  // Hauteur et marge en bas
     >
+      <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
       {/* Conteneur pour les icônes sociaux */}
       <div className="flex items-center justify-between space-x-3">
         {/* Spotify */}
