@@ -42,7 +42,7 @@ const ContactPage = () => {
                 className="object-cover"
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
-                <h3 className="text-2xl font-semibold">27 • 02 - Paris (95)</h3>
+                <h3 className="text-2xl font-semibold">27 • 02 - Bagnolet (93)</h3>
                 <p className="text-sm font-black font-robotomono">LE SAMPLE</p>
               </div>
             </div>
@@ -72,7 +72,7 @@ const ContactPage = () => {
                 className="object-cover"
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
-                <h3 className="text-2xl font-semibold">05 • 02 - Bagnolet (93)</h3>
+                <h3 className="text-2xl font-semibold">05 • 02 - Paris (95)</h3>
                 <p className="text-sm font-black font-robotomono">L&apos;ALIMENTATION GÉNÉRALE</p>
               </div>
             </div>
