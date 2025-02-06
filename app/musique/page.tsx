@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 
 const BentoPage = () => {
   return (
@@ -9,8 +10,25 @@ const BentoPage = () => {
       <div className="w-full mx-auto text-center text-black pb-4 bg-white">
         <h2 className="text-7xl text-black font-extrabold pt-4 sm:text-9xl drop-shadow-lg">MUSIQUES</h2>
 
+        <div className="max-w-md mx-auto mb-4">
+          <div className="flex justify-center space-x-6">
+            {[
+              { href: "https://open.spotify.com/intl-fr/artist/1gUDo746RvvVVY3lbL2r7N?si=9xiGodwdSca93pMnkZ37-w", src: "/img/icon/spotify_red.png", alt: "Spotify" },
+              { href: "https://music.apple.com/fr/artist/amantique/1771329106", src: "/img/icon/apple_red.png", alt: "Apple Music" },
+              { href: "https://www.instagram.com/amantique._/", src: "/img/icon/instagram_red.png", alt: "Instagram" },
+              { href: "https://www.facebook.com/profile.php?id=100091951621434", src: "/img/icon/facebook_red.png", alt: "Facebook" },
+              { href: "https://www.tiktok.com/@amantique_?is_from_webapp=1&sender_device=pc", src: "/img/icon/tiktok_red.png", alt: "TikTok" },
+              { href: "https://www.youtube.com/@Amantique", src: "/img/icon/youtube_red.png", alt: "YouTube" },
+            ].map((icon, index) => (
+              <a key={index} href={icon.href} target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+                <Image src={icon.src} alt={icon.alt} width={30} height={30} className="rounded-md" />
+              </a>
+            ))}
+          </div>
+        </div>
+
         {/* Liste de la playlist */}
-        <div className="space-y-8">
+        <div className="space-y-4">
           {/* Premier morceau */}
           <div className="flex flex-col items-center justify-center space-y-4"> {/* Ajout de space-y pour espacer les titres */}
             <a
@@ -30,7 +48,7 @@ const BentoPage = () => {
               className="group inline-block"
             >
               <p className="text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]">
-                Ange & Mouche
+                Anges & Mouches
               </p>
             </a>
           </div>
