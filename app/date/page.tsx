@@ -45,6 +45,9 @@ const ContactPage = () => {
                 <h3 className="text-2xl font-semibold">27 • 02 - Bagnolet (93)</h3>
                 <p className="text-sm font-black font-robotomono">LE SAMPLE</p>
               </div>
+              <div className="text-[#F20D01] absolute top-[-10px] left-0 w-full text-center text-5xl font-bold animate-bounce">
+                RELEASE
+              </div>
             </div>
           </a>
         </div>
@@ -57,7 +60,7 @@ const ContactPage = () => {
         </div>
 
         <div className="grid grid-cols-1 pb-10 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 justify-center items-center">
-          {/* gilbert deisc 31/01/25 */}
+          {/* alimentation 05/02/25 */}
           <a
             href="https://www.instagram.com/p/DFiiCRBINEm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             target="_blank"
@@ -77,10 +80,8 @@ const ContactPage = () => {
               </div>
             </div>
           </a>
-        </div>
-
-        <div className="grid grid-cols-1 pb-10 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 justify-center items-center">
-          {/* gilbert deisc 31/01/25 */}
+          
+          {/* gilbert disc 31/01/25 */}
           <a
             href="https://www.instagram.com/p/DE72DoCoOOZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             target="_blank"
@@ -100,9 +101,7 @@ const ContactPage = () => {
               </div>
             </div>
           </a>
-        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-10 gap-8 px-4 justify-center items-center">
           {/* Cirque électrique 15/01/25 */}
           <a
             href="https://www.instagram.com/p/DEiFBTuIL3B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
