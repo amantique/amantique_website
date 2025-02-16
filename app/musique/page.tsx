@@ -28,7 +28,7 @@ const BentoPage = () => {
         </div>
 
         {/* Liste de la playlist */}
-        <div className="flex items-center justify-center w-full space-x-20">
+        <div className="flex flex-col md:flex-row items-center justify-center w-full space-y-10 md:space-y-0 md:space-x-20">
           <div className="relative group">
             <Image
               src="/img/cover/laurent.png"
@@ -42,7 +42,7 @@ const BentoPage = () => {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-4 text-center md:text-left">
             <div className="flex flex-col">
               <a
                 href="https://youtu.be/JYfQXyXPdhs?si=XYOu95WlmPqcEu9X"
