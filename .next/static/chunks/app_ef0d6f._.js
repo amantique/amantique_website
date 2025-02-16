@@ -777,7 +777,7 @@ const ContactPage = ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "grid grid-cols-1 pb-10 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 justify-center items-center",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "https://www.instagram.com/amantique._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+                            href: "https://www.helloasso.com/associations/elephant-joli-mais-veneneux/evenements/release-party-amantique-le-sample-27-02-2025-2",
                             target: "_blank",
                             rel: "noopener noreferrer",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -884,7 +884,7 @@ const ContactPage = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "text-2xl font-semibold",
-                                                    children: "05 • 02 - Paris (95)"
+                                                    children: "05 • 02 - Paris (75)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/date/page.tsx",
                                                     lineNumber: 78,
@@ -938,7 +938,7 @@ const ContactPage = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "text-2xl font-semibold",
-                                                    children: "31 • 01 - Paris (95)"
+                                                    children: "31 • 01 - Paris (75)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/date/page.tsx",
                                                     lineNumber: 99,
@@ -992,7 +992,7 @@ const ContactPage = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "text-2xl font-semibold",
-                                                    children: "15 • 01 - Paris (95)"
+                                                    children: "15 • 01 - Paris (75)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/date/page.tsx",
                                                     lineNumber: 120,
@@ -1046,7 +1046,7 @@ const ContactPage = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "text-2xl font-semibold",
-                                                    children: "5 • 12 - Paris (95)"
+                                                    children: "5 • 12 - Paris (75)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/date/page.tsx",
                                                     lineNumber: 141,
@@ -1108,7 +1108,7 @@ const ContactPage = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "text-2xl font-semibold",
-                                                    children: "15 • 11 - Paris (95)"
+                                                    children: "15 • 11 - Paris (75)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/date/page.tsx",
                                                     lineNumber: 165,
@@ -1162,7 +1162,7 @@ const ContactPage = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                     className: "text-2xl font-semibold",
-                                                    children: "11 • 10 - Paris (95)"
+                                                    children: "11 • 10 - Paris (75)"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/date/page.tsx",
                                                     lineNumber: 186,

@@ -29,7 +29,7 @@ const ContactPage = () => {
         <div className="grid grid-cols-1 pb-10 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4 justify-center items-center">
           {/* le sample 27/02/25 */}
           <a
-            href="https://www.instagram.com/amantique._?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.helloasso.com/associations/elephant-joli-mais-veneneux/evenements/release-party-amantique-le-sample-27-02-2025-2"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -75,7 +75,7 @@ const ContactPage = () => {
                 className="object-cover"
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
-                <h3 className="text-2xl font-semibold">05 • 02 - Paris (95)</h3>
+                <h3 className="text-2xl font-semibold">05 • 02 - Paris (75)</h3>
                 <p className="text-sm font-black font-robotomono">L&apos;ALIMENTATION GÉNÉRALE</p>
               </div>
             </div>
@@ -96,7 +96,7 @@ const ContactPage = () => {
                 className="object-cover"
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
-                <h3 className="text-2xl font-semibold">31 • 01 - Paris (95)</h3>
+                <h3 className="text-2xl font-semibold">31 • 01 - Paris (75)</h3>
                 <p className="text-sm font-black font-robotomono">GILBERT DISC</p>
               </div>
             </div>
@@ -117,7 +117,7 @@ const ContactPage = () => {
                 className="object-cover"
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
-                <h3 className="text-2xl font-semibold">15 • 01 - Paris (95)</h3>
+                <h3 className="text-2xl font-semibold">15 • 01 - Paris (75)</h3>
                 <p className="text-sm font-black font-robotomono">CIRQUE ÉLECTRIQUE</p>
               </div>
             </div>
@@ -138,7 +138,7 @@ const ContactPage = () => {
                 className="object-cover"
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
-                <h3 className="text-2xl font-semibold">5 • 12 - Paris (95)</h3>
+                <h3 className="text-2xl font-semibold">5 • 12 - Paris (75)</h3>
                 <p className="text-sm font-black font-robotomono">TRUSKEL</p>
               </div>
               <div className="text-[#F20D01] absolute top-[-10px] left-0 w-full text-center text-5xl font-bold animate-bounce">
@@ -162,7 +162,7 @@ const ContactPage = () => {
                 className="object-cover"
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
-                <h3 className="text-2xl font-semibold">15 • 11 - Paris (95)</h3>
+                <h3 className="text-2xl font-semibold">15 • 11 - Paris (75)</h3>
                 <p className="text-sm font-black font-robotomono">LA MÉCANIQUE ONDULATOIRE</p>
               </div>
             </div>
@@ -183,7 +183,7 @@ const ContactPage = () => {
                 className="object-cover"
               />
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:bg-opacity-70 group-hover:text-white group-hover:tracking-wider transition-all duration-500 ease-in-out">
-                <h3 className="text-2xl font-semibold">11 • 10 - Paris (95)</h3>
+                <h3 className="text-2xl font-semibold">11 • 10 - Paris (75)</h3>
                 <p className="text-sm font-black font-robotomono">POP UP DU LABEL</p>
               </div>
               <div className="text-[#F20D01] absolute top-[-10px] left-0 w-full text-center text-5xl font-bold animate-bounce">

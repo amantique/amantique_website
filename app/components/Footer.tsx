@@ -13,7 +13,7 @@ export default function Footer() {
                             rel="noopener noreferrer" 
                             className="text-[#F20D01] hover:text-white mx-2"
                         >
-                            &ana_themart
+                            @ana_themart
                         </a>
                     </div>
                     <div className="text-gray-400 mx-2 flex items-center">

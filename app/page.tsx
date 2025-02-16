@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Navbar_Responsive from "./components/Navbar_responsive";
 import DatePage from "./date/page";
-import DatePageResponsive from "./date/page_responsive";
+// import DatePageResponsive from "./date/page_responsive";
 import MusiquePage from "./musique/page";
 import BioPage from "./bio/page";
 import PhotoPage from "./photo/page";
@@ -110,7 +110,8 @@ const HomePage: React.FC = () => {
         <MusiquePage />
       </div>
       <div ref={datePageRef}>
-        {isSmallScreen ? (<DatePageResponsive />) : (<DatePage />)}
+        {/* {isSmallScreen ? (<DatePageResponsive />) : (<DatePage />)} */}
+        <DatePage />
       </div>
       <div ref={bioPageRef}>
         <BioPage />
