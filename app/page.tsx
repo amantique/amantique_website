@@ -11,7 +11,7 @@ import BioPage from "./bio/page";
 import PhotoPage from "./photo/page";
 import ContactPage from "./contact/page";
 import Footer from "./components/Footer";
-import ActusPage from "./actus/page";
+// import ActusPage from "./actus/page";
 
 const HomePage: React.FC = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
 
   // Références des sections
   const datePageRef = useRef<HTMLDivElement>(null);
-  const actusPageRef = useRef<HTMLDivElement>(null);
+  // const actusPageRef = useRef<HTMLDivElement>(null);
   const musiquePageRef = useRef<HTMLDivElement>(null);
   const bioPageRef = useRef<HTMLDivElement>(null);
   const parolesPageRef = useRef<HTMLDivElement>(null);
