@@ -50,13 +50,18 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 const ParolePage = ()=>{
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSearchParams"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
-    const src = searchParams.get("src");
-    const textFile = searchParams.get("textFile");
-    const title = searchParams.get("title");
+    const src = decodeURIComponent(searchParams.get("src") || "");
+    const textFile = decodeURIComponent(searchParams.get("textFile") || "");
+    const title = decodeURIComponent(searchParams.get("title") || "Sans titre");
     const [text, setText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         if (textFile) {
-            fetch(textFile).then((response)=>response.text()).then(setText).catch(()=>setText("Impossible de charger le texte."));
+            fetch(textFile).then((response)=>{
+                if (!response.ok) {
+                    throw new Error("Fichier introuvable");
+                }
+                return response.text();
+            }).then(setText).catch(()=>setText("Impossible de charger le texte."));
         }
     }, [
         textFile
@@ -79,7 +84,7 @@ const ParolePage = ()=>{
                             children: "Retour"
                         }, void 0, false, {
                             fileName: "[project]/app/parole/page.tsx",
-                            lineNumber: 32,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -87,13 +92,13 @@ const ParolePage = ()=>{
                             children: title
                         }, void 0, false, {
                             fileName: "[project]/app/parole/page.tsx",
-                            lineNumber: 39,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/parole/page.tsx",
-                    lineNumber: 30,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -103,23 +108,23 @@ const ParolePage = ()=>{
                         children: text
                     }, void 0, false, {
                         fileName: "[project]/app/parole/page.tsx",
-                        lineNumber: 43,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/parole/page.tsx",
-                    lineNumber: 42,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/parole/page.tsx",
-            lineNumber: 29,
+            lineNumber: 35,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/parole/page.tsx",
-        lineNumber: 25,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 };

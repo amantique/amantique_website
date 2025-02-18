@@ -5,17 +5,23 @@ import { useEffect, useState } from "react";
 
 const ParolePage = () => {
   const searchParams = useSearchParams();
-  const router = useRouter(); 
-  const src = searchParams.get("src");
-  const textFile = searchParams.get("textFile");
-  const title = searchParams.get("title");
+  const router = useRouter();
+
+  const src = decodeURIComponent(searchParams.get("src") || "");
+  const textFile = decodeURIComponent(searchParams.get("textFile") || "");
+  const title = decodeURIComponent(searchParams.get("title") || "Sans titre");
 
   const [text, setText] = useState("");
 
   useEffect(() => {
     if (textFile) {
       fetch(textFile)
-        .then(response => response.text())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Fichier introuvable");
+          }
+          return response.text();
+        })
         .then(setText)
         .catch(() => setText("Impossible de charger le texte."));
     }
@@ -24,14 +30,14 @@ const ParolePage = () => {
   return (
     <div
       className="relative w-full h-screen bg-cover bg-center text-white flex justify-center items-center p-4 text-center"
-      style={{ backgroundImage: `url(${src})`, backgroundAttachment: "fixed" }} 
+      style={{ backgroundImage: `url(${src})`, backgroundAttachment: "fixed" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-4">
         <div className="flex items-center mb-6">
           {/* Bouton retour */}
           <button
             className="px-4 py-2 bg-[#F20D01] text-white rounded mr-4"
-            onClick={() => router.back()} 
+            onClick={() => router.back()}
           >
             Retour
           </button>
