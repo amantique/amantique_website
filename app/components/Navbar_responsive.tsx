@@ -10,10 +10,11 @@ interface NavbarProps {
   onMusiqueClick?: () => void;
   onBioClick?: () => void;
   onPhotoClick?: () => void;
+  onParoleClick?: () => void;
 }
 
 // Définition du composant Navbar avec forwardRef
-const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick }, ref) => {
+const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick, onParoleClick }, ref) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // Gestion de l'état du menu mobile
 
@@ -102,6 +103,17 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
             className="hover:text-[#F20D01] transition-colors duration-300"
           >
             BIO
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              onParoleClick?.();
+              closeMenu(); // Ferme le menu après le clic
+            }}
+            className="hover:text-[#F20D01] transition-colors duration-300"
+          >
+            PAROLES
           </a>
           <a
             href="#"

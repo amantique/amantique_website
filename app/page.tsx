@@ -71,6 +71,7 @@ const HomePage: React.FC = () => {
           onDateClick={() => scrollToSection(datePageRef)}
           onMusiqueClick={() => scrollToSection(musiquePageRef)}
           onBioClick={() => scrollToSection(bioPageRef)}
+          onParoleClick={() => scrollToSection(parolesPageRef)}
           onPhotoClick={() => scrollToSection(photoPageRef)}
         />
       ) : (
