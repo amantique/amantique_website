@@ -7,7 +7,7 @@ interface ImageData {
   src: string;
   alt: string;
   textFile: string;
-  title: string;  // Ajout du titre
+  title: string;
 }
 
 const images: ImageData[] = [
@@ -22,7 +22,9 @@ const ParolesPage = () => {
   const router = useRouter();
 
   const handleImageClick = (image: ImageData) => {
-    router.push(`/parole?src=${encodeURIComponent(image.src)}&textFile=${encodeURIComponent(image.textFile)}&title=${encodeURIComponent(image.title)}`);
+    router.push(
+      `/parole?src=${encodeURIComponent(image.src)}&textFile=${encodeURIComponent(image.textFile)}&title=${encodeURIComponent(image.title)}`
+    );
   };
 
   return (
@@ -33,9 +35,8 @@ const ParolesPage = () => {
           <Image
             src="/img/live/PA110065-Enhanced-NR copie.jpg"
             alt="Background Image"
-            layout="fill"
-            objectFit="cover"
-            className="z-0"
+            fill
+            className="z-0 object-cover"
           />
         </div>
         <h2 className="text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg text-center z-20 relative">
@@ -50,7 +51,7 @@ const ParolesPage = () => {
           onClick={() => handleImageClick(image)}
         >
           {/* Fond de l'image */}
-          <Image src={image.src} alt={image.alt} layout="fill" objectFit="cover" />
+          <Image src={image.src} alt={image.alt} fill className="object-cover" />
           
           {/* Superposition d'un fond transparent sur l'image */}
           <div className="absolute inset-0 bg-black bg-opacity-30 transition-all duration-500 hover:bg-opacity-0"></div>
