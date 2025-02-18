@@ -29,7 +29,7 @@ const BentoPage = () => {
 
         {/* Liste de la playlist */}
         <div className="flex flex-col md:flex-row items-center justify-center w-full space-y-10 md:space-y-0 md:space-x-20">
-          <div className="relative group">
+          <a className="relative group" href='https://open.spotify.com/intl-fr/album/7saazYMgviLznaQ3Oyii2l?si=RVMf56lmT7yOqMB6kB9VJQ'>
             <Image
               src="/img/cover/laurent.png"
               alt="Image de la carte"
@@ -38,30 +38,60 @@ const BentoPage = () => {
               className="object-cover"
             />
             <div className="text-[#F20D01] absolute top-[160px] left-0 w-full text-center text-5xl font-bold animate-bounce">
-              DISPO LE 17 • 01
+              DISPO LE 17 • 02
             </div>
-          </div>
+          </a>
 
           <div className="space-y-4 text-center md:text-left">
             <div className="flex flex-col">
               <a
-                href="https://youtu.be/JYfQXyXPdhs?si=XYOu95WlmPqcEu9X"
+                href="https://open.spotify.com/intl-fr/track/4gjrLMzHI2l13ZsJt4V3C7?si=d5874015b8894066"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-block"
               >
                 <p className="text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]">
-                  Eau Salée
+                  1. Eau Salée
                 </p>
               </a>
               <a
-                href="https://youtu.be/nXbfBoSJI7o?si=La8zugaD8prDyGBY"
+                href="https://open.spotify.com/intl-fr/track/20ZVH5eaaRqSc2Wp3tZ9zJ?si=399e643fc49245ee"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-block"
               >
                 <p className="text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]">
-                  Anges & Mouches
+                  2. Daphné
+                </p>
+              </a>
+              <a
+                href="https://open.spotify.com/intl-fr/track/1VG0RQfs5k9vqgNsdcKuCB?si=f7d91ed5312142d8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
+              >
+                <p className="text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]">
+                  3. La Mer
+                </p>
+              </a>
+              <a
+                href="https://open.spotify.com/intl-fr/track/5aXqNK2bVKFfQyWWkhYdgr?si=8329172d978d4fe9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
+              >
+                <p className="text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]">
+                  4. La Météo
+                </p>
+              </a>
+              <a
+                href="https://open.spotify.com/intl-fr/track/4WlYmInKMOBR2NNZBLRzJG?si=5e9e4fc501404529"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
+              >
+                <p className="text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]">
+                  5. Anges & Mouches
                 </p>
               </a>
             </div>

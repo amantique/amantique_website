@@ -10,10 +10,11 @@ interface NavbarProps {
   onMusiqueClick?: () => void;
   onBioClick?: () => void;
   onPhotoClick?: () => void;
+  onParolesClick?: () => void;
 }
 
 // Définition du composant Navbar avec forwardRef
-const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick }, ref) => {
+const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick, onParolesClick }, ref) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -123,6 +124,16 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
         >
           BIO
+        </a>
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            onParolesClick?.();
+          }}
+          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
+        >
+          PAROLES
         </a>
         <a
           href="#"

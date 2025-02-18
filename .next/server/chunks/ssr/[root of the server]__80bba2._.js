@@ -1062,8 +1062,9 @@ const BentoPage = ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col md:flex-row items-center justify-center w-full space-y-10 md:space-y-0 md:space-x-20",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 className: "relative group",
+                                href: "https://open.spotify.com/intl-fr/album/7saazYMgviLznaQ3Oyii2l?si=RVMf56lmT7yOqMB6kB9VJQ",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/img/cover/laurent.png",
@@ -1078,7 +1079,7 @@ const BentoPage = ()=>{
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "text-[#F20D01] absolute top-[160px] left-0 w-full text-center text-5xl font-bold animate-bounce",
-                                        children: "DISPO LE 17 • 01"
+                                        children: "DISPO LE 17 • 02"
                                     }, void 0, false, {
                                         fileName: "[project]/app/musique/page.tsx",
                                         lineNumber: 40,
@@ -1097,13 +1098,13 @@ const BentoPage = ()=>{
                                         className: "flex flex-col",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "https://youtu.be/JYfQXyXPdhs?si=XYOu95WlmPqcEu9X",
+                                                href: "https://open.spotify.com/intl-fr/track/4gjrLMzHI2l13ZsJt4V3C7?si=d5874015b8894066",
                                                 target: "_blank",
                                                 rel: "noopener noreferrer",
                                                 className: "group inline-block",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]",
-                                                    children: "Eau Salée"
+                                                    children: "1. Eau Salée"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/musique/page.tsx",
                                                     lineNumber: 53,
@@ -1115,13 +1116,13 @@ const BentoPage = ()=>{
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "https://youtu.be/nXbfBoSJI7o?si=La8zugaD8prDyGBY",
+                                                href: "https://open.spotify.com/intl-fr/track/20ZVH5eaaRqSc2Wp3tZ9zJ?si=399e643fc49245ee",
                                                 target: "_blank",
                                                 rel: "noopener noreferrer",
                                                 className: "group inline-block",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]",
-                                                    children: "Anges & Mouches"
+                                                    children: "2. Daphné"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/musique/page.tsx",
                                                     lineNumber: 63,
@@ -1130,6 +1131,60 @@ const BentoPage = ()=>{
                                             }, void 0, false, {
                                                 fileName: "[project]/app/musique/page.tsx",
                                                 lineNumber: 57,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "https://open.spotify.com/intl-fr/track/1VG0RQfs5k9vqgNsdcKuCB?si=f7d91ed5312142d8",
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                className: "group inline-block",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]",
+                                                    children: "3. La Mer"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/musique/page.tsx",
+                                                    lineNumber: 73,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/musique/page.tsx",
+                                                lineNumber: 67,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "https://open.spotify.com/intl-fr/track/5aXqNK2bVKFfQyWWkhYdgr?si=8329172d978d4fe9",
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                className: "group inline-block",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]",
+                                                    children: "4. La Météo"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/musique/page.tsx",
+                                                    lineNumber: 83,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/musique/page.tsx",
+                                                lineNumber: 77,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "https://open.spotify.com/intl-fr/track/4WlYmInKMOBR2NNZBLRzJG?si=5e9e4fc501404529",
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                className: "group inline-block",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-3xl font-semibold text-gray-900 transition-all duration-300 ease-in-out group-hover:text-[#F20D01]",
+                                                    children: "5. Anges & Mouches"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/musique/page.tsx",
+                                                    lineNumber: 93,
+                                                    columnNumber: 17
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/musique/page.tsx",
+                                                lineNumber: 87,
                                                 columnNumber: 15
                                             }, this)
                                         ]
@@ -1145,12 +1200,12 @@ const BentoPage = ()=>{
                                             children: "Et beaucoup d'autres à venir..."
                                         }, void 0, false, {
                                             fileName: "[project]/app/musique/page.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 101,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/musique/page.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this)
                                 ]

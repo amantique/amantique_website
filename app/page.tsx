@@ -5,12 +5,13 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Navbar_Responsive from "./components/Navbar_responsive";
 import DatePage from "./date/page";
-// import DatePageResponsive from "./date/page_responsive";
+import ParolesPage from "./paroles/page";
 import MusiquePage from "./musique/page";
 import BioPage from "./bio/page";
 import PhotoPage from "./photo/page";
 import ContactPage from "./contact/page";
 import Footer from "./components/Footer";
+import ActusPage from "./actus/page";
 
 const HomePage: React.FC = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -18,8 +19,10 @@ const HomePage: React.FC = () => {
 
   // Références des sections
   const datePageRef = useRef<HTMLDivElement>(null);
+  const actusPageRef = useRef<HTMLDivElement>(null);
   const musiquePageRef = useRef<HTMLDivElement>(null);
   const bioPageRef = useRef<HTMLDivElement>(null);
+  const parolesPageRef = useRef<HTMLDivElement>(null);
   const photoPageRef = useRef<HTMLDivElement>(null);
   const contactPageRef = useRef<HTMLDivElement>(null);
 
@@ -79,6 +82,7 @@ const HomePage: React.FC = () => {
           onMusiqueClick={() => scrollToSection(musiquePageRef)}
           onBioClick={() => scrollToSection(bioPageRef)}
           onPhotoClick={() => scrollToSection(photoPageRef)}
+          onParolesClick={() => scrollToSection(parolesPageRef)}
         />
       )}
       <div className="w-full pt-20">
@@ -110,11 +114,16 @@ const HomePage: React.FC = () => {
         <MusiquePage />
       </div>
       <div ref={datePageRef}>
-        {/* {isSmallScreen ? (<DatePageResponsive />) : (<DatePage />)} */}
         <DatePage />
       </div>
+      {/* <div ref={actusPageRef}>
+        <ActusPage />
+      </div> */}
       <div ref={bioPageRef}>
         <BioPage />
+      </div>
+      <div ref={parolesPageRef}>
+        <ParolesPage />
       </div>
       <div ref={photoPageRef}>
         <PhotoPage />
