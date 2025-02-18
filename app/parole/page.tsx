@@ -1,9 +1,9 @@
 "use client";
 
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 
-const ParolePage = () => {
+const ParoleContent = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -50,6 +50,14 @@ const ParolePage = () => {
         </div>
       </div>
     </div>
+  );
+};
+
+const ParolePage = () => {
+  return (
+    <Suspense fallback={<div className="text-white text-center p-4">Chargement...</div>}>
+      <ParoleContent />
+    </Suspense>
   );
 };
 

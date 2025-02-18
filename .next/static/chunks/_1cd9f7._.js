@@ -16,7 +16,7 @@ var _s = __turbopack_refresh__.signature();
 "use client";
 ;
 ;
-const ParolePage = ()=>{
+const ParoleContent = ()=>{
     _s();
     const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -25,21 +25,21 @@ const ParolePage = ()=>{
     const title = decodeURIComponent(searchParams.get("title") || "Sans titre");
     const [text, setText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "ParolePage.useEffect": ()=>{
+        "ParoleContent.useEffect": ()=>{
             if (textFile) {
                 fetch(textFile).then({
-                    "ParolePage.useEffect": (response)=>{
+                    "ParoleContent.useEffect": (response)=>{
                         if (!response.ok) {
                             throw new Error("Fichier introuvable");
                         }
                         return response.text();
                     }
-                }["ParolePage.useEffect"]).then(setText).catch({
-                    "ParolePage.useEffect": ()=>setText("Impossible de charger le texte.")
-                }["ParolePage.useEffect"]);
+                }["ParoleContent.useEffect"]).then(setText).catch({
+                    "ParoleContent.useEffect": ()=>setText("Impossible de charger le texte.")
+                }["ParoleContent.useEffect"]);
             }
         }
-    }["ParolePage.useEffect"], [
+    }["ParoleContent.useEffect"], [
         textFile
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -104,16 +104,39 @@ const ParolePage = ()=>{
         columnNumber: 5
     }, this);
 };
-_s(ParolePage, "HuRuYgaFwRMsUplR5Mk8xPHc1P4=", false, function() {
+_s(ParoleContent, "HuRuYgaFwRMsUplR5Mk8xPHc1P4=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];
 });
-_c = ParolePage;
+_c = ParoleContent;
+const ParolePage = ()=>{
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Suspense"], {
+        fallback: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "text-white text-center p-4",
+            children: "Chargement..."
+        }, void 0, false, {
+            fileName: "[project]/app/parole/page.tsx",
+            lineNumber: 58,
+            columnNumber: 25
+        }, void 0),
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ParoleContent, {}, void 0, false, {
+            fileName: "[project]/app/parole/page.tsx",
+            lineNumber: 59,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/app/parole/page.tsx",
+        lineNumber: 58,
+        columnNumber: 5
+    }, this);
+};
+_c1 = ParolePage;
 const __TURBOPACK__default__export__ = ParolePage;
-var _c;
-__turbopack_refresh__.register(_c, "ParolePage");
+var _c, _c1;
+__turbopack_refresh__.register(_c, "ParoleContent");
+__turbopack_refresh__.register(_c1, "ParolePage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_refresh__.registerExports(module, globalThis.$RefreshHelpers$);
 }
