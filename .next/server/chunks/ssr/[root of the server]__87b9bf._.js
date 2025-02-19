@@ -2433,6 +2433,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const articles = [
     {
+        title: "SYNPRODUCTION",
+        subtitle: "À LA RENCONTRE DE… AMANTIQUE",
+        author: "",
+        image: "/img/live/153A1371.jpg",
+        category: "Vidéo",
+        url: "https://www.instagram.com/reel/DGOL2I0ojtL/?utm_source=ig_web_copy_link",
+        reverse: false
+    },
+    {
         title: "LA VAGUE PARALLELE",
         subtitle: "Amantique le bruit et la fureur",
         author: "Paul Mougeot",
@@ -2458,15 +2467,6 @@ const articles = [
         category: "Podcast",
         url: "https://soundcloud.com/user-393781883/totalement-rock-2-11-02-05-25?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
         reverse: true
-    },
-    {
-        title: "SYNPRODUCTION",
-        subtitle: "À LA RENCONTRE DE… AMANTIQUE",
-        author: "",
-        image: "/img/live/153A1371.jpg",
-        category: "Vidéo",
-        url: "https://www.instagram.com/reel/DGOL2I0ojtL/?utm_source=ig_web_copy_link",
-        reverse: false
     }
 ];
 const ActusPage = ()=>{
@@ -2643,13 +2643,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const articles = [
     {
+        title: "SYNPRODUCTION",
+        subtitle: "À LA RENCONTRE DE… AMANTIQUE",
+        author: "",
+        image: "/img/live/153A1371.jpg",
+        category: "Vidéo",
+        url: "https://www.instagram.com/reel/DGOL2I0ojtL/?utm_source=ig_web_copy_link",
+        reverse: false
+    },
+    {
         title: "LA VAGUE PARALLELE",
         subtitle: "Amantique le bruit et la fureur",
         author: "Paul Mougeot",
         image: "/img/live/153A1354.jpg",
         category: "Article",
         url: "https://lavagueparallele.com/amantique-le-bruit-et-la-fureur/",
-        reverse: false
+        reverse: true
     },
     {
         title: "HEXALIVE",
@@ -2658,7 +2667,7 @@ const articles = [
         image: "/img/live/153A1316.jpg",
         category: "Article",
         url: "https://hexalive.rocks/actualites/amantique-ep-a-sortir-le-17-fevrier/",
-        reverse: true
+        reverse: false
     },
     {
         title: "TOTALEMENT ROCK",
@@ -2667,15 +2676,6 @@ const articles = [
         image: "/img/live/153A1422.jpg",
         category: "Podcast",
         url: "https://soundcloud.com/user-393781883/totalement-rock-2-11-02-05-25?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        reverse: false
-    },
-    {
-        title: "SYNPRODUCTION",
-        subtitle: "À LA RENCONTRE DE… AMANTIQUE",
-        author: "",
-        image: "/img/live/153A1371.jpg",
-        category: "Vidéo",
-        url: "https://www.instagram.com/reel/DGOL2I0ojtL/?utm_source=ig_web_copy_link",
         reverse: true
     }
 ];
@@ -2683,14 +2683,7 @@ const ActusPageResponsive = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                style: {
-                    position: "absolute",
-                    left: "-9999px",
-                    top: "-9999px",
-                    width: "1px",
-                    height: "1px",
-                    overflow: "hidden"
-                },
+                className: "sr-only",
                 children: "amantique"
             }, void 0, false, {
                 fileName: "[project]/app/actus/actuse_responsive.tsx",
@@ -2705,52 +2698,53 @@ const ActusPageResponsive = ()=>{
                         children: "ACTUS"
                     }, void 0, false, {
                         fileName: "[project]/app/actus/actuse_responsive.tsx",
-                        lineNumber: 53,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "",
+                        className: "space-y-6",
                         children: articles.map((article, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                 href: article.url,
                                 target: "_blank",
                                 rel: "noopener noreferrer",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex w-full items-start bg-[#F20D01] text-white relative overflow-hidden cursor-pointer transition-transform transform hover:scale-105",
+                                    className: `flex flex-col md:flex-row w-full items-center bg-[#F20D01] text-white relative overflow-hidden cursor-pointer transition-transform transform hover:scale-105 ${article.reverse ? 'md:flex-row-reverse' : ''}`,
                                     children: [
-                                        !article.reverse && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "whitespace-nowrap text-right p-4",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `p-4 md:w-1/3 ${article.reverse ? 'text-left' : 'text-right'}`,
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-6xl",
+                                                    className: "text-4xl md:text-6xl",
                                                     children: article.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 61,
-                                                    columnNumber: 21
+                                                    lineNumber: 58,
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-4xl",
+                                                    className: "text-2xl md:text-4xl",
                                                     children: article.subtitle
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 62,
-                                                    columnNumber: 21
+                                                    lineNumber: 59,
+                                                    columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-xl",
                                                     children: article.author
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 63,
-                                                    columnNumber: 21
+                                                    lineNumber: 60,
+                                                    columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                            lineNumber: 60,
-                                            columnNumber: 19
+                                            lineNumber: 57,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative w-2/3 h-[300px]",
+                                            className: "relative w-full md:w-2/3 h-[300px]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     src: article.image,
@@ -2759,76 +2753,43 @@ const ActusPageResponsive = ()=>{
                                                     objectFit: "cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 67,
+                                                    lineNumber: 63,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute bottom-2 right-2 text-white text-5xl px-3 py-1 rounded-lg",
+                                                    className: "absolute bottom-2 right-2 text-white text-2xl md:text-5xl px-3 py-1 rounded-lg",
                                                     children: article.category
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 64,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 62,
                                             columnNumber: 17
-                                        }, this),
-                                        article.reverse && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "whitespace-nowrap text-right p-4",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-6xl",
-                                                    children: article.title
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 79,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-4xl",
-                                                    children: article.subtitle
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 80,
-                                                    columnNumber: 21
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-2xl",
-                                                    children: article.author
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 81,
-                                                    columnNumber: 21
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                            lineNumber: 78,
-                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                    lineNumber: 58,
+                                    lineNumber: 56,
                                     columnNumber: 15
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                lineNumber: 57,
+                                lineNumber: 55,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/actus/actuse_responsive.tsx",
-                        lineNumber: 55,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/actus/actuse_responsive.tsx",
-                lineNumber: 52,
+                lineNumber: 50,
                 columnNumber: 7
             }, this)
         ]
