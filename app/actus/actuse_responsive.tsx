@@ -6,6 +6,15 @@ import Link from "next/link";
 
 const articles = [
   {
+      title: "SYNPRODUCTION",
+      subtitle: "À LA RENCONTRE DE… AMANTIQUE",
+      author: "",
+      image: "/img/live/153A1371.jpg",
+      category: "Vidéo",
+      url: "https://www.instagram.com/reel/DGOL2I0ojtL/?utm_source=ig_web_copy_link",
+      reverse: true,
+  },
+  {
     title: "LA VAGUE PARALLELE",
     subtitle: "Amantique le bruit et la fureur",
     author: "Paul Mougeot",
@@ -31,15 +40,6 @@ const articles = [
     category: "Podcast",
     url: "https://soundcloud.com/user-393781883/totalement-rock-2-11-02-05-25?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     reverse: false,
-  },
-  {
-    title: "SYNPRODUCTION",
-    subtitle: "À LA RENCONTRE DE… AMANTIQUE",
-    author: "",
-    image: "/img/live/153A1371.jpg",
-    category: "Vidéo",
-    url: "https://www.instagram.com/reel/DGOL2I0ojtL/?utm_source=ig_web_copy_link",
-    reverse: true,
   },
 ];
 
