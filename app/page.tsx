@@ -11,7 +11,8 @@ import BioPage from "./bio/page";
 import PhotoPage from "./photo/page";
 import ContactPage from "./contact/page";
 import Footer from "./components/Footer";
-// import ActusPage from "./actus/page";
+import ActusPage from "./actus/page";
+import ActusPageResponsive from "./actus/actuse_responsive";
 
 const HomePage: React.FC = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -19,7 +20,7 @@ const HomePage: React.FC = () => {
 
   // Références des sections
   const datePageRef = useRef<HTMLDivElement>(null);
-  // const actusPageRef = useRef<HTMLDivElement>(null);
+  const actusPageRef = useRef<HTMLDivElement>(null);
   const musiquePageRef = useRef<HTMLDivElement>(null);
   const bioPageRef = useRef<HTMLDivElement>(null);
   const parolesPageRef = useRef<HTMLDivElement>(null);
@@ -42,7 +43,7 @@ const HomePage: React.FC = () => {
 
   useEffect(() => {
     const checkWindowSize = () => {
-      setIsSmallScreen(window.innerWidth < 830);
+      setIsSmallScreen(window.innerWidth < 1020);
     };
 
     window.addEventListener("resize", checkWindowSize);
@@ -73,6 +74,7 @@ const HomePage: React.FC = () => {
           onBioClick={() => scrollToSection(bioPageRef)}
           onParoleClick={() => scrollToSection(parolesPageRef)}
           onPhotoClick={() => scrollToSection(photoPageRef)}
+          onActusClick={() => scrollToSection(actusPageRef)}
         />
       ) : (
         <Navbar
@@ -84,6 +86,7 @@ const HomePage: React.FC = () => {
           onBioClick={() => scrollToSection(bioPageRef)}
           onPhotoClick={() => scrollToSection(photoPageRef)}
           onParolesClick={() => scrollToSection(parolesPageRef)}
+          onActusClick={() => scrollToSection(actusPageRef)}
         />
       )}
       <div className="w-full pt-20">
@@ -117,9 +120,9 @@ const HomePage: React.FC = () => {
       <div ref={datePageRef}>
         <DatePage />
       </div>
-      {/* <div ref={actusPageRef}>
-        <ActusPage />
-      </div> */}
+      <div ref={actusPageRef}>
+        {isSmallScreen ? <ActusPageResponsive /> : <ActusPage />}
+      </div>
       <div ref={bioPageRef}>
         <BioPage />
       </div>
