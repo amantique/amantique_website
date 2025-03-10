@@ -1505,19 +1505,19 @@ const BioPage = ()=>{
                                         type: "video/mp4"
                                     }, void 0, false, {
                                         fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 29,
+                                        lineNumber: 27,
                                         columnNumber: 15
                                     }, this),
                                     "Votre navigateur ne supporte pas la balise vidéo."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/bio/page.tsx",
-                                lineNumber: 14,
+                                lineNumber: 12,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/bio/page.tsx",
-                            lineNumber: 13,
+                            lineNumber: 11,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1530,7 +1530,7 @@ const BioPage = ()=>{
                                         children: "BIO"
                                     }, void 0, false, {
                                         fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 37,
+                                        lineNumber: 34,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1541,132 +1541,262 @@ const BioPage = ()=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "font-medium leading-relaxed mb-4",
                                                     children: [
-                                                        "Fondé en ",
+                                                        "Quatuor parisiano-nantais né en ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
                                                             children: "2023"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 43,
-                                                            columnNumber: 31
+                                                            lineNumber: 39,
+                                                            columnNumber: 53
                                                         }, this),
-                                                        ", venant de ",
+                                                        " aux membres affectueux et aux visages pileux, produisant du ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "Nantes"
+                                                            children: "rock alternatif punkifié"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 43,
-                                                            columnNumber: 82
+                                                            lineNumber: 39,
+                                                            columnNumber: 153
                                                         }, this),
-                                                        " et ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "Paris"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 43,
-                                                            columnNumber: 127
-                                                        }, this),
-                                                        ", Amantique est un groupe de ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "rock alternatif/psyché"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 44,
-                                                            columnNumber: 48
-                                                        }, this),
-                                                        " avec du ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "chant en français"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 44,
-                                                            columnNumber: 115
-                                                        }, this),
-                                                        ". C’est une musique géignarde, qui se traduit par d’intenses gémissements de 4 à 6 minutes, le tout rendu possible par une communication affectueuse entre les membres du groupe, tous allant de 19 à 23 ans."
+                                                        " dans la langue de Molière."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/bio/page.tsx",
-                                                    lineNumber: 42,
+                                                    lineNumber: 38,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "font-medium leading-relaxed mb-4",
                                                     children: [
-                                                        "La musique d’Amantique est influencée par des groupes tels que les ",
+                                                        "Amantique s'est fondé sur la volonté de créer une ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "musique nouvelle"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 42,
+                                                            columnNumber: 76
+                                                        }, this),
+                                                        ", mêlant une fondation instrumentale explosive, brutale mais aussi sensible, pleine d'empathie, avec un chant en français lui hurlant dessus, et qui parfois, avec rancœur et déséquilibre, lui chuchote quelques mots d'amour."
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 41,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "font-medium leading-relaxed mb-4",
+                                                    children: [
+                                                        "Amantique aime s'hydrater et prend plaisir à puiser dans de multiples sources, allant des ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
                                                             children: "Red Hot Chili Peppers"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 49,
-                                                            columnNumber: 88
+                                                            lineNumber: 45,
+                                                            columnNumber: 116
                                                         }, this),
-                                                        ", ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "Feu! Chatterton"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 49,
-                                                            columnNumber: 146
-                                                        }, this),
-                                                        ", ",
+                                                        ", à ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
                                                             children: "Viagra Boys"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 50,
-                                                            columnNumber: 23
+                                                            lineNumber: 45,
+                                                            columnNumber: 176
                                                         }, this),
-                                                        " ou encore ",
+                                                        ", en passant par ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
                                                             children: "Pogo Car Crash Control"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 50,
-                                                            columnNumber: 80
+                                                            lineNumber: 45,
+                                                            columnNumber: 239
                                                         }, this),
-                                                        ". Le batteur explose, les lignes de basses ont chacune un Haut Potentiel Émotionnel (HPE), le guitariste s’appelle Samuel et le chanteur, Louis, a une puissante moustache."
+                                                        " ou encore ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "Feu! Chatterton"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 45,
+                                                            columnNumber: 307
+                                                        }, this),
+                                                        ". Les membres ont tous entre ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "19 et 24 ans"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 45,
+                                                            columnNumber: 386
+                                                        }, this),
+                                                        ", et comptent bien aller au moins jusqu'à ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "20 et 25 ans"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 45,
+                                                            columnNumber: 480
+                                                        }, this),
+                                                        "."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/bio/page.tsx",
-                                                    lineNumber: 48,
+                                                    lineNumber: 44,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "font-medium leading-relaxed mb-4",
                                                     children: [
+                                                        "Une communication affectueuse entre eux rend leurs rapports sains, équilibrés et modernes. Amantique cherche le ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "Amantique"
+                                                            children: "mouvement"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 48,
+                                                            columnNumber: 133
+                                                        }, this),
+                                                        ", d'une foule, de l'aile d'une mouche, d'une tête qui se laisse bercer, d'une moustache ou d'une grosse caisse."
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 47,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "font-medium leading-relaxed mb-4",
+                                                    children: [
+                                                        "Été ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "2024"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 51,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        ", le groupe a enregistré son premier ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: 'EP "Laurent&qot;'
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 51,
+                                                            columnNumber: 101
+                                                        }, this),
+                                                        " au Studio Arpège à Nantes, le tout mixé par le superbe anglais ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "Alistair Groves"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 51,
+                                                            columnNumber: 221
+                                                        }, this),
+                                                        " au ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "Motor Museum Studio"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 51,
+                                                            columnNumber: 275
+                                                        }, this),
+                                                        " à Liverpool (Oasis, Arctic Monkeys, Bring Me The Horizon...) et masterisé par l'aussi superbe et anglais ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "Grant Berry"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 51,
+                                                            columnNumber: 440
+                                                        }, this),
+                                                        " à Manchester (While She Sleeps, Busted...)."
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/bio/page.tsx",
+                                                    lineNumber: 50,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "font-medium leading-relaxed mb-4",
+                                                    children: [
+                                                        "Après une ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "trentaine de concerts"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 54,
-                                                            columnNumber: 21
+                                                            columnNumber: 31
                                                         }, this),
-                                                        " souhaite à travers sa musique en live offrir une ",
+                                                        " à Paris et en région parisienne, incluant des salles emblématiques tels que le ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "possibilité de se réunir"
+                                                            children: "Pop Up, le Supersonic"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 54,
-                                                            columnNumber: 115
+                                                            columnNumber: 167
                                                         }, this),
-                                                        ", de s’extraire un temps de nos existences individuelles: ",
+                                                        " ou encore ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "créer du mouvement"
+                                                            children: "l'International"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 55,
-                                                            columnNumber: 77
+                                                            lineNumber: 54,
+                                                            columnNumber: 234
+                                                        }, this),
+                                                        ", Amantique a sorti son ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "premier single &qot;Eau Salée&qot;"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 54,
+                                                            columnNumber: 313
+                                                        }, this),
+                                                        " le ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "11 octobre"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 54,
+                                                            columnNumber: 386
+                                                        }, this),
+                                                        ", suivi d’un second, ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "&qot;Anges & Mouches&qot;"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 54,
+                                                            columnNumber: 452
+                                                        }, this),
+                                                        " le ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "3 décembre"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 54,
+                                                            columnNumber: 516
+                                                        }, this),
+                                                        ", le tout en ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "font-bold",
+                                                            children: "2024"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/bio/page.tsx",
+                                                            lineNumber: 54,
+                                                            columnNumber: 574
                                                         }, this),
                                                         "."
                                                     ]
@@ -1678,166 +1808,57 @@ const BioPage = ()=>{
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "font-medium leading-relaxed mb-4",
                                                     children: [
-                                                        "Été 2024, ",
+                                                        "Leur premier EP ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "Amantique"
+                                                            children: "&qot;Laurent&qot;"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 58,
-                                                            columnNumber: 31
+                                                            lineNumber: 57,
+                                                            columnNumber: 37
                                                         }, this),
-                                                        " a enregistré son premier ",
+                                                        " est sorti le ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "EP. “Laurent”"
+                                                            children: "17 février 2025"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 58,
-                                                            columnNumber: 101
+                                                            lineNumber: 57,
+                                                            columnNumber: 103
                                                         }, this),
-                                                        " au Studio Arpège à Nantes, le tout mixé par l’anglais ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "Alistair Groves"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 59,
-                                                            columnNumber: 72
-                                                        }, this),
-                                                        " au ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "Motor Museum Studio"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 59,
-                                                            columnNumber: 126
-                                                        }, this),
-                                                        " à ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "Liverpool (Oasis, Arctic Monkeys, Bring Me The Horizon…)"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 59,
-                                                            columnNumber: 183
-                                                        }, this),
-                                                        " et masterisé par ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "Grant Berry à Manchester (While She Sleeps, Busted…)"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 60,
-                                                            columnNumber: 35
-                                                        }, this),
-                                                        "."
+                                                        ". Un gros caillou brut. Mais aussi un léger bourdonnement, celui d'un insecte qui, après avoir pondu de beaux œufs, s'en va marcher un coup."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/bio/page.tsx",
-                                                    lineNumber: 57,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "font-medium leading-relaxed mb-4",
-                                                    children: [
-                                                        "Après une ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "vingtaine de concerts à Paris et en région parisienne"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 63,
-                                                            columnNumber: 31
-                                                        }, this),
-                                                        ", incluant des salles emblématiques tels que le ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "Pop Up, le Supersonic ou encore l’International"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 64,
-                                                            columnNumber: 28
-                                                        }, this),
-                                                        ", Amantique a sorti son ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "premier single “Eau Salée”"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 64,
-                                                            columnNumber: 134
-                                                        }, this),
-                                                        " le ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "11 octobre dernier"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 65,
-                                                            columnNumber: 43
-                                                        }, this),
-                                                        ", suivi d’un second nommé ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "“Anges & Mouches”"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 65,
-                                                            columnNumber: 122
-                                                        }, this),
-                                                        ", souhaitant défendre un ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "premier projet musical rempli d’émotions"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 66,
-                                                            columnNumber: 44
-                                                        }, this),
-                                                        ", en disant déjà beaucoup sur ",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "font-bold",
-                                                            children: "eux et leur musique"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/bio/page.tsx",
-                                                            lineNumber: 66,
-                                                            columnNumber: 149
-                                                        }, this),
-                                                        "."
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/app/bio/page.tsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 56,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/bio/page.tsx",
-                                            lineNumber: 41,
+                                            lineNumber: 37,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/bio/page.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 36,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/bio/page.tsx",
-                                lineNumber: 36,
+                                lineNumber: 33,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/bio/page.tsx",
-                            lineNumber: 35,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/bio/page.tsx",
-                    lineNumber: 11,
+                    lineNumber: 10,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
