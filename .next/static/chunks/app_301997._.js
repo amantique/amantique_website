@@ -1709,7 +1709,7 @@ const BioPage = ()=>{
                                                         ", le groupe a enregistré son premier ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: 'EP "Laurent&qot;'
+                                                            children: 'EP "Laurent"'
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 51,
@@ -1722,7 +1722,7 @@ const BioPage = ()=>{
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 51,
-                                                            columnNumber: 221
+                                                            columnNumber: 222
                                                         }, this),
                                                         " au ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1731,7 +1731,7 @@ const BioPage = ()=>{
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 51,
-                                                            columnNumber: 275
+                                                            columnNumber: 276
                                                         }, this),
                                                         " à Liverpool (Oasis, Arctic Monkeys, Bring Me The Horizon...) et masterisé par l'aussi superbe et anglais ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1740,7 +1740,7 @@ const BioPage = ()=>{
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 51,
-                                                            columnNumber: 440
+                                                            columnNumber: 441
                                                         }, this),
                                                         " à Manchester (While She Sleeps, Busted...)."
                                                     ]
@@ -1782,7 +1782,7 @@ const BioPage = ()=>{
                                                         ", Amantique a sorti son ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "premier single &qot;Eau Salée&qot;"
+                                                            children: 'premier single "Eau Salée"'
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 54,
@@ -1795,16 +1795,16 @@ const BioPage = ()=>{
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 54,
-                                                            columnNumber: 386
+                                                            columnNumber: 388
                                                         }, this),
                                                         ", suivi d’un second, ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "&qot;Anges & Mouches&qot;"
+                                                            children: '"Anges & Mouches"'
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 54,
-                                                            columnNumber: 452
+                                                            columnNumber: 454
                                                         }, this),
                                                         " le ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1813,7 +1813,7 @@ const BioPage = ()=>{
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 54,
-                                                            columnNumber: 516
+                                                            columnNumber: 520
                                                         }, this),
                                                         ", le tout en ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1822,7 +1822,7 @@ const BioPage = ()=>{
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 54,
-                                                            columnNumber: 574
+                                                            columnNumber: 578
                                                         }, this),
                                                         "."
                                                     ]
@@ -1837,7 +1837,7 @@ const BioPage = ()=>{
                                                         "Leur premier EP ",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                             className: "font-bold",
-                                                            children: "&qot;Laurent&qot;"
+                                                            children: '"Laurent"'
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 57,
@@ -1850,7 +1850,7 @@ const BioPage = ()=>{
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/bio/page.tsx",
                                                             lineNumber: 57,
-                                                            columnNumber: 103
+                                                            columnNumber: 105
                                                         }, this),
                                                         ". Un gros caillou brut. Mais aussi un léger bourdonnement, celui d'un insecte qui, après avoir pondu de beaux œufs, s'en va marcher un coup."
                                                     ]
