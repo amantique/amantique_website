@@ -5,6 +5,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Navbar_Responsive from "./components/Navbar_responsive";
 import DatePage from "./date/page";
+import VideoPage from "./video/page";
 import ParolesPage from "./paroles/page";
 import MusiquePage from "./musique/page";
 import BioPage from "./bio/page";
@@ -20,6 +21,7 @@ const HomePage: React.FC = () => {
 
   // Références des sections
   const datePageRef = useRef<HTMLDivElement>(null);
+  const videoPageRef = useRef<HTMLDivElement>(null);
   const actusPageRef = useRef<HTMLDivElement>(null);
   const musiquePageRef = useRef<HTMLDivElement>(null);
   const bioPageRef = useRef<HTMLDivElement>(null);
@@ -43,7 +45,7 @@ const HomePage: React.FC = () => {
 
   useEffect(() => {
     const checkWindowSize = () => {
-      setIsSmallScreen(window.innerWidth < 1020);
+      setIsSmallScreen(window.innerWidth < 1250);
     };
 
     window.addEventListener("resize", checkWindowSize);
@@ -70,6 +72,7 @@ const HomePage: React.FC = () => {
           className="sticky top-0 z-50"
           onContactClick={() => scrollToSection(contactPageRef)}
           onDateClick={() => scrollToSection(datePageRef)}
+          onVideoClick={() => scrollToSection(videoPageRef)}
           onMusiqueClick={() => scrollToSection(musiquePageRef)}
           onBioClick={() => scrollToSection(bioPageRef)}
           onParoleClick={() => scrollToSection(parolesPageRef)}
@@ -82,6 +85,7 @@ const HomePage: React.FC = () => {
           className="sticky top-0 z-50"
           onContactClick={() => scrollToSection(contactPageRef)}
           onDateClick={() => scrollToSection(datePageRef)}
+          onVideoClick={() => scrollToSection(videoPageRef)}
           onMusiqueClick={() => scrollToSection(musiquePageRef)}
           onBioClick={() => scrollToSection(bioPageRef)}
           onPhotoClick={() => scrollToSection(photoPageRef)}
@@ -119,6 +123,9 @@ const HomePage: React.FC = () => {
       </div>
       <div ref={datePageRef}>
         <DatePage />
+      </div>
+      <div ref={videoPageRef}>
+        <VideoPage />
       </div>
       <div ref={actusPageRef}>
         {isSmallScreen ? <ActusPageResponsive /> : <ActusPage />}

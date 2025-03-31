@@ -7,6 +7,7 @@ interface NavbarProps {
   className?: string;
   onContactClick?: () => void;
   onDateClick?: () => void;
+  onVideoClick?: () => void;
   onMusiqueClick?: () => void;
   onBioClick?: () => void;
   onPhotoClick?: () => void;
@@ -15,7 +16,7 @@ interface NavbarProps {
 }
 
 // Définition du composant Navbar avec forwardRef
-const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick, onParolesClick, onActusClick }, ref) => {
+const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onVideoClick, onMusiqueClick, onBioClick, onPhotoClick, onParolesClick, onActusClick }, ref) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -51,10 +52,16 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
           <Image src="/img/icon/spotify_red.png" alt="Spotify Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
 
-        {/* Apple Music */}
+        {/* Apple */}
         <a href="https://music.apple.com/fr/artist/amantique/1771329106" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
           <Image src="/img/icon/apple.png" alt="Apple Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
           <Image src="/img/icon/apple_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+        </a>
+
+        {/* Deezer */}
+        <a href="https://dzr.page.link/18ZrTtkM344FGeA77" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/deezer.png" alt="Apple Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/deezer_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
 
         {/* Instagram */}
@@ -69,16 +76,16 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
           <Image src="/img/icon/facebook_red.png" alt="Facebook Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
 
-        {/* TikTok */}
-        <a href="https://www.tiktok.com/@amantique_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/tiktok.png" alt="TikTok Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/tiktok_red.png" alt="TikTok Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
-
         {/* YouTube */}
         <a href="https://www.youtube.com/@Amantique" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
           <Image src="/img/icon/youtube.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
           <Image src="/img/icon/youtube_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+        </a>
+
+        {/* Bandcamp */}
+        <a href="https://amantique.bandcamp.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/bandcamp.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/bandcamp_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
       </div>
 
@@ -115,6 +122,16 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
           className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
         >
           DATES
+        </a>
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault(); 
+            onVideoClick?.(); 
+          }}
+          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
+        >
+          VIDÉOS
         </a>
         <a
           href="#"

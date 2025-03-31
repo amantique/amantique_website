@@ -7,6 +7,7 @@ interface NavbarProps {
   className?: string;
   onContactClick?: () => void;
   onDateClick?: () => void;
+  onVideoClick?: () => void;
   onMusiqueClick?: () => void;
   onBioClick?: () => void;
   onPhotoClick?: () => void;
@@ -15,7 +16,7 @@ interface NavbarProps {
 }
 
 // Définition du composant Navbar avec forwardRef
-const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onMusiqueClick, onBioClick, onPhotoClick, onParoleClick, onActusClick }, ref) => {
+const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onVideoClick, onMusiqueClick, onBioClick, onPhotoClick, onParoleClick, onActusClick }, ref) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // Gestion de l'état du menu mobile
 
@@ -98,6 +99,17 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
             href="#"
             onClick={(e) => {
               e.preventDefault();
+              onVideoClick?.();
+              closeMenu(); // Ferme le menu après le clic
+            }}
+            className="hover:text-[#F20D01] transition-colors duration-300"
+          >
+            VIDÉOS
+          </a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
               onActusClick?.();
               closeMenu(); // Ferme le menu après le clic
             }}
@@ -154,23 +166,46 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
 
       {/* Conteneur des icônes sociaux visible sur mobile et desktop */}
       <div className="hidden lg:flex space-x-4">
-        <a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/spotify.png" alt="Spotify Icon" width={20} height={20} />
+        {/* Spotify */}
+        <a href="https://open.spotify.com/intl-fr/artist/1gUDo746RvvVVY3lbL2r7N?si=9xiGodwdSca93pMnkZ37-w" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/spotify.png" alt="Spotify Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/spotify_red.png" alt="Spotify Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
-        <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/apple.png" alt="Apple Music Icon" width={20} height={20} />
+
+        {/* Apple */}
+        <a href="https://music.apple.com/fr/artist/amantique/1771329106" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/apple.png" alt="Apple Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/apple_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/instagram.png" alt="Instagram Icon" width={20} height={20} />
+
+        {/* Deezer */}
+        <a href="https://dzr.page.link/18ZrTtkM344FGeA77" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/deezer.png" alt="Apple Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/deezer_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/facebook.png" alt="Facebook Icon" width={20} height={20} />
+
+        {/* Instagram */}
+        <a href="https://www.instagram.com/amantique._/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/instagram.png" alt="Instagram Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/instagram_red.png" alt="Instagram Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
-        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/tiktok.png" alt="TikTok Icon" width={20} height={20} />
+
+        {/* Facebook */}
+        <a href="https://www.facebook.com/profile.php?id=100091951621434" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/facebook.png" alt="Facebook Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/facebook_red.png" alt="Facebook Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
-        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/youtube.png" alt="YouTube Icon" width={20} height={20} />
+
+        {/* YouTube */}
+        <a href="https://www.youtube.com/@Amantique" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/youtube.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/youtube_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+        </a>
+
+        {/* Bandcamp */}
+        <a href="https://amantique.bandcamp.com" target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center transition-transform transform hover:scale-150">
+          <Image src="/img/icon/bandcamp.png" alt="Bandcamp Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/bandcamp_red.png" alt="Bandcamp Icon Hover" width={20} height={20} className="absolute rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
       </div>
     </nav>

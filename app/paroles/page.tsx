@@ -28,12 +28,12 @@ const ParolesPage = () => {
   };
 
   return (
-    <div className="flex flex-col w-full h-screen">
+    <div className="flex flex-col w-full h-screen bg-black">
       <div className="relative w-full ">
         {/* Fond de l'image derrière le titre */}
         <div className="absolute inset-0">
           <Image
-            src="/img/live/PA110065-Enhanced-NR copie.jpg"
+            src="/img/live/PB150201-Edit_modified.jpg"
             alt="Background Image"
             fill
             className="z-0 object-cover"

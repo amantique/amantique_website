@@ -132,6 +132,40 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://dzr.page.link/18ZrTtkM344FGeA77",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/img/icon/deezer.png",
+                                alt: "Apple Icon",
+                                width: 20,
+                                height: 20,
+                                className: "rounded-md transition-opacity duration-300"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/Navbar.tsx",
+                                lineNumber: 62,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/img/icon/deezer_red.png",
+                                alt: "Apple Icon Hover",
+                                width: 20,
+                                height: 20,
+                                className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/Navbar.tsx",
+                                lineNumber: 63,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/Navbar.tsx",
+                        lineNumber: 61,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "https://www.instagram.com/amantique._/",
                         target: "_blank",
                         rel: "noopener noreferrer",
@@ -145,7 +179,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 62,
+                                lineNumber: 68,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -156,13 +190,13 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 63,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 61,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -179,46 +213,12 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                                 className: "rounded-md transition-opacity duration-300"
                             }, void 0, false, {
                                 fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 68,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 src: "/img/icon/facebook_red.png",
                                 alt: "Facebook Icon Hover",
-                                width: 20,
-                                height: 20,
-                                className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 69,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 67,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                        href: "https://www.tiktok.com/@amantique_?is_from_webapp=1&sender_device=pc",
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        className: "transition-transform transform hover:scale-150",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                src: "/img/icon/tiktok.png",
-                                alt: "TikTok Icon",
-                                width: 20,
-                                height: 20,
-                                className: "rounded-md transition-opacity duration-300"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/Navbar.tsx",
-                                lineNumber: 74,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                src: "/img/icon/tiktok_red.png",
-                                alt: "TikTok Icon Hover",
                                 width: 20,
                                 height: 20,
                                 className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
@@ -266,6 +266,40 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         fileName: "[project]/app/components/Navbar.tsx",
                         lineNumber: 79,
                         columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://amantique.bandcamp.com",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/img/icon/bandcamp.png",
+                                alt: "YouTube Icon",
+                                width: 20,
+                                height: 20,
+                                className: "rounded-md transition-opacity duration-300"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/Navbar.tsx",
+                                lineNumber: 86,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/img/icon/bandcamp_red.png",
+                                alt: "YouTube Icon Hover",
+                                width: 20,
+                                height: 20,
+                                className: "absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/Navbar.tsx",
+                                lineNumber: 87,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/Navbar.tsx",
+                        lineNumber: 85,
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
@@ -286,12 +320,12 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                     children: "AMANTIQUE"
                 }, void 0, false, {
                     fileName: "[project]/app/components/Navbar.tsx",
-                    lineNumber: 87,
+                    lineNumber: 93,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/Navbar.tsx",
-                lineNumber: 86,
+                lineNumber: 92,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -307,7 +341,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         children: "MUSIQUES"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 99,
+                        lineNumber: 105,
                         columnNumber: 7
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -320,7 +354,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         children: "DATES"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 109,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -333,7 +367,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         children: "ACTUS"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 119,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -346,7 +380,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         children: "BIO"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 129,
+                        lineNumber: 135,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -359,7 +393,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         children: "PAROLES"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 139,
+                        lineNumber: 145,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -372,7 +406,7 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         children: "PHOTOS"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 149,
+                        lineNumber: 155,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -385,13 +419,13 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         children: "CONTACTS"
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar.tsx",
-                        lineNumber: 159,
+                        lineNumber: 165,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/Navbar.tsx",
-                lineNumber: 98,
+                lineNumber: 104,
                 columnNumber: 7
             }, this)
         ]
@@ -662,6 +696,26 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://dzr.page.link/18ZrTtkM344FGeA77",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/img/icon/deezer.png",
+                            alt: "Apple Music Icon",
+                            width: 20,
+                            height: 20
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 164,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 163,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "https://www.instagram.com",
                         target: "_blank",
                         rel: "noopener noreferrer",
@@ -673,12 +727,12 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                             height: 20
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar_responsive.tsx",
-                            lineNumber: 164,
+                            lineNumber: 167,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar_responsive.tsx",
-                        lineNumber: 163,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -693,12 +747,12 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                             height: 20
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar_responsive.tsx",
-                            lineNumber: 167,
+                            lineNumber: 170,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar_responsive.tsx",
-                        lineNumber: 166,
+                        lineNumber: 169,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -713,12 +767,12 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                             height: 20
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar_responsive.tsx",
-                            lineNumber: 170,
+                            lineNumber: 173,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar_responsive.tsx",
-                        lineNumber: 169,
+                        lineNumber: 172,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -733,12 +787,32 @@ const Navbar = /*#__PURE__*/ _s((0, __TURBOPACK__imported__module__$5b$project$5
                             height: 20
                         }, void 0, false, {
                             fileName: "[project]/app/components/Navbar_responsive.tsx",
-                            lineNumber: 173,
+                            lineNumber: 176,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/Navbar_responsive.tsx",
-                        lineNumber: 172,
+                        lineNumber: 175,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://amantique.bandcamp.com",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "transition-transform transform hover:scale-150",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/img/icon/bandcamp.png",
+                            alt: "YouTube Icon",
+                            width: 20,
+                            height: 20
+                        }, void 0, false, {
+                            fileName: "[project]/app/components/Navbar_responsive.tsx",
+                            lineNumber: 179,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/app/components/Navbar_responsive.tsx",
+                        lineNumber: 178,
                         columnNumber: 9
                     }, this)
                 ]
@@ -783,31 +857,41 @@ var _s = __turbopack_refresh__.signature();
 ;
 const upcomingEvents = [
     {
+        date: "05 • 04 - Paris (75)",
+        location: "SUPERSONIC RECORDS",
+        image: "/img/poster/05_04_25.jpg",
+        link: "https://www.instagram.com/p/DHrBoHaMOKc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        label: undefined
+    }
+];
+const pastEvents = [
+    {
         date: "27 • 02 - Bagnolet (93)",
         location: "LE SAMPLE",
         image: "/img/poster/27_02_25.jpeg",
         link: "https://www.helloasso.com/associations/elephant-joli-mais-veneneux/evenements/release-party-amantique-le-sample-27-02-2025-2",
         label: "RELEASE"
-    }
-];
-const pastEvents = [
+    },
     {
         date: "05 • 02 - Paris (75)",
         location: "L'ALIMENTATION GÉNÉRALE",
         image: "/img/poster/05_02_25.jpeg",
-        link: "https://www.instagram.com/p/DFiiCRBINEm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        link: "https://www.instagram.com/p/DFiiCRBINEm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        label: undefined
     },
     {
         date: "31 • 01 - Paris (75)",
         location: "GILBERT DISC",
         image: "/img/poster/31_01_25.jpg",
-        link: "https://www.instagram.com/p/DE72DoCoOOZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        link: "https://www.instagram.com/p/DE72DoCoOOZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        label: undefined
     },
     {
         date: "15 • 01 - Paris (75)",
         location: "CIRQUE ÉLECTRIQUE",
         image: "/img/poster/15_01_25.jpg",
-        link: "https://www.instagram.com/p/DEiFBTuIL3B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        link: "https://www.instagram.com/p/DEiFBTuIL3B/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        label: undefined
     },
     {
         date: "05 • 12 - Paris (75)",
@@ -820,7 +904,8 @@ const pastEvents = [
         date: "15 • 11 - Paris (75)",
         location: "LA MÉCANIQUE ONDULATOIRE",
         image: "/img/poster/15_11_24.jpg",
-        link: "https://www.instagram.com/p/DCChdLLoNCU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+        link: "https://www.instagram.com/p/DCChdLLoNCU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        label: undefined
     },
     {
         date: "11 • 10 - Paris (75)",
@@ -845,7 +930,7 @@ const ContactPage = ()=>{
                 children: "DATES"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 64,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -853,7 +938,7 @@ const ContactPage = ()=>{
                 children: "À VENIR"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 67,
+                lineNumber: 77,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -873,7 +958,7 @@ const ContactPage = ()=>{
                                     className: "object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 82,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -884,7 +969,7 @@ const ContactPage = ()=>{
                                             children: event.date
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 84,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -892,13 +977,13 @@ const ContactPage = ()=>{
                                             children: event.location
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 85,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 83,
                                     columnNumber: 15
                                 }, this),
                                 event.label && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -906,23 +991,23 @@ const ContactPage = ()=>{
                                     children: event.label
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 87,
                                     columnNumber: 31
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 71,
+                            lineNumber: 81,
                             columnNumber: 13
                         }, this)
                     }, index, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 70,
+                        lineNumber: 80,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 68,
+                lineNumber: 78,
                 columnNumber: 7
             }, this),
             visibleUpcoming < upcomingEvents.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -931,7 +1016,7 @@ const ContactPage = ()=>{
                 children: "Afficher plus"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 83,
+                lineNumber: 93,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -939,7 +1024,7 @@ const ContactPage = ()=>{
                 children: "TROP TARD..."
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 87,
+                lineNumber: 97,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -959,7 +1044,7 @@ const ContactPage = ()=>{
                                     className: "object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 92,
+                                    lineNumber: 102,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -970,7 +1055,7 @@ const ContactPage = ()=>{
                                             children: event.date
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 94,
+                                            lineNumber: 104,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -978,13 +1063,13 @@ const ContactPage = ()=>{
                                             children: event.location
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 105,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 93,
+                                    lineNumber: 103,
                                     columnNumber: 15
                                 }, this),
                                 event.label && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -992,23 +1077,23 @@ const ContactPage = ()=>{
                                     children: event.label
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 107,
                                     columnNumber: 31
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 91,
+                            lineNumber: 101,
                             columnNumber: 13
                         }, this)
                     }, index, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 90,
+                        lineNumber: 100,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 88,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             visiblePast < pastEvents.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1017,13 +1102,13 @@ const ContactPage = ()=>{
                 children: "Afficher plus"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 103,
+                lineNumber: 113,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/date/page.tsx",
-        lineNumber: 63,
+        lineNumber: 73,
         columnNumber: 5
     }, this);
 };
@@ -1099,7 +1184,7 @@ const ParolesPage = ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            src: "/img/live/PA110065-Enhanced-NR copie.jpg",
+                            src: "/img/live/PB150201-Edit_modified.jpg",
                             alt: "Background Image",
                             fill: true,
                             className: "z-0 object-cover"
