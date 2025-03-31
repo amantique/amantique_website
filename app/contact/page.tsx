@@ -34,6 +34,15 @@ const ContactPage = () => {
               </p>
             </div>
 
+            {/* Téléphone */}
+            <div className="bg-white p-4 rounded-lg shadow-md mt-7 max-w-md mx-auto">
+              <p className="text-3xl text-gray-600">
+                <a href="tel:+33782140660" className="text-[#F20D01] hover:underline">
+                  +33 7 82 14 06 60
+                </a>
+              </p>
+            </div>
+
             {/* Réseaux sociaux */}
             <div className="bg-white p-4 rounded-lg shadow-md max-w-md mx-auto">
               <div className="flex justify-center space-x-6">
