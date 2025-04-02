@@ -58,7 +58,7 @@ const pastEvents = [
   },
   {
     date: "11 • 10 - Paris (75)",
-    location: "LA MÉCANIQUE ONDULATOIRE",
+    location: "POPUP DU LABEL",
     image: "/img/poster/11_10_24.jpg",
     link: "https://www.instagram.com/p/DA6I3iPoDPH/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     label: "RELEASE",

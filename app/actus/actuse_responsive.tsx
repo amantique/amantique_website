@@ -24,13 +24,22 @@ const articles = [
     reverse: true,
   },
   {
+    title: "RADIO CAMPUS",
+    subtitle: "LA TRANCHE - Amantique",
+    author: "Faustine Moulin",
+    image: "/img/live/153A1185.jpg",
+    category: "Podcast",
+    url: "https://open.spotify.com/episode/3lzq7sMzpsIuqzZ4w7Jp5m?si=r7x-IJpmQpWXw8xh8OzYSg",
+    reverse: false,
+  },
+  {
     title: "HEXALIVE",
     subtitle: "Amantique, EP à sortir le 17 février",
     author: "Gafish",
     image: "/img/live/153A1316.jpg",
     category: "Article",
     url: "https://hexalive.rocks/actualites/amantique-ep-a-sortir-le-17-fevrier/",
-    reverse: false,
+    reverse: true,
   },
   {
     title: "TOTALEMENT ROCK",
@@ -39,7 +48,7 @@ const articles = [
     image: "/img/live/153A1422.jpg",
     category: "Podcast",
     url: "https://soundcloud.com/user-393781883/totalement-rock-2-11-02-05-25?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-    reverse: true,
+    reverse: false,
   },
 ];
 

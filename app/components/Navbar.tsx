@@ -46,6 +46,18 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
       <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
       {/* Conteneur pour les icônes sociaux */}
       <div className="flex items-center justify-between space-x-3">
+        {/* Bandcamp */}
+        <a href="https://amantique.bandcamp.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/bandcamp.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/bandcamp_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+        </a>
+
+        {/* Instagram */}
+        <a href="https://www.instagram.com/amantique._/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
+          <Image src="/img/icon/instagram.png" alt="Instagram Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
+          <Image src="/img/icon/instagram_red.png" alt="Instagram Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
+        </a>
+
         {/* Spotify */}
         <a href="https://open.spotify.com/intl-fr/artist/1gUDo746RvvVVY3lbL2r7N?si=9xiGodwdSca93pMnkZ37-w" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
           <Image src="/img/icon/spotify.png" alt="Spotify Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
@@ -64,12 +76,6 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
           <Image src="/img/icon/deezer_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
 
-        {/* Instagram */}
-        <a href="https://www.instagram.com/amantique._/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/instagram.png" alt="Instagram Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/instagram_red.png" alt="Instagram Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
-
         {/* Facebook */}
         <a href="https://www.facebook.com/profile.php?id=100091951621434" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
           <Image src="/img/icon/facebook.png" alt="Facebook Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
@@ -80,12 +86,6 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick
         <a href="https://www.youtube.com/@Amantique" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
           <Image src="/img/icon/youtube.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
           <Image src="/img/icon/youtube_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
-
-        {/* Bandcamp */}
-        <a href="https://amantique.bandcamp.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/bandcamp.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/bandcamp_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
         </a>
       </div>
 

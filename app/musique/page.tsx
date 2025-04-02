@@ -13,13 +13,13 @@ const BentoPage = () => {
         <div className="max-w-md mx-auto mb-4">
           <div className="flex justify-center space-x-6">
             {[
+              { href: "https://amantique.bandcamp.com", src: "/img/icon/bandcamp_red.png", alt: "Bandcamp"},
+              { href: "https://www.instagram.com/amantique._/", src: "/img/icon/instagram_red.png", alt: "Instagram" },
               { href: "https://open.spotify.com/intl-fr/artist/1gUDo746RvvVVY3lbL2r7N?si=9xiGodwdSca93pMnkZ37-w", src: "/img/icon/spotify_red.png", alt: "Spotify" },
               { href: "https://music.apple.com/fr/artist/amantique/1771329106", src: "/img/icon/apple_red.png", alt: "Apple Music" },
               { href: "https://dzr.page.link/18ZrTtkM344FGeA77", src: "/img/icon/deezer_red.png", alt: "Deezer" },
-              { href: "https://www.instagram.com/amantique._/", src: "/img/icon/instagram_red.png", alt: "Instagram" },
               { href: "https://www.facebook.com/profile.php?id=100091951621434", src: "/img/icon/facebook_red.png", alt: "Facebook" },
               { href: "https://www.youtube.com/@Amantique", src: "/img/icon/youtube_red.png", alt: "YouTube" },
-              { href: "https://amantique.bandcamp.com", src: "/img/icon/bandcamp_red.png", alt: "Bandcamp"} ,
             ].map((icon, index) => (
               <a key={index} href={icon.href} target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center transition-transform transform hover:scale-150">
                 <Image src={icon.src} alt={icon.alt} width={30} height={30} className="rounded-md" />
