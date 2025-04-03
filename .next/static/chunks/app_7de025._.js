@@ -1252,7 +1252,7 @@ const VideoPage = ()=>{
         },
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                className: "text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg",
+                className: "text-5xl sm:text-7xl lg:text-9xl text-white font-extrabold pt-4 drop-shadow-lg",
                 children: "VIDÉOS"
             }, void 0, false, {
                 fileName: "[project]/app/video/page.tsx",
@@ -1260,11 +1260,11 @@ const VideoPage = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col lg:flex-row items-center bg-black text-white relative overflow-hidden cursor-pointer transition-transform transform hover:scale-105 bg-opacity-80 px-4 mx-10 mt-6 rounded-lg shadow-lg",
+                className: "flex flex-col items-center text-white relative overflow-hidden cursor-pointer transition-transform transform hover:scale-105 bg-opacity-80 px-4 mx-6 sm:mx-10 mt-6",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative w-full h-[50em] self-center lg:self-auto mt-4 lg:mt-0",
+                    className: "relative w-full max-w-screen-lg aspect-video overflow-hidden mx-auto",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("iframe", {
-                        className: "w-full h-full rounded-lg",
+                        className: "w-full h-full",
                         src: "https://www.youtube.com/embed/alw4OCDB05Y",
                         title: "YouTube video player",
                         frameBorder: "0",
@@ -3092,7 +3092,7 @@ const ActusPageResponsive = ()=>{
                 children: "amantique"
             }, void 0, false, {
                 fileName: "[project]/app/actus/actuse_responsive.tsx",
-                lineNumber: 58,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3103,7 +3103,7 @@ const ActusPageResponsive = ()=>{
                         children: "ACTUS"
                     }, void 0, false, {
                         fileName: "[project]/app/actus/actuse_responsive.tsx",
-                        lineNumber: 60,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3123,7 +3123,7 @@ const ActusPageResponsive = ()=>{
                                                     children: article.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 67,
+                                                    lineNumber: 68,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3131,7 +3131,7 @@ const ActusPageResponsive = ()=>{
                                                     children: article.subtitle
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 69,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3139,13 +3139,13 @@ const ActusPageResponsive = ()=>{
                                                     children: article.author
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 70,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 67,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3158,7 +3158,7 @@ const ActusPageResponsive = ()=>{
                                                     objectFit: "cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 73,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3166,35 +3166,35 @@ const ActusPageResponsive = ()=>{
                                                     children: article.category
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 74,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 72,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                    lineNumber: 65,
+                                    lineNumber: 66,
                                     columnNumber: 15
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                lineNumber: 64,
+                                lineNumber: 65,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/actus/actuse_responsive.tsx",
-                        lineNumber: 62,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/actus/actuse_responsive.tsx",
-                lineNumber: 59,
+                lineNumber: 60,
                 columnNumber: 7
             }, this)
         ]

@@ -6,14 +6,14 @@ const VideoPage = () => {
       className="w-full text-center bg-cover bg-center bg-no-repeat text-[#0A0A0A] pb-10"
       style={{ backgroundImage: "url('/img/live/153A1422.jpg')" }}
     >
-      <h2 className="text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg">
+      <h2 className="text-5xl sm:text-7xl lg:text-9xl text-white font-extrabold pt-4 drop-shadow-lg">
         VIDÉOS
       </h2>
 
-      <div className="flex flex-col lg:flex-row items-center bg-black text-white relative overflow-hidden cursor-pointer transition-transform transform hover:scale-105 bg-opacity-80 px-4 mx-10 mt-6 rounded-lg shadow-lg">
-        <div className="relative w-full h-[50em] self-center lg:self-auto mt-4 lg:mt-0">
+      <div className="flex flex-col items-center text-white relative overflow-hidden cursor-pointer transition-transform transform hover:scale-105 bg-opacity-80 px-4 mx-6 sm:mx-10 mt-6">
+        <div className="relative w-full max-w-screen-lg aspect-video overflow-hidden mx-auto">
           <iframe
-            className="w-full h-full rounded-lg"
+            className="w-full h-full"
             src="https://www.youtube.com/embed/alw4OCDB05Y"
             title="YouTube video player"
             frameBorder="0"

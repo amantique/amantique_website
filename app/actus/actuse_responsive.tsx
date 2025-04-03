@@ -52,6 +52,7 @@ const articles = [
   },
 ];
 
+
 const ActusPageResponsive = () => {
   return (
     <>
