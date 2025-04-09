@@ -5,15 +5,29 @@ import Image from "next/image";
 
 const upcomingEvents = [
   {
+    date: "16 • 04 - Paris (75)",
+    location: "L'ALIMENTATION GÉNÉRALE",
+    image: "/img/poster/16_04_25.jpg",
+    link: "",
+    label: undefined,
+  },
+  {
+    date: "25 • 04 - Nantes (44)",
+    location: "POUM POUM T'CHACK",
+    image: "/img/poster/25_04_25.jpg",
+    link: "",
+    label: undefined,
+  },
+];
+
+const pastEvents = [
+  {
     date: "05 • 04 - Paris (75)",
     location: "SUPERSONIC RECORDS",
     image: "/img/poster/05_04_25.jpg",
     link: "https://www.instagram.com/p/DHrBoHaMOKc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     label: undefined,
   },
-];
-
-const pastEvents = [
   {
     date: "27 • 02 - Bagnolet (93)",
     location: "LE SAMPLE",
