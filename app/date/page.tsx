@@ -5,6 +5,16 @@ import Image from "next/image";
 
 const upcomingEvents = [
   {
+    date: "17 • 05 - Paris (75)",
+    location: "TRUSKEL",
+    image: "/img/poster/17_05_25.jpg",
+    link: "https://www.instagram.com/p/DJZlvE8MnNU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    label: "RELEASE - CLIP",
+  },
+];
+
+const pastEvents = [
+  {
     date: "16 • 04 - Paris (75)",
     location: "L'ALIMENTATION GÉNÉRALE",
     image: "/img/poster/16_04_25.jpg",
@@ -18,9 +28,6 @@ const upcomingEvents = [
     link: "",
     label: undefined,
   },
-];
-
-const pastEvents = [
   {
     date: "05 • 04 - Paris (75)",
     location: "SUPERSONIC RECORDS",

@@ -24,6 +24,15 @@ const articles = [
     reverse: false,
   },
   {
+    title: "LE SKIT",
+    subtitle: "Amantique, l'interview par Xaper",
+    author: "Xaper",
+    image: "/img/live/153A1222.jpg",
+    category: "Podcast",
+    url: "https://www.youtube.com/watch?v=9L2e5pLpxRE",
+    reverse: true,
+  },
+  {
     title: "RADIO CAMPUS",
     subtitle: "LA TRANCHE - Amantique",
     author: "Faustine Moulin",
@@ -39,7 +48,7 @@ const articles = [
     image: "/img/live/153A1316.jpg",
     category: "Article",
     url: "https://hexalive.rocks/actualites/amantique-ep-a-sortir-le-17-fevrier/",
-    reverse: true,
+    reverse: false,
   },
   {
     title: "TOTALEMENT ROCK",

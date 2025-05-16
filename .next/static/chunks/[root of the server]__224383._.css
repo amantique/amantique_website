@@ -4,6 +4,15 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
+  src: url("../media/gyByhwUxId8gMEwYGFWNOITddY4-s.b7d310ad.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: Geist;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
   src: url("../media/gyByhwUxId8gMEwSGFWNOITddY4-s.81df3a5b.woff2") format("woff2");
   unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -37,6 +46,15 @@
 
 
 /* [next]/internal/font/google/geist_mono_68a01160.module.css [app-client] (css) */
+@font-face {
+  font-family: Geist Mono;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../media/or3nQ6H_1_WfwkMZI_qYFrMdmhHkjkotbA-s.cb6bbcb1.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
 @font-face {
   font-family: Geist Mono;
   font-style: normal;
@@ -1092,11 +1110,6 @@ img, video {
   border-width: 1px;
 }
 
-.border-\[\#F20D01\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(242 13 1 / var(--tw-border-opacity, 1));
-}
-
 .bg-\[\#F20D01\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 13 1 / var(--tw-bg-opacity, 1));
@@ -1528,12 +1541,6 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:scale-150:hover {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
@@ -1547,10 +1554,6 @@ body {
 
 .hover\:bg-opacity-0:hover {
   --tw-bg-opacity: 0;
-}
-
-.hover\:tracking-wider:hover {
-  letter-spacing: .05em;
 }
 
 .hover\:text-\[\#F20D01\]:hover {
@@ -1571,10 +1574,6 @@ body {
   opacity: 1;
 }
 
-.hover\:opacity-90:hover {
-  opacity: .9;
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid #0000;
   outline-offset: 2px;
@@ -1591,14 +1590,6 @@ body {
 
 .group:hover .group-hover\:bg-white\/50 {
   background-color: #ffffff80;
-}
-
-.group:hover .group-hover\:bg-opacity-70 {
-  --tw-bg-opacity: .7;
-}
-
-.group:hover .group-hover\:tracking-wider {
-  letter-spacing: .05em;
 }
 
 .group:hover .group-hover\:text-\[\#F20D01\] {
@@ -1708,10 +1699,6 @@ body {
     width: 66.6667%;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1771,10 +1758,6 @@ body {
 
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:text-9xl {

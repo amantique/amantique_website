@@ -939,21 +939,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 const upcomingEvents = [
     {
+        date: "17 • 05 - Paris (75)",
+        location: "TRUSKEL",
+        image: "/img/poster/17_05_25.jpg",
+        link: "https://www.instagram.com/p/DJZlvE8MnNU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        label: "RELEASE - CLIP"
+    }
+];
+const pastEvents = [
+    {
         date: "16 • 04 - Paris (75)",
         location: "L'ALIMENTATION GÉNÉRALE",
         image: "/img/poster/16_04_25.jpg",
-        link: "https://www.instagram.com/p/DHrBoHaMOKc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        link: "",
         label: undefined
     },
     {
         date: "25 • 04 - Nantes (44)",
         location: "POUM POUM T'CHACK",
         image: "/img/poster/25_04_25.jpg",
-        link: "https://www.instagram.com/p/DHrBoHaMOKc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+        link: "",
         label: undefined
-    }
-];
-const pastEvents = [
+    },
     {
         date: "05 • 04 - Paris (75)",
         location: "SUPERSONIC RECORDS",
@@ -1024,7 +1031,7 @@ const ContactPage = ()=>{
                 }
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 89,
+                lineNumber: 96,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1032,7 +1039,7 @@ const ContactPage = ()=>{
                 children: "DATES"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 94,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1040,7 +1047,7 @@ const ContactPage = ()=>{
                 children: "À VENIR"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 99,
+                lineNumber: 106,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1060,7 +1067,7 @@ const ContactPage = ()=>{
                                     className: "object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 118,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1071,7 +1078,7 @@ const ContactPage = ()=>{
                                             children: event.date
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 126,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1079,13 +1086,13 @@ const ContactPage = ()=>{
                                             children: event.location
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 120,
+                                            lineNumber: 127,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 125,
                                     columnNumber: 15
                                 }, this),
                                 event.label && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1093,23 +1100,23 @@ const ContactPage = ()=>{
                                     children: event.label
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 130,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 110,
+                            lineNumber: 117,
                             columnNumber: 13
                         }, this)
                     }, index, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 104,
+                        lineNumber: 111,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 102,
+                lineNumber: 109,
                 columnNumber: 7
             }, this),
             visibleUpcoming < upcomingEvents.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1118,7 +1125,7 @@ const ContactPage = ()=>{
                 children: "Afficher plus"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 132,
+                lineNumber: 139,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1126,7 +1133,7 @@ const ContactPage = ()=>{
                 children: "TROP TARD..."
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 141,
+                lineNumber: 148,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1146,7 +1153,7 @@ const ContactPage = ()=>{
                                     className: "object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 160,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1157,7 +1164,7 @@ const ContactPage = ()=>{
                                             children: event.date
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 168,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1165,13 +1172,13 @@ const ContactPage = ()=>{
                                             children: event.location
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 169,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 160,
+                                    lineNumber: 167,
                                     columnNumber: 15
                                 }, this),
                                 event.label && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1179,23 +1186,23 @@ const ContactPage = ()=>{
                                     children: event.label
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 165,
+                                    lineNumber: 172,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 152,
+                            lineNumber: 159,
                             columnNumber: 13
                         }, this)
                     }, index, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 146,
+                        lineNumber: 153,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 144,
+                lineNumber: 151,
                 columnNumber: 7
             }, this),
             visiblePast < pastEvents.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1204,13 +1211,13 @@ const ContactPage = ()=>{
                 children: "Afficher plus"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 174,
+                lineNumber: 181,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/date/page.tsx",
-        lineNumber: 87,
+        lineNumber: 94,
         columnNumber: 5
     }, this);
 };
@@ -2777,6 +2784,15 @@ const articles = [
         reverse: false
     },
     {
+        title: "LE SKIT",
+        subtitle: "Amantique, l'interview par Xaper",
+        author: "Xaper",
+        image: "/img/live/153A1222.jpg",
+        category: "Podcast",
+        url: "https://www.youtube.com/watch?v=9L2e5pLpxRE",
+        reverse: true
+    },
+    {
         title: "RADIO CAMPUS",
         subtitle: "LA TRANCHE - Amantique",
         author: "Faustine Moulin",
@@ -2792,7 +2808,7 @@ const articles = [
         image: "/img/live/153A1316.jpg",
         category: "Article",
         url: "https://hexalive.rocks/actualites/amantique-ep-a-sortir-le-17-fevrier/",
-        reverse: true
+        reverse: false
     },
     {
         title: "TOTALEMENT ROCK",
@@ -2819,7 +2835,7 @@ const ActusPage = ()=>{
                 children: "amantique"
             }, void 0, false, {
                 fileName: "[project]/app/actus/page.tsx",
-                lineNumber: 58,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2830,7 +2846,7 @@ const ActusPage = ()=>{
                         children: "ACTUS"
                     }, void 0, false, {
                         fileName: "[project]/app/actus/page.tsx",
-                        lineNumber: 62,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2850,7 +2866,7 @@ const ActusPage = ()=>{
                                                     children: article.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/page.tsx",
-                                                    lineNumber: 70,
+                                                    lineNumber: 79,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2858,20 +2874,20 @@ const ActusPage = ()=>{
                                                     children: article.subtitle
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/page.tsx",
-                                                    lineNumber: 71,
+                                                    lineNumber: 80,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     children: article.author
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/page.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 81,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/page.tsx",
-                                            lineNumber: 69,
+                                            lineNumber: 78,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2884,7 +2900,7 @@ const ActusPage = ()=>{
                                                     objectFit: "cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/page.tsx",
-                                                    lineNumber: 76,
+                                                    lineNumber: 85,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2892,13 +2908,13 @@ const ActusPage = ()=>{
                                                     children: article.category
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/page.tsx",
-                                                    lineNumber: 82,
+                                                    lineNumber: 91,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/page.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 84,
                                             columnNumber: 17
                                         }, this),
                                         article.reverse && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2909,7 +2925,7 @@ const ActusPage = ()=>{
                                                     children: article.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/page.tsx",
-                                                    lineNumber: 88,
+                                                    lineNumber: 97,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2917,7 +2933,7 @@ const ActusPage = ()=>{
                                                     children: article.subtitle
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/page.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 98,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2925,35 +2941,35 @@ const ActusPage = ()=>{
                                                     children: article.author
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/page.tsx",
-                                                    lineNumber: 90,
+                                                    lineNumber: 99,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/page.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 96,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/actus/page.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 76,
                                     columnNumber: 15
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/app/actus/page.tsx",
-                                lineNumber: 66,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/actus/page.tsx",
-                        lineNumber: 64,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/actus/page.tsx",
-                lineNumber: 61,
+                lineNumber: 70,
                 columnNumber: 7
             }, this)
         ]
@@ -2996,13 +3012,22 @@ const articles = [
         reverse: true
     },
     {
+        title: "LE SKIT",
+        subtitle: "Amantique, l'interview par Xaper",
+        author: "Xaper",
+        image: "/img/live/153A1222.jpg",
+        category: "Podcast",
+        url: "https://www.youtube.com/watch?v=9L2e5pLpxRE",
+        reverse: false
+    },
+    {
         title: "RADIO CAMPUS",
         subtitle: "LA TRANCHE - Amantique",
         author: "Faustine Moulin",
         image: "/img/live/153A1185.jpg",
         category: "Podcast",
         url: "https://open.spotify.com/episode/3lzq7sMzpsIuqzZ4w7Jp5m?si=r7x-IJpmQpWXw8xh8OzYSg",
-        reverse: false
+        reverse: true
     },
     {
         title: "HEXALIVE",
@@ -3011,7 +3036,7 @@ const articles = [
         image: "/img/live/153A1316.jpg",
         category: "Article",
         url: "https://hexalive.rocks/actualites/amantique-ep-a-sortir-le-17-fevrier/",
-        reverse: true
+        reverse: false
     },
     {
         title: "TOTALEMENT ROCK",
@@ -3020,7 +3045,7 @@ const articles = [
         image: "/img/live/153A1422.jpg",
         category: "Podcast",
         url: "https://soundcloud.com/user-393781883/totalement-rock-2-11-02-05-25?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        reverse: false
+        reverse: true
     }
 ];
 const ActusPageResponsive = ()=>{
@@ -3031,7 +3056,7 @@ const ActusPageResponsive = ()=>{
                 children: "amantique"
             }, void 0, false, {
                 fileName: "[project]/app/actus/actuse_responsive.tsx",
-                lineNumber: 59,
+                lineNumber: 68,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3042,7 +3067,7 @@ const ActusPageResponsive = ()=>{
                         children: "ACTUS"
                     }, void 0, false, {
                         fileName: "[project]/app/actus/actuse_responsive.tsx",
-                        lineNumber: 61,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3062,7 +3087,7 @@ const ActusPageResponsive = ()=>{
                                                     children: article.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 77,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3070,7 +3095,7 @@ const ActusPageResponsive = ()=>{
                                                     children: article.subtitle
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 78,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3078,13 +3103,13 @@ const ActusPageResponsive = ()=>{
                                                     children: article.author
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 70,
+                                                    lineNumber: 79,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 76,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3097,7 +3122,7 @@ const ActusPageResponsive = ()=>{
                                                     objectFit: "cover"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 82,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3105,35 +3130,35 @@ const ActusPageResponsive = ()=>{
                                                     children: article.category
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                                    lineNumber: 74,
+                                                    lineNumber: 83,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 81,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 75,
                                     columnNumber: 15
                                 }, this)
                             }, index, false, {
                                 fileName: "[project]/app/actus/actuse_responsive.tsx",
-                                lineNumber: 65,
+                                lineNumber: 74,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/actus/actuse_responsive.tsx",
-                        lineNumber: 63,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/actus/actuse_responsive.tsx",
-                lineNumber: 60,
+                lineNumber: 69,
                 columnNumber: 7
             }, this)
         ]
