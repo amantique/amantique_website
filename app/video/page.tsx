@@ -11,16 +11,25 @@ const VideoPage = () => {
       </h2>
 
       <div className="flex flex-col items-center text-white relative overflow-hidden cursor-pointer transition-transform transform hover:scale-105 bg-opacity-80 px-4 mx-6 sm:mx-10 mt-6">
-        <div className="relative w-full max-w-screen-lg aspect-video overflow-hidden mx-auto">
+
+      <div className="relative w-full max-w-screen-lg aspect-video overflow-hidden mx-auto">
+          <iframe 
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/cmtglxtHvzI?si=ndOQYP7GhvZg6gb9" 
+            title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          ></iframe>
+        </div>
+
+        <div className="relative w-full max-w-screen-lg aspect-video overflow-hidden mx-auto m-10">
           <iframe
             className="w-full h-full"
             src="https://www.youtube.com/embed/alw4OCDB05Y"
             title="YouTube video player"
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
           ></iframe>
         </div>
+
       </div>
     </div>
   );
