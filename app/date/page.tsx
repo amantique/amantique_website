@@ -5,15 +5,29 @@ import Image from "next/image";
 
 const upcomingEvents = [
   {
+    date: "12 • 07 - Paris (75)",
+    location: "FEST. RESTONS SÉRIEUX",
+    image: "/img/poster/12_07_25.jpeg",
+    link: "https://www.instagram.com/p/DLIPFduIjiT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    label: undefined,
+  },
+];
+
+const pastEvents = [
+  {
+    date: "28 • 06 - Paris (75)",
+    location: "RAWDOGS SKATEPARK",
+    image: "/img/poster/28_06_25.png",
+    link: "https://www.instagram.com/p/DLP-D9JIkOn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    label: undefined,
+  },
+  {
     date: "07 • 06 - Paris (75)",
     location: "LA MÉCANIQUE ONDULATOIRE",
     image: "/img/poster/07_06_25.jpg",
     link: "https://www.instagram.com/p/DKPljJ4M_2s/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     label: undefined,
   },
-];
-
-const pastEvents = [
   {
     date: "17 • 05 - Paris (75)",
     location: "TRUSKEL",
