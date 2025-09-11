@@ -939,14 +939,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 ;
 const upcomingEvents = [
     {
+        date: "17 • 09 - Paris (75)",
+        location: "PETIT BAIN",
+        image: "/img/poster/17_09_25.png",
+        link: "https://dice.fm/event/bb63mv-preoccupations-17th-sep-petit-bain-paris-tickets?lng=fr",
+        label: undefined
+    },
+    {
+        date: "20 • 09 - Paris (75)",
+        location: "VELVET ECHO LIVE",
+        image: "/img/poster/20_09_25.png",
+        link: "https://www.helloasso.com/associations/velvet-echo/evenements/dealing-for-dimes-amantique-fraps-mecanique-ondulatoire-paris-20-09-2025",
+        label: undefined
+    }
+];
+const pastEvents = [
+    {
         date: "12 • 07 - Paris (75)",
         location: "FEST. RESTONS SÉRIEUX",
         image: "/img/poster/12_07_25.jpeg",
         link: "https://www.instagram.com/p/DLIPFduIjiT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
         label: undefined
-    }
-];
-const pastEvents = [
+    },
     {
         date: "28 • 06 - Paris (75)",
         location: "RAWDOGS SKATEPARK",
@@ -1048,11 +1062,11 @@ const ContactPage = ()=>{
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center bg-no-repeat",
                 style: {
-                    backgroundImage: "url('/img/bg/bg_bio.jpg')"
+                    backgroundImage: "url('/img/bg/bg_bio.png')"
                 }
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 117,
+                lineNumber: 131,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1060,7 +1074,7 @@ const ContactPage = ()=>{
                 children: "DATES"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 122,
+                lineNumber: 136,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1068,7 +1082,7 @@ const ContactPage = ()=>{
                 children: "À VENIR"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 127,
+                lineNumber: 141,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1080,15 +1094,21 @@ const ContactPage = ()=>{
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "relative w-full max-w-xs mx-auto group",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    src: event.image,
-                                    alt: "Event Poster",
-                                    width: 320,
-                                    height: 320,
-                                    className: "object-cover"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative w-full aspect-[3/3]",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: event.image,
+                                        alt: "Event Poster",
+                                        fill: true,
+                                        className: "object-cover"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/date/page.tsx",
+                                        lineNumber: 154,
+                                        columnNumber: 17
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 153,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1099,7 +1119,7 @@ const ContactPage = ()=>{
                                             children: event.date
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 147,
+                                            lineNumber: 162,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1107,13 +1127,13 @@ const ContactPage = ()=>{
                                             children: event.location
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 163,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 146,
+                                    lineNumber: 161,
                                     columnNumber: 15
                                 }, this),
                                 event.label && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1121,23 +1141,23 @@ const ContactPage = ()=>{
                                     children: event.label
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 151,
+                                    lineNumber: 166,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 138,
+                            lineNumber: 152,
                             columnNumber: 13
                         }, this)
                     }, index, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 132,
+                        lineNumber: 146,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 130,
+                lineNumber: 144,
                 columnNumber: 7
             }, this),
             visibleUpcoming < upcomingEvents.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1146,7 +1166,7 @@ const ContactPage = ()=>{
                 children: "Afficher plus"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 160,
+                lineNumber: 175,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1154,7 +1174,7 @@ const ContactPage = ()=>{
                 children: "TROP TARD..."
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 169,
+                lineNumber: 184,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1166,15 +1186,21 @@ const ContactPage = ()=>{
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "relative w-full max-w-xs mx-auto group",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    src: event.image,
-                                    alt: "Event Poster",
-                                    width: 320,
-                                    height: 320,
-                                    className: "object-cover"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative w-full aspect-[3/3]",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: event.image,
+                                        alt: "Event Poster",
+                                        fill: true,
+                                        className: "object-cover"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/date/page.tsx",
+                                        lineNumber: 197,
+                                        columnNumber: 17
+                                    }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 196,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1185,7 +1211,7 @@ const ContactPage = ()=>{
                                             children: event.date
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 189,
+                                            lineNumber: 205,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1193,13 +1219,13 @@ const ContactPage = ()=>{
                                             children: event.location
                                         }, void 0, false, {
                                             fileName: "[project]/app/date/page.tsx",
-                                            lineNumber: 190,
+                                            lineNumber: 206,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 188,
+                                    lineNumber: 204,
                                     columnNumber: 15
                                 }, this),
                                 event.label && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1207,23 +1233,23 @@ const ContactPage = ()=>{
                                     children: event.label
                                 }, void 0, false, {
                                     fileName: "[project]/app/date/page.tsx",
-                                    lineNumber: 193,
+                                    lineNumber: 209,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/date/page.tsx",
-                            lineNumber: 180,
+                            lineNumber: 195,
                             columnNumber: 13
                         }, this)
                     }, index, false, {
                         fileName: "[project]/app/date/page.tsx",
-                        lineNumber: 174,
+                        lineNumber: 189,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 172,
+                lineNumber: 187,
                 columnNumber: 7
             }, this),
             visiblePast < pastEvents.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1232,13 +1258,13 @@ const ContactPage = ()=>{
                 children: "Afficher plus"
             }, void 0, false, {
                 fileName: "[project]/app/date/page.tsx",
-                lineNumber: 202,
+                lineNumber: 218,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/date/page.tsx",
-        lineNumber: 115,
+        lineNumber: 129,
         columnNumber: 5
     }, this);
 };

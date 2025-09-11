@@ -5,15 +5,29 @@ import Image from "next/image";
 
 const upcomingEvents = [
   {
+    date: "17 • 09 - Paris (75)",
+    location: "PETIT BAIN",
+    image: "/img/poster/17_09_25.png",
+    link: "https://dice.fm/event/bb63mv-preoccupations-17th-sep-petit-bain-paris-tickets?lng=fr",
+    label: undefined,
+    },    
+    {
+    date: "20 • 09 - Paris (75)",
+    location: "VELVET ECHO LIVE",
+    image: "/img/poster/20_09_25.png",
+    link: "https://www.helloasso.com/associations/velvet-echo/evenements/dealing-for-dimes-amantique-fraps-mecanique-ondulatoire-paris-20-09-2025",
+    label: undefined,
+    }
+];
+
+const pastEvents = [
+  {
     date: "12 • 07 - Paris (75)",
     location: "FEST. RESTONS SÉRIEUX",
     image: "/img/poster/12_07_25.jpeg",
     link: "https://www.instagram.com/p/DLIPFduIjiT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     label: undefined,
   },
-];
-
-const pastEvents = [
   {
     date: "28 • 06 - Paris (75)",
     location: "RAWDOGS SKATEPARK",
@@ -116,7 +130,7 @@ const ContactPage = () => {
       {/* FOND FIXE EN ARRIÈRE-PLAN */}
       <div
         className="fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/img/bg/bg_bio.jpg')" }}
+        style={{ backgroundImage: "url('/img/bg/bg_bio.png')" }}
       />
 
       <h2 className="text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg">
@@ -136,13 +150,14 @@ const ContactPage = () => {
             rel="noopener noreferrer"
           >
             <div className="relative w-full max-w-xs mx-auto group">
-              <Image
-                src={event.image}
-                alt="Event Poster"
-                width={320}
-                height={320}
-                className="object-cover"
-              />
+              <div className="relative w-full aspect-[3/3]"> 
+                <Image
+                  src={event.image}
+                  alt="Event Poster"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:text-white">
                 <h3 className="text-2xl font-semibold">{event.date}</h3>
                 <p className="text-sm font-black">{event.location}</p>
@@ -178,13 +193,14 @@ const ContactPage = () => {
             rel="noopener noreferrer"
           >
             <div className="relative w-full max-w-xs mx-auto group">
-              <Image
-                src={event.image}
-                alt="Event Poster"
-                width={320}
-                height={320}
-                className="object-cover"
-              />
+              <div className="relative w-full aspect-[3/3]"> 
+                <Image
+                  src={event.image}
+                  alt="Event Poster"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="absolute bottom-0 w-full text-[#F20D01] bg-white bg-opacity-90 py-4 px-6 group-hover:bg-[#F20D01] group-hover:text-white">
                 <h3 className="text-2xl font-semibold">{event.date}</h3>
                 <p className="text-sm font-black">{event.location}</p>
