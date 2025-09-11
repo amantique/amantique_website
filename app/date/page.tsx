@@ -7,7 +7,7 @@ const upcomingEvents = [
   {
     date: "17 • 09 - Paris (75)",
     location: "PETIT BAIN",
-    image: "/img/poster/17_09_25.png",
+    image: "/img/poster/17_09_25.jpg",
     link: "https://dice.fm/event/bb63mv-preoccupations-17th-sep-petit-bain-paris-tickets?lng=fr",
     label: undefined,
     },    
