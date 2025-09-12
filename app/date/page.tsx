@@ -29,7 +29,7 @@ const pastEvents = [
     label: undefined,
   },
   {
-    date: "28 • 06 - Paris (75)",
+    date: "28 • 06 - Yutz (57)",
     location: "RAWDOGS SKATEPARK",
     image: "/img/poster/28_06_25.png",
     link: "https://www.instagram.com/p/DLP-D9JIkOn/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
