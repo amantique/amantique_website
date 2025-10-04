@@ -30,7 +30,12 @@ const GalleryPage = async () => {
               top: `${Math.random() * 80}%`, 
             }}
           >
-            <Image src={imagePath} alt={`Image ${index}`} width={200} height={200} />
+            <Image 
+              src={imagePath} 
+              alt={`Image ${index}`} 
+              fill
+              className="object-cover"
+            />
           </div>
         ))
       ) : (
