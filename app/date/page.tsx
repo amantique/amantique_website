@@ -14,6 +14,27 @@ type Event = {
 
 const events: Event[] = [
   {
+    date: "2025-10-29",
+    displayDate: "29 • 10 - BELLEVILLE (75)",
+    location: "FOLIA",
+    link: "https://www.instagram.com/p/DPg4rO7jE2J/?utm_source=ig_web_copy_link",
+    image: "/img/poster/29_10_25.jpg"
+  },
+  {
+    date: "2025-11-22",
+    displayDate: "22 • 11 - LE MANS (72)",
+    location: "LE PORTLAND",
+    link: "https://www.helloasso.com/associations/chimeric-productions/evenements/shimmeric-amantique",
+    image: "/img/poster/22_11_25.png"
+  },
+  {
+    date: "2026-01-24",
+    displayDate: "24 • 01 - Paris (75)",
+    location: "LE POPUP DU LABEL",
+    link: "https://www.instagram.com/p/DPtqMlHjP2J/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    image: "/img/poster/24_01_26.png"
+  },
+  {
     date: "2025-11-21",
     displayDate: "21 • 11 - NANTES (44)",
     location: "LE FERRAILLEUR",
