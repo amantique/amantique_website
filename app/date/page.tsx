@@ -31,7 +31,7 @@ const events: Event[] = [
     date: "2026-01-24",
     displayDate: "24 • 01 - Paris (75)",
     location: "LE POPUP DU LABEL",
-    link: "https://www.instagram.com/p/DPtqMlHjP2J/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    link: "https://dice.fm/event/av7leq-amantique-shimmeric-24th-jan-popup-paris-tickets",
     image: "/img/poster/24_01_26.png"
   },
   {
