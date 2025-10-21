@@ -17,7 +17,7 @@ const events: Event[] = [
     date: "2025-10-29",
     displayDate: "29 • 10 - BELLEVILLE (75)",
     location: "FOLIA",
-    link: "https://www.instagram.com/p/DPg4rO7jE2J/?utm_source=ig_web_copy_link",
+    link: "https://www.helloasso.com/associations/tapages-events/evenements/29-10-preventes-release-party-poisson-de-l-aube-au-folia-belleville?fbclid=PAb21jcANklf5leHRuA2FlbQIxMQABp-GE2j7waXmp1MC7EM8ULrNO7PEaFC75pDbfcgUsCMUp5jd7lvJugrTXqsx7_aem_Jyw0H6Yu5cLW4VZq3Oj7bA",
     image: "/img/poster/29_10_25.jpg"
   },
   {
