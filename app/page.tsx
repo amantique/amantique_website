@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import LoaderPage from "./loader/page";
+import LoaderPage from "./components/LoaderPage";
 import Navbar from "./components/Navbar";
 import Navbar_Responsive from "./components/Navbar_responsive";
 import DatePage from "./date/page";

@@ -8,13 +8,11 @@ interface LoaderPageProps {
   fadeOut?: boolean;
 }
 
-// Liste des images dans le répertoire /public/img/head
 const images = [
   "/img/head/fly1.png",
   "/img/head/fly2.png",
   "/img/head/fly3.png",
   "/img/head/fly4.png",
-  // Ajoute toutes les images ici
 ];
 
 interface Fly {
@@ -64,7 +62,6 @@ const LoaderPage: React.FC<LoaderPageProps> = ({ text = "Chargement...", fadeOut
       }`}
       style={{ backgroundColor: "#E33522" }}
     >
-      {/* Flies */}
       {flies.map((fly) => (
         <div
           key={fly.id}
@@ -82,15 +79,14 @@ const LoaderPage: React.FC<LoaderPageProps> = ({ text = "Chargement...", fadeOut
         </div>
       ))}
 
-      {/* Texte */}
       <p className="text-7xl font-bold tracking-wider mt-64 text-white flex items-center">
         {text}
-        <span className="flex ml-4 space-x-1 mt-10">
-            <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-75"></span>
-            <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-150"></span>
-            <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-300"></span>
+        <span className="flex ml-4 space-x-1">
+          <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-75"></span>
+          <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-150"></span>
+          <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-300"></span>
         </span>
-        </p>
+      </p>
     </div>
   );
 };
