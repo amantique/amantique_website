@@ -9,10 +9,10 @@ interface LoaderPageProps {
 }
 
 const images = [
-  "/img/head/fly1.png",
-  "/img/head/fly2.png",
-  "/img/head/fly3.png",
-  "/img/head/fly4.png",
+  "/img/head/shady.png",
+  "/img/head/mathis.png",
+  "/img/head/louis.png",
+  "/img/head/sam.png",
 ];
 
 interface Fly {
@@ -35,7 +35,7 @@ const LoaderPage: React.FC<LoaderPageProps> = ({ text = "Chargement...", fadeOut
       y: Math.random() * 80 + 10,
       dx: (Math.random() - 0.5) * 0.5,
       dy: (Math.random() - 0.5) * 0.5,
-      size: Math.random() * 40 + 50,
+      size: Math.random() * 400 + 500,
       src,
     }));
     setFlies(initialFlies);
@@ -79,12 +79,12 @@ const LoaderPage: React.FC<LoaderPageProps> = ({ text = "Chargement...", fadeOut
         </div>
       ))}
 
-      <p className="text-7xl font-bold tracking-wider mt-64 text-white flex items-center">
+      <p className="text-7xl font-bold tracking-wider mt-64 text-[#FDF050] flex items-center">
         {text}
-        <span className="flex ml-4 space-x-1">
-          <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-75"></span>
-          <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-150"></span>
-          <span className="w-3 h-3 bg-white rounded-full animate-bounce delay-300"></span>
+        <span className="flex ml-4 space-x-1 mt-10">
+          <span className="w-3 h-3 bg-[#FDF050] rounded-full animate-bounce delay-75"></span>
+          <span className="w-3 h-3 bg-[#FDF050] rounded-full animate-bounce delay-150"></span>
+          <span className="w-3 h-3 bg-[#FDF050] rounded-full animate-bounce delay-300"></span>
         </span>
       </p>
     </div>
