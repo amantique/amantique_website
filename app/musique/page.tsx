@@ -1,14 +1,20 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BentoPage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800});
+  }, []);  
+
   return (
     <>
       <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
       <div className="w-full mx-auto text-center text-black pb-4 bg-white">
-        <h2 className="text-7xl text-black font-extrabold pt-4 sm:text-9xl drop-shadow-lg">MUSIQUES</h2>
+        <h2 className="text-7xl text-black font-extrabold pt-4 sm:text-9xl drop-shadow-lg" data-aos="fade-down">MUSIQUES</h2>
 
         <div className="max-w-md mx-auto mb-4">
           <div className="flex justify-center space-x-6">
@@ -22,7 +28,7 @@ const BentoPage = () => {
               { href: "https://www.youtube.com/@Amantique", src: "/img/icon/youtube_red.png", alt: "YouTube" },
             ].map((icon, index) => (
               <a key={index} href={icon.href} target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center transition-transform transform hover:scale-150">
-                <Image src={icon.src} alt={icon.alt} width={30} height={30} className="rounded-md" />
+                <Image src={icon.src} alt={icon.alt} width={30} height={30} className="rounded-md" data-aos="fade-down" />
               </a>
             ))}
           </div>
@@ -30,7 +36,7 @@ const BentoPage = () => {
 
         {/* Liste de la playlist */}
         <div className="flex flex-col md:flex-row items-center justify-center w-full space-y-10 md:space-y-0 md:space-x-20">
-          <a className="relative group" href='https://open.spotify.com/intl-fr/album/7saazYMgviLznaQ3Oyii2l?si=RVMf56lmT7yOqMB6kB9VJQ'>
+          <a className="relative group" href='https://open.spotify.com/intl-fr/album/7saazYMgviLznaQ3Oyii2l?si=RVMf56lmT7yOqMB6kB9VJQ' data-aos="fade-right">
             <Image
               src="/img/cover/laurent.png"
               alt="Image de la carte"
@@ -43,7 +49,7 @@ const BentoPage = () => {
             </div>
           </a>
 
-          <div className="space-y-4 text-center md:text-left">
+          <div className="space-y-4 text-center md:text-left" data-aos="fade-left">
             <div className="flex flex-col">
               <a
                 href="https://open.spotify.com/intl-fr/track/4gjrLMzHI2l13ZsJt4V3C7?si=d5874015b8894066"
@@ -99,7 +105,7 @@ const BentoPage = () => {
 
             {/* Texte supplémentaire */}
             <div className="relative">
-              <p className="text-3xl font-semibold text-gray-400">
+              <p className="text-3xl font-semibold text-gray-400" data-aos="fade-up">
                 Et beaucoup d&apos;autres à venir...
               </p>
             </div>

@@ -1,9 +1,15 @@
 "use client";
 
-import React from 'react';
 import Image from 'next/image';
+import React, { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContactPage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800});
+  }, []); 
+
   return (
     <>
       <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden", backgroundColor: "#F20D01", }}>amantique</h1>
@@ -14,9 +20,9 @@ const ContactPage = () => {
 
           {/* Première colonne */}
           <div className="flex-1">
-            <h2 className="text-7xl font-extrabold sm:text-9xl pt-7">CONTACTS</h2>
+            <h2 className="text-7xl font-extrabold sm:text-9xl pt-7" data-aos="fade-right">CONTACTS</h2>
             <div className="pl-4">
-              <p className="text-base text-white font-robotomono">
+              <p className="text-base text-white font-robotomono"  data-aos="fade-right">
                 Besoin d&apos;infos, envie de programmer un concert ou une question qui trotte dans ta tête ? N’hésite pas à nous contacter par ici.
               </p>
             </div>            
@@ -26,7 +32,7 @@ const ContactPage = () => {
           <div className="flex-1 space-y-4 mt-4">
             
             {/* Email */}
-            <div className="bg-white p-4 rounded-lg shadow-md mt-7 max-w-md mx-auto">
+            <div className="bg-white p-4 rounded-lg shadow-md mt-7 max-w-md mx-auto"  data-aos="fade-left">
               <p className="text-3xl text-gray-600">
                 <a href="mailto:amantic.sm@gmail.com" className="text-[#F20D01] hover:underline">
                   amantic.sm@gmail.com
@@ -35,7 +41,7 @@ const ContactPage = () => {
             </div>
 
             {/* Téléphone */}
-            <div className="bg-white p-4 rounded-lg shadow-md mt-7 max-w-md mx-auto">
+            <div className="bg-white p-4 rounded-lg shadow-md mt-7 max-w-md mx-auto"  data-aos="fade-left">
               <p className="text-3xl text-gray-600">
                 <a href="tel:+33782140660" className="text-[#F20D01] hover:underline">
                   +33 7 82 14 06 60
@@ -44,7 +50,7 @@ const ContactPage = () => {
             </div>
 
             {/* Réseaux sociaux */}
-            <div className="bg-white p-4 rounded-lg shadow-md max-w-md mx-auto">
+            <div className="bg-white p-4 rounded-lg shadow-md max-w-md mx-auto"  data-aos="fade-left">
               <div className="relative flex items-center justify-center space-x-6">
                 {[
                   { href: "https://amantique.bandcamp.com", src: "/img/icon/bandcamp_red.png", alt: "Bandcamp" },

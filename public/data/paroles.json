@@ -1,0 +1,8 @@
+[
+    { "src": "/img/live/153A1196.jpg", "alt": "Image 1", "textFile": "/txt/paroles/eau_salee.txt", "title": "EAU SALÉE" },
+    { "src": "/img/live/153A1185.jpg", "alt": "Image 2", "textFile": "/txt/paroles/daphne.txt", "title": "DAPHNÉ" },
+    { "src": "/img/live/153A1113.jpg", "alt": "Image 3", "textFile": "/txt/paroles/la_mer.txt", "title": "LA MER" },
+    { "src": "/img/live/153A1130.jpg", "alt": "Image 4", "textFile": "/txt/paroles/la_meteo.txt", "title": "LA MÉTÉO" },
+    { "src": "/img/live/153A1222.jpg", "alt": "Image 5", "textFile": "/txt/paroles/anges_et_mouches.txt", "title": "ANGES & MOUCHES" }
+  ]
+  

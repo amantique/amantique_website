@@ -2,158 +2,124 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link"; // Importer Link pour la navigation
+import clsx from "clsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-// Exemple d'images pour tes albums
-const directories = {
-  "15_10_meca": [
-    "/img/live/PB150056-Edit.jpg",
-    "/img/live/PB150061-Edit.jpg",
-  ],
-  "11_10_popup": [
-    "/img/live/PA110006-Enhanced-NR.jpg",
-    "/img/live/PA110010-Enhanced-NR.jpg",
-  ],
-};
-
-const PhotoPage: React.FC = () => {
+const PolaroidGalleryPage: React.FC = () => {
   const [images, setImages] = useState<string[]>([]);
+  const [visible, setVisible] = useState<number>(0);
 
-  // Mélange les images de manière aléatoire
   const shuffleImages = (imagesArray: string[]): string[] => {
     const shuffled = [...imagesArray];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Échange les éléments
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
     }
     return shuffled;
   };
 
-  // Récupérer toutes les images et les mélanger
-  useEffect(() => {
-    const allImages = [
-      ...directories["15_10_meca"],
-      ...directories["11_10_popup"],
-    ];
+  // --- CALCUL AUTO DU NOMBRE D’IMAGES NÉCESSAIRES ---
+  const computeNeededImages = () => {
+    const cardWidth = 200;   // 48 + margins approximées
+    const cardHeight = 270;  // 60 + titre + marges
+    const gap = 24;          // gap-6
 
-    setImages(shuffleImages(allImages));
+    const totalWidth = window.innerWidth;
+    const totalHeight = window.innerHeight;
+
+    const cols = Math.floor(totalWidth / (cardWidth + gap));
+    const rows = Math.floor(totalHeight / (cardHeight + gap));
+
+    const needed = Math.max(cols * rows, 4); // toujours au moins 4 images
+    return needed;
+  };
+
+  useEffect(() => {
+    async function fetchImages() {
+      const res = await fetch("/api/live-images");
+      const data = await res.json();
+      const shuffled = shuffleImages(data);
+
+      setImages(shuffled);
+
+      // Détermine combien afficher au début
+      const needed = computeNeededImages();
+      setVisible(needed);
+    }
+
+    fetchImages();
+
+    // Recalcule si la fenêtre change de taille
+    const onResize = () => {
+      setVisible((prev) => Math.max(prev, computeNeededImages()));
+    };
+
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  // Logique pour changer de slide automatiquement toutes les 0,5 secondes
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length); // Passe à la suivante
-    }, 1500); // Défile toutes les 1 seconde
+    AOS.init({ duration: 800});
+  }, []); 
 
-    return () => clearInterval(interval); // Nettoie l'intervalle quand le composant se démonte
-  }, [images.length]);
+  const handleShowMore = () => {
+    setVisible((prev) => prev + 6); // ajoute 6 images à chaque clic
+  };
 
   return (
-    <div className="pb-4 relative w-full text-center text-white bg-gray-950">
-      <h2 className="text-7xl font-extrabold sm:text-9xl py-4">PHOTOS</h2>
+    <div className="min-h-screen w-full text-white bg-gray-950 py-12 flex flex-col items-center">
+      <h2 className="text-7xl font-extrabold sm:text-9xl text-center mb-10" data-aos="zoom-in-up">
+        PHOTOS
+      </h2>
 
-      {/* Carrousel */}
-      <div id="indicators-carousel" className="relative w-full" data-carousel="static">
-        {/* Carousel wrapper */}
-        <div className="relative w-full h-[70vh] overflow-hidden rounded-lg">
-          {images.map((image, index) => (
+      {/* Mur de polaroids */}
+      <div className="relative w-full mx-auto flex flex-wrap justify-center gap-6 px-4">
+        {images.slice(0, visible).map((image, index) => {
+          const rotation = (Math.random() - 0.5) * 20;
+          const xOffset = (Math.random() - 0.5) * 40;
+          const yOffset = (Math.random() - 0.5) * 40;
+
+          return (
             <div
               key={index}
-              className={`absolute w-full h-full transition-all duration-700 ease-in-out transform ${
-                index === currentSlide
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 translate-x-full"
-              }`}
-              data-carousel-item
+              style={{
+                transform: `rotate(${rotation}deg) translate(${xOffset}px, ${yOffset}px)`,
+              }}
+              className={clsx(
+                "bg-white p-2 shadow-xl rounded-sm cursor-pointer transition-transform hover:scale-105 hover:z-10 border border-gray-300",
+                "relative w-48 h-60 flex flex-col items-center"
+              )}
+              data-aos="zoom-in-up"
             >
-              <Image
-                src={image}
-                alt={`Image ${index + 1}`}
-                fill
-                style={{ objectFit: "contain" }}
-                className="rounded-lg"
-              />
+              <div className="relative w-full h-48" data-aos="zoom-in-up">
+                <Image
+                  src={image}
+                  alt={`Photo ${index + 1}`}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  className="rounded-sm"
+                />
+              </div>
             </div>
-          ))}
-        </div>
-
-        {/* Slider indicators */}
-        <div className="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              type="button"
-              className={`w-3 h-3 rounded-full ${currentSlide === index ? "bg-white" : "bg-gray-500"}`}
-              aria-label={`Slide ${index + 1}`}
-              onClick={() => setCurrentSlide(index)} // Permet de naviguer à un slide spécifique
-            ></button>
-          ))}
-        </div>
-
-        {/* Slider controls */}
-        <button
-          type="button"
-          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          onClick={() => setCurrentSlide((currentSlide - 1 + images.length) % images.length)} // Naviguer vers le slide précédent
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-
-        <button
-          type="button"
-          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          onClick={() => setCurrentSlide((currentSlide + 1) % images.length)} // Naviguer vers le slide suivant
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
+          );
+        })}
       </div>
 
-      {/* Button to view all photos */}
-      <div className="mt-4">
-      <Link href="./photo/galerie_page">
-        <button className="px-6 py-3 text-lg font-bold text-gray-950 bg-white rounded-lg hover:bg-[#F20D01] transition duration-300">
-          Voir toutes les photos
-        </button>
-      </Link>
-      </div>
+      {/* Bouton Voir plus */}
+      {visible < images.length && (
+        <div className="text-center mt-10">
+          <button
+            onClick={handleShowMore}
+            className="px-6 py-3 text-lg font-bold text-gray-950 bg-white rounded-lg hover:bg-[#F20D01] transition duration-300"
+            data-aos="zoom-in-up"
+          >
+            Voir plus
+          </button>
+        </div>
+      )}
     </div>
   );
 };
 
-export default PhotoPage;
+export default PolaroidGalleryPage;

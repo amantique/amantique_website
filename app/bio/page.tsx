@@ -1,8 +1,14 @@
 "use client";
 
-import React from 'react';
+import React, {useEffect} from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BioPage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800});
+  }, []); 
+
   return (
     <>
       <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
@@ -31,9 +37,9 @@ const BioPage = () => {
 
           <div className="relative z-10 w-full lg:w-1/2 p-4 sm:px-8 flex flex-col items-center justify-center bg-black bg-opacity-50">
             <div className="text-center text-white">
-              <h2 className="text-7xl text-[#F20D01] font-extrabold sm:text-9xl drop-shadow-lg">BIO</h2>
+              <h2 className="text-7xl text-[#F20D01] font-extrabold sm:text-9xl drop-shadow-lg" data-aos="fade-left">BIO</h2>
 
-              <div className="sm:text-base flex flex-col items-center justify-center text-justify font-robotomono max-w-7xl">
+              <div className="sm:text-base flex flex-col items-center justify-center text-justify font-robotomono max-w-7xl" data-aos="fade-left">
                 <div className="w-full p-4">
                   <p className="font-medium leading-relaxed mb-4">
                     Quatuor parisiano-nantais né en <span className="font-bold">2023</span> aux membres affectueux et aux visages pileux, produisant du <span className="font-bold">rock alternatif punkifié</span> dans la langue de Molière.
