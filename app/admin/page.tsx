@@ -2,15 +2,21 @@
 
 import { useEffect, useState } from "react";
 
+type EventItem = {
+  displayDate: string;
+  location: string;
+  link: string;
+};
+
 export default function AdminPage() {
-  const [events, setEvents] = useState<any[]>([]);
+  const [events, setEvents] = useState<EventItem[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // 1. Charger le JSON depuis /public/data/events.json
+  // Charger le JSON depuis /public/data/events.json
   useEffect(() => {
     async function loadData() {
       const res = await fetch("/data/events.json");
-      const data = await res.json();
+      const data: EventItem[] = await res.json();
       setEvents(data);
       setLoading(false);
     }
