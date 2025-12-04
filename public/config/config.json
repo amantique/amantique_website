@@ -1,0 +1,51 @@
+{
+    "sections": [
+      {
+        "id": "hero",
+        "type": "banner",
+        "title": "Hero Section",
+        "jsonDataPath": "/data/hero.json",
+        "editableFields": ["title", "subtitle", "backgroundImage", "cta"],
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "about",
+        "type": "contentBlock",
+        "title": "About Section",
+        "jsonDataPath": "/data/about.json",
+        "editableFields": ["title", "content", "image"],
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "services",
+        "type": "repeater",
+        "title": "Services List",
+        "jsonDataPath": "/data/services.json",
+        "itemStructure": ["title", "description", "icon"],
+        "editableFields": ["title", "description", "icon"],
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "gallery",
+        "type": "imageGallery",
+        "title": "Gallery",
+        "jsonDataPath": "/data/gallery.json",
+        "editableFields": ["images"],
+        "enabled": false,
+        "order": 4
+      },
+      {
+        "id": "contact",
+        "type": "form",
+        "title": "Contact Form",
+        "jsonDataPath": "/data/contact.json",
+        "editableFields": ["title", "fields", "emailRecipient"],
+        "enabled": true,
+        "order": 5
+      }
+    ]
+  }
+  
