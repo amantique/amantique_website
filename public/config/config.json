@@ -4,7 +4,7 @@
         "id": "articles",
         "type": "banner",
         "title": "Article",
-        "jsonDataPath": "/data/articles.json",
+        "jsonDataPath": "/public/data/articles.json",
         "editableFields": ["title", "subtitle", "author", "image", "category", "url", "reverse", "order", "publicationDate"],
         "enabled": true,
         "order": 1
@@ -13,7 +13,7 @@
         "id": "events",
         "type": "contentBlock",
         "title": "Dates",
-        "jsonDataPath": "/data/events.json",
+        "jsonDataPath": "/public/data/events.json",
         "editableFields": ["date", "displayDate", "location", "link", "image"],
         "enabled": true,
         "order": 2
@@ -22,7 +22,7 @@
         "id": "lyrics",
         "type": "repeater",
         "title": "Paroles",
-        "jsonDataPath": "/data/paroles.json",
+        "jsonDataPath": "/public/data/paroles.json",
         "editableFields": ["src", "alt", "textFile", "title"],
         "enabled": true,
         "order": 3
