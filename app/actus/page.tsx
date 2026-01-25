@@ -26,7 +26,7 @@ const ActusPage = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const res = await fetch("/data/articles.json");
+        const res = await fetch("/data/fr/articles.json");
         if (!res.ok) throw new Error("Erreur lors du chargement des articles");
         const data: Article[] = await res.json();
         setArticles(data);

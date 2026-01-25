@@ -22,7 +22,7 @@ export default function ParolesPage() {
   useEffect(() => {
     AOS.init({ duration: 800 });
 
-    fetch("/data/paroles.json")
+    fetch("/data/fr/paroles.json")
       .then(res => res.ok ? res.json() : Promise.reject("Impossible de charger le JSON"))
       .then(setImages)
       .catch(err => console.error(err));

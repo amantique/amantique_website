@@ -1,0 +1,67 @@
+{
+    "sections": [
+      {
+        "id": "articles",
+        "type": "banner",
+        "title": "Actus",
+        "jsonDataPath": "/public/data/{langue}/articles.json",
+        "editableFields": {
+          "title": "shortText",
+          "subtitle": "shortText",
+          "author": "shortText",
+          "image": "media",
+          "category": ["Podcast", "Article", "Vidéo"],
+          "url": "url",
+          "reverse": [true, false]
+        },
+        "languages": ["fr"],
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "events",
+        "type": "contentBlock",
+        "title": "Date",
+        "jsonDataPath": "/public/data/{langue}/events.json",
+        "editableFields": {
+          "date": "date",
+          "displayDate": "shortText",
+          "location": "shortText",
+          "link": "url",
+          "image": "media"
+        },
+        "languages": ["fr"],
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "paroles",
+        "type": "repeater",
+        "title": "Paroles",
+        "jsonDataPath": "/public/data/{langue}/paroles.json",
+        "editableFields": {
+          "phone": "shortText",
+          "email": "shortText",
+          "address": "longText"
+        },
+        "singleItem": true,
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "openingHours",
+        "type": "repeater",
+        "title": "Horaires d'ouverture",
+        "jsonDataPath": "/public/data/openingHours.json",
+        "editableFields": {
+          "src": "media",
+          "alt": "shortText",
+          "textFile": "media",
+          "title": "shortText"
+        },
+        "languages": ["fr"],
+        "enabled": true,
+        "order": 4
+      }
+    ]
+  }

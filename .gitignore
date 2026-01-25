@@ -17,3 +17,6 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 node_modules
+.vercel
+
+/app/generated/prisma

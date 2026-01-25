@@ -22,7 +22,7 @@ const ContactPage = () => {
 
     const fetchEvents = async () => {
       try {
-        const res = await fetch("/data/events.json");
+        const res = await fetch("/data/fr/events.json");
         if (!res.ok) throw new Error("Erreur lors du chargement des événements");
         const data: Event[] = await res.json();
         setEvents(data);
