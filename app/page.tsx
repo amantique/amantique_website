@@ -14,6 +14,7 @@ import ContactPage from "./contact/page";
 import Footer from "./components/Footer";
 import ActusPage from "./actus/page";
 import ActusPageResponsive from "./actus/actuse_responsive";
+import MerchPage from "./merch/page";
 
 const MIN_LOADING_TIME = 2000; // 2 secondes minimum
 
@@ -31,6 +32,7 @@ const HomePage: React.FC = () => {
   const parolesPageRef = useRef<HTMLDivElement>(null);
   const photoPageRef = useRef<HTMLDivElement>(null);
   const contactPageRef = useRef<HTMLDivElement>(null);
+  const merchPageRef = useRef<HTMLDivElement>(null);
 
   const getNavbarHeight = () =>
     navbarRef.current ? navbarRef.current.offsetHeight : 0;
@@ -116,6 +118,7 @@ const HomePage: React.FC = () => {
           onParoleClick={() => scrollToSection(parolesPageRef)}
           onPhotoClick={() => scrollToSection(photoPageRef)}
           onActusClick={() => scrollToSection(actusPageRef)}
+          onMerchClick={() => scrollToSection(merchPageRef)}
         />
       ) : (
         <Navbar
@@ -129,6 +132,7 @@ const HomePage: React.FC = () => {
           onPhotoClick={() => scrollToSection(photoPageRef)}
           onParolesClick={() => scrollToSection(parolesPageRef)}
           onActusClick={() => scrollToSection(actusPageRef)}
+          onMerchClick={() => scrollToSection(merchPageRef)}
         />
       )}
 
@@ -160,6 +164,9 @@ const HomePage: React.FC = () => {
       </div>
       <div ref={datePageRef}>
         <DatePage />
+      </div>
+      <div ref={merchPageRef}>
+        <MerchPage />
       </div>
       <div ref={videoPageRef}>
         <VideoPage />

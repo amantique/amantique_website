@@ -1,5 +1,12 @@
 [
     {
+      "date": "2026-03-07",
+      "displayDate": "07 • 03 - MONTREUIL (93)",
+      "location": "LE CHINOIS",
+      "link": "https://www.instagram.com/p/DSUeYfnihEU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "image": "/img/poster/07_03_26.jpg"
+    },
+    {
       "date": "2025-10-29",
       "displayDate": "29 • 10 - BELLEVILLE (75)",
       "location": "FOLIA",
@@ -18,7 +25,8 @@
       "displayDate": "24 • 01 - Paris (75)",
       "location": "LE POPUP DU LABEL",
       "link": "https://dice.fm/event/av7leq-amantique-shimmeric-24th-jan-popup-paris-tickets",
-      "image": "/img/poster/24_01_26.png"
+      "image": "/img/poster/24_01_26.png",
+      "label": "SOLD OUT"
     },
     {
       "date": "2025-11-21",

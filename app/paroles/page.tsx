@@ -55,19 +55,30 @@ export default function ParolesPage() {
       </div>
 
       {images.map((image, index) => (
-        <div
-          key={index}
-          className="relative flex-1 cursor-pointer transition-all duration-500 hover:opacity-100 opacity-60"
-          onClick={() => setModalData(image)}
-          data-aos="fade-right"
-        >
-          <Image src={image.src} alt={image.alt} fill className="object-cover" />
-          <div className="absolute inset-0 bg-black bg-opacity-30 transition-all duration-500 hover:bg-opacity-0"></div>
-          <div className="absolute inset-0 flex justify-center items-center text-white z-10">
-            <h2 className="text-4xl font-extrabold" data-aos="fade-right">{image.title}</h2>
-          </div>
-        </div>
-      ))}
+  <div
+    key={index}
+    className="relative flex-1 cursor-pointer transition-all duration-500 hover:opacity-100 opacity-60 overflow-hidden group"
+    onClick={() => setModalData(image)}
+    data-aos="fade-right"
+  >
+    {/* IMAGE avec zoom */}
+    <Image
+      src={image.src}
+      alt={image.alt}
+      fill
+      className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+    />
+
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-black bg-opacity-30 transition-all duration-500 hover:bg-opacity-0"></div>
+
+    {/* Texte centré */}
+    <div className="absolute inset-0 flex justify-center items-center text-white z-10">
+      <h2 className="text-4xl font-extrabold" data-aos="fade-right">{image.title}</h2>
+    </div>
+  </div>
+))}
+
 
       {modalData && (
         <Modal onClose={() => setModalData(null)}>
