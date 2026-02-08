@@ -17,6 +17,8 @@ export const CardGrid = <T extends CardData>({
   pastTitle = "TROP TARD...",
 }: CardGridProps<T>) => {
   const today = new Date();
+  today.setHours(0, 0, 0, 0); // Ignore l'heure pour éviter les problèmes de fuseau
+
   const [visibleFuture, setVisibleFuture] = useState(4);
   const [visiblePast, setVisiblePast] = useState(4);
 
@@ -25,13 +27,21 @@ export const CardGrid = <T extends CardData>({
 
   if (sortByDate) {
     future = data
-      .filter((d: any) => new Date(d.meta) >= today)
+      .filter((d: any) => {
+        const eventDate = new Date(d.meta);
+        eventDate.setHours(0, 0, 0, 0);
+        return eventDate >= today;
+      })
       .sort((a: any, b: any) => new Date(a.meta).getTime() - new Date(b.meta).getTime());
-  
+
     past = data
-      .filter((d: any) => new Date(d.meta) < today)
+      .filter((d: any) => {
+        const eventDate = new Date(d.meta);
+        eventDate.setHours(0, 0, 0, 0);
+        return eventDate < today;
+      })
       .sort((a: any, b: any) => new Date(b.meta).getTime() - new Date(a.meta).getTime());
-  }   else {
+  } else {
     future = data;
   }
 

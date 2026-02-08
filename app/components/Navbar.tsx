@@ -49,7 +49,7 @@ const Navbar = forwardRef<HTMLElement, NavbarProps>(
 
     const navItems: NavItem[] = [
       { label: "MUSIQUES", onClick: onMusiqueClick },
-      { label: "DATES", onClick: onEventClick },
+      { label: "CONCERTS", onClick: onEventClick },
       { label: "MERCH", onClick: onMerchClick },
       { label: "VIDÉOS", onClick: onVideoClick },
       { label: "ACTUS", onClick: onActusClick },

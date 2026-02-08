@@ -27,7 +27,7 @@ const EventsPage = () => {
     fetchEvents();
   }, []);
 
-  if (!events.length) return null;
+  if (!events.length) return <p className="text-white text-xl mt-8">Chargement des événements...</p>;
 
   return (
     <div className="relative w-full text-center text-[#0A0A0A] pb-4 overflow-hidden">
@@ -42,7 +42,7 @@ const EventsPage = () => {
         className="text-7xl text-white font-extrabold pt-4 sm:text-9xl drop-shadow-lg"
         data-aos="zoom-in"
       >
-        DATES
+        CONCERTS
       </h2>
 
       {/* Card Grid */}
