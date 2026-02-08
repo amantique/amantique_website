@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useEffect, forwardRef } from 'react';
-import Image from 'next/image';
+import { useState, useEffect, forwardRef } from "react";
+import Image from "next/image";
+import contacts from "../../public/data/fr/contacts.json";
 
 interface NavbarProps {
   className?: string;
   onContactClick?: () => void;
-  onDateClick?: () => void;
+  onEventClick?: () => void;
   onVideoClick?: () => void;
   onMusiqueClick?: () => void;
   onBioClick?: () => void;
@@ -16,190 +17,143 @@ interface NavbarProps {
   onMerchClick?: () => void;
 }
 
-// Définition du composant Navbar avec forwardRef
-const Navbar = forwardRef<HTMLElement, NavbarProps>(({ className, onContactClick, onDateClick, onVideoClick, onMusiqueClick, onBioClick, onPhotoClick, onParolesClick, onActusClick, onMerchClick }, ref) => {
-  const [scrolled, setScrolled] = useState(false);
+type NavItem = {
+  label: string;
+  onClick?: () => void;
+};
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
+const Navbar = forwardRef<HTMLElement, NavbarProps>(
+  (
+    {
+      className,
+      onContactClick,
+      onEventClick,
+      onVideoClick,
+      onMusiqueClick,
+      onBioClick,
+      onPhotoClick,
+      onParolesClick,
+      onActusClick,
+      onMerchClick,
+    },
+    ref
+  ) => {
+    const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    window.addEventListener('scroll', handleScroll);
+    useEffect(() => {
+      const handleScroll = () => setScrolled(window.scrollY > 50);
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    const navItems: NavItem[] = [
+      { label: "MUSIQUES", onClick: onMusiqueClick },
+      { label: "DATES", onClick: onEventClick },
+      { label: "MERCH", onClick: onMerchClick },
+      { label: "VIDÉOS", onClick: onVideoClick },
+      { label: "ACTUS", onClick: onActusClick },
+      { label: "BIO", onClick: onBioClick },
+      { label: "PAROLES", onClick: onParolesClick },
+      { label: "PHOTOS", onClick: onPhotoClick },
+      { label: "CONTACTS", onClick: onContactClick },
+    ];
 
-  return (
-    
-    <nav
-      ref={ref} // Référence pour le composant
-      className={`text-white flex items-center justify-between fixed top-0 px-5 z-50 
-        ${scrolled ? 'bg-black bg-opacity-50 backdrop-blur-md shadow-2xl' : 'bg-black bg-opacity-75 shadow-none'} 
-        ${className} h-[50px]`}  // Hauteur et marge en bas
-    >
-      <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}>amantique</h1>
-      {/* Conteneur pour les icônes sociaux */}
-      <div className="flex items-center justify-between space-x-3">
-        {/* Bandcamp */}
-        <a href="https://amantique.bandcamp.com" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/bandcamp.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/bandcamp_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
+    return (
+      <nav
+        ref={ref}
+        className={`fixed top-0 w-full flex items-center justify-between px-5 z-50 h-[60px] transition-all
+        ${scrolled ? "bg-black/50 backdrop-blur-md shadow-2xl" : "bg-black/80"}
+        ${className}`}
+      >
+        <h1 className="sr-only">amantique</h1>
 
-        {/* Instagram */}
-        <a href="https://www.instagram.com/amantique._/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/instagram.png" alt="Instagram Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/instagram_red.png" alt="Instagram Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
+        {/* SOCIAL ICONS DESKTOP */}
+        <div className="hidden xl:flex items-center space-x-3">
+          {contacts.socials.map((s) => (
+            <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer">
+              <Image
+                src={s.src}
+                alt={s.alt}
+                width={20}
+                height={20}
+                className="hover:scale-150 transition-all duration-500 ease-out "
+              />
+            </a>
+          ))}
+        </div>
 
-        {/* Spotify */}
-        <a href="https://open.spotify.com/intl-fr/artist/1gUDo746RvvVVY3lbL2r7N?si=9xiGodwdSca93pMnkZ37-w" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/spotify.png" alt="Spotify Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/spotify_red.png" alt="Spotify Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
-
-        {/* Apple */}
-        <a href="https://music.apple.com/fr/artist/amantique/1771329106" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/apple.png" alt="Apple Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/apple_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
-
-        {/* Deezer */}
-        <a href="https://dzr.page.link/18ZrTtkM344FGeA77" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/deezer.png" alt="Apple Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/deezer_red.png" alt="Apple Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
-
-        {/* Facebook */}
-        <a href="https://www.facebook.com/profile.php?id=100091951621434" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/facebook.png" alt="Facebook Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/facebook_red.png" alt="Facebook Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
-
-        {/* YouTube */}
-        <a href="https://www.youtube.com/@Amantique" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-150">
-          <Image src="/img/icon/youtube.png" alt="YouTube Icon" width={20} height={20} className="rounded-md transition-opacity duration-300" />
-          <Image src="/img/icon/youtube_red.png" alt="YouTube Icon Hover" width={20} height={20} className="absolute top-0 left-0 rounded-md opacity-0 transition-opacity duration-300 hover:opacity-100" />
-        </a>
-      </div>
-
-      {/* Logo centré */}
-      <div className="absolute left-1/2 transform -translate-x-1/2">
-        <h1
-          className="text-6xl cursor-pointer"
-          onClick={() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
+        {/* LOGO CENTER */}
+        <div
+          className="absolute left-1/2 -translate-x-1/2 text-4xl xl:text-6xl cursor-pointer"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           AMANTIQUE
-        </h1>
-      </div>
+        </div>
 
-      {/* Liens de navigation */}
-      <div className="text-2xl flex items-center justify-between space-x-3">
-      <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            onMusiqueClick?.();
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          MUSIQUES
-        </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault(); 
-            onDateClick?.(); 
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          DATES
-        </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault(); 
-            onMerchClick?.(); 
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          MERCH
-        </a>       
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault(); 
-            onVideoClick?.(); 
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          VIDÉOS
-        </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault(); 
-            onActusClick?.(); 
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          ACTUS
-        </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            onBioClick?.();
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          BIO
-        </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            onParolesClick?.();
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          PAROLES
-        </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            onPhotoClick?.();
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          PHOTOS
-        </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            onContactClick?.();
-          }}
-          className="px-1 hover:text-[#F20D01] transition-colors-transform duration-300 rounded-md hover:scale-150"
-        >
-          CONTACTS
-        </a>
-      </div>
-    </nav>
-  );
-});
+        {/* DESKTOP MENU */}
+        <div className="hidden xl:flex text-xl space-x-4">
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                item.onClick?.();
+              }}
+              className="hover:text-[#F20D01] hover:scale-125 transition-all duration-500 ease-out "
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
 
-// Définir le displayName pour faciliter le débogage
-Navbar.displayName = 'Navbar';
+        {/* MOBILE HAMBURGER */}
+        <button
+          className="xl:hidden text-white text-3xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
 
+        {/* MOBILE MENU */}
+        {menuOpen && (
+          <div className="absolute top-[60px] left-0 w-full bg-black/95 backdrop-blur-md flex flex-col items-center space-y-4 py-6 xl:hidden">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  item.onClick?.();
+                  setMenuOpen(false);
+                }}
+                className="text-2xl hover:text-[#F20D01]"
+              >
+                {item.label}
+              </a>
+            ))}
+
+            {/* SOCIAL ICONS MOBILE */}
+            <div className="flex space-x-4 pt-4">
+              {contacts.socials.map((s) => (
+                <a key={s.href} href={s.href} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={s.src}
+                    alt={s.alt}
+                    width={22}
+                    height={22}
+                    className="hover:scale-125 transition-transform"
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </nav>
+    );
+  }
+);
+
+Navbar.displayName = "Navbar";
 export default Navbar;

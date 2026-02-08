@@ -3,16 +3,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef, useMemo } from "react";
-
-type TiltImageMotionProps = {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  className?: string;
-  tiltRange?: { x: [number, number]; y: [number, number] };
-  overlayText?: string;
-};
+import { TiltImageMotionProps } from "./TiltImageMotion.types";
 
 export default function TiltImageMotion({
   src,

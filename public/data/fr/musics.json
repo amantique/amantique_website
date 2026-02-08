@@ -1,0 +1,21 @@
+{
+    "playlist": {
+      "cover": "/img/cover/laurent.png",
+      "link": "https://open.spotify.com/intl-fr/album/7saazYMgviLznaQ3Oyii2l",
+      "overlayText": "1er EP DISPO",
+      "tracks": [
+        { "title": "1. Eau Salée", "link": "https://open.spotify.com/track/4gjrLMzHI2l13ZsJt4V3C7" },
+        { "title": "2. Daphné", "link": "https://open.spotify.com/track/20ZVH5eaaRqSc2Wp3tZ9zJ" },
+        { "title": "3. La Mer", "link": "https://open.spotify.com/track/1VG0RQfs5k9vqgNsdcKuCB" },
+        { "title": "4. La Météo", "link": "https://open.spotify.com/track/5aXqNK2bVKFfQyWWkhYdgr" },
+        { "title": "5. Anges & Mouches", "link": "https://open.spotify.com/track/4WlYmInKMOBR2NNZBLRzJG" }
+      ]
+    },
+    "singles": {
+      "cover": "/img/cover/ligne.png",
+      "link": "https://open.spotify.com/intl-fr/track/2XTRcViRcnXy9vlDA6JpiU?si=fe873934bf4f46e0",
+      "overlayText": "NOUVEAU",
+      "title": "Singles"
+    }
+  }
+  
