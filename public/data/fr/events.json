@@ -1,5 +1,26 @@
 [
     {
+      "date": "2026-05-04",
+      "displayDate": "04 • 05 - PARIS (75)",
+      "location": "Supersonic",
+      "link": "https://supersonic-club.fr/event/frenzee-blast-candy/",
+      "image": "/img/poster/04_05_26.jpg"
+    },
+    {
+      "date": "2026-04-11",
+      "displayDate": "11 • 04 - NANTES (44)",
+      "location": "BB'O Café Culturel",
+      "link": "https://www.helloasso.com/associations/elephant-joli-mais-veneneux/evenements/amantique-x-the-corndogs-au-bbo",
+      "image": "/img/poster/11_04_26.png"
+    },
+    {
+      "date": "2026-04-10",
+      "displayDate": "10 • 04 - PARIS (75)",
+      "location": "La Télévision",
+      "link": "https://www.helloasso.com/associations/la-television/evenements/10-04-26-amantique-x-lavomatic-x-the-initiativ",
+      "image": "/img/poster/10_04_26.png"
+    },
+    {
       "date": "2026-02-27",
       "displayDate": "27 • 02 - REZÉ (44)",
       "location": "LE PETIT CAF2 DE REZÉ",
