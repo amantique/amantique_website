@@ -47,21 +47,6 @@
         "singleItem": true,
         "enabled": true,
         "order": 3
-      },
-      {
-        "id": "openingHours",
-        "type": "repeater",
-        "title": "Horaires d'ouverture",
-        "jsonDataPath": "/public/data/openingHours.json",
-        "editableFields": {
-          "src": "media",
-          "alt": "shortText",
-          "textFile": "media",
-          "title": "shortText"
-        },
-        "languages": ["fr"],
-        "enabled": true,
-        "order": 4
       }
     ]
   }
